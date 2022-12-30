@@ -2,7 +2,7 @@
  C# Windows Form GUI for FHIR-Universal-Conversion-Kit
 
 ## TODO List
-- [ ] Change App icon in Taskbar
+- [x] Change App icon in Taskbar
 - [ ] Test to run command line in background
 - [ ] Import F.U.C.K (FHIR Universal Conversion Kit) in project
 - [ ] Launch F.U.C.K in background
