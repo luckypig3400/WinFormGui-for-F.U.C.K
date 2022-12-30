@@ -147,6 +147,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="fuck-logo.ico" />
     <Content Include="icons8_user_shield.ico" />
     <None Include="Resources\fuck-logo.png" />
   </ItemGroup>
