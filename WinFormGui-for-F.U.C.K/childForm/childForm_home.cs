@@ -15,5 +15,10 @@ namespace SHRMS.childForm
         {
             InitializeComponent();
         }
+
+        private void btn_readManual_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("提供HackMD的連結", "Readme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

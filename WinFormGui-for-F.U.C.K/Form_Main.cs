@@ -28,10 +28,6 @@ namespace SHRMS
         {
             panel_businessSubMenu.Visible = false;
             panel_basicSubMenu.Visible = false;
-            panel_productSubMenu.Visible = false;
-            panel_cusSubMenu.Visible = false;
-            panel_salarySubMenu.Visible = false;
-            panel_empSubMenu.Visible = false;
         }
 
         private void hideSubMenu()
@@ -40,14 +36,6 @@ namespace SHRMS
                 panel_businessSubMenu.Visible = false;
             if (panel_basicSubMenu.Visible == true)
                 panel_basicSubMenu.Visible = false;
-            if (panel_productSubMenu.Visible == true)
-                panel_productSubMenu.Visible = false;
-            if (panel_cusSubMenu.Visible == true)
-                panel_cusSubMenu.Visible = false;
-            if (panel_salarySubMenu.Visible == true)
-                panel_salarySubMenu.Visible = false;
-            if (panel_empSubMenu.Visible == true)
-                panel_empSubMenu.Visible = false;
         }
 
         private void showSubMenu(Panel SubMenu)
@@ -146,34 +134,10 @@ namespace SHRMS
             showSubMenu(panel_basicSubMenu);
         }
 
-        private void btn_product_Click(object sender, EventArgs e)
-        {
-            selectedBackground(btn_product);
-            showSubMenu(panel_productSubMenu);
-        }
-
-        private void btn_teacher_Click(object sender, EventArgs e)
-        {
-            selectedBackground(btn_employee);
-            showSubMenu(panel_empSubMenu);
-        }
-
-        private void btn_emp_Click(object sender, EventArgs e)
-        {
-            selectedBackground(btn_customer);
-            showSubMenu(panel_cusSubMenu);
-        }
-
         private void btn_attendance_Click(object sender, EventArgs e)
         {
             selectedBackground(btn_business);
             showSubMenu(panel_businessSubMenu);
-        }
-
-        private void btn_salary_Click(object sender, EventArgs e)
-        {
-            selectedBackground(btn_salary);
-            showSubMenu(panel_salarySubMenu);
         }
 
         private void btn_apply_Click(object sender, EventArgs e)
@@ -182,14 +146,6 @@ namespace SHRMS
             hideSubMenu();
             childForm_developing frm = new childForm_developing();
             openChildForm(frm); 
-        }
-
-        private void btn_personalInfo_Click(object sender, EventArgs e)
-        {
-            selectedBackground(btn_personalInfo);
-            hideSubMenu();
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
         }
 
         private void btn_systemManage_Click(object sender, EventArgs e)
@@ -221,86 +177,10 @@ namespace SHRMS
             openChildForm(frm);
         }
 
-        private void sbtn_product_manage_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_product_manage);
-            childForm_developing frm = new childForm_developing();
-            openChildForm(frm);
-        }
-
-        private void sbtn_product_in_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_product_in);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_product_refund_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_product_refund);
-            childForm_developing frm = new childForm_developing();
-            openChildForm(frm);
-        }
-
-        private void sbtn_product_report_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_product_report);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-        private void sbtn_empInfo_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_empInfo);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_empAchievement_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_empAchievement);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_empAdd_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_empAdd);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
         private void sbtn_cusInfo_Click(object sender, EventArgs e)
         {
             selectedBackground_sub(sbtn_cusInfo);
             childForm_templateUpSearchBottomResult frm = new childForm_templateUpSearchBottomResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_cusAnalyze_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_cusAnalyze);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_cusAdd_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_cusAdd);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_cusCardSell_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_cusCardSell);
-            childForm_developing frm = new childForm_developing();
-            openChildForm(frm);
-        }
-
-        private void sbtn_cusCardUse_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_cusCardUse);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
             openChildForm(frm);
         }
 
@@ -314,34 +194,6 @@ namespace SHRMS
         private void sbtn_business_other_Click(object sender, EventArgs e)
         {
             selectedBackground_sub(sbtn_business_other);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_business_report_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_business_report);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_salaryHairdresserCal_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_salaryHairdresserCal);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_salaryAssistantCal_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_salaryAssistantCal);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
-        }
-
-        private void sbtn_salaryReport_Click(object sender, EventArgs e)
-        {
-            selectedBackground_sub(sbtn_salaryReport);
             childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
             openChildForm(frm);
         }
