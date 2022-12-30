@@ -42,13 +42,13 @@
             this.panel_businessSubMenu = new System.Windows.Forms.Panel();
             this.sbtn_business_other = new System.Windows.Forms.Button();
             this.sbtn_business_income = new System.Windows.Forms.Button();
-            this.btn_business = new System.Windows.Forms.Button();
             this.sbtn_cusInfo = new System.Windows.Forms.Button();
+            this.btn_business = new System.Windows.Forms.Button();
             this.panel_basicSubMenu = new System.Windows.Forms.Panel();
-            this.sbtn_serviceManage = new System.Windows.Forms.Button();
-            this.sbtn_providerAdd = new System.Windows.Forms.Button();
-            this.sbtn_providerInfo = new System.Windows.Forms.Button();
-            this.btn_basic = new System.Windows.Forms.Button();
+            this.sbtn_FUCK_restart = new System.Windows.Forms.Button();
+            this.sbtn_FUCK_test = new System.Windows.Forms.Button();
+            this.sbtn_FUCK_launch = new System.Windows.Forms.Button();
+            this.btn_serviceFUCKoptions = new System.Windows.Forms.Button();
             this.btn_home = new System.Windows.Forms.Button();
             this.panel_logo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -159,7 +159,7 @@
             this.panel_bigMenu.Controls.Add(this.panel_businessSubMenu);
             this.panel_bigMenu.Controls.Add(this.btn_business);
             this.panel_bigMenu.Controls.Add(this.panel_basicSubMenu);
-            this.panel_bigMenu.Controls.Add(this.btn_basic);
+            this.panel_bigMenu.Controls.Add(this.btn_serviceFUCKoptions);
             this.panel_bigMenu.Controls.Add(this.btn_home);
             this.panel_bigMenu.Controls.Add(this.panel_logo);
             this.panel_bigMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -252,6 +252,22 @@
             this.sbtn_business_income.UseVisualStyleBackColor = true;
             this.sbtn_business_income.Click += new System.EventHandler(this.sbtn_business_income_Click);
             // 
+            // sbtn_cusInfo
+            // 
+            this.sbtn_cusInfo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtn_cusInfo.FlatAppearance.BorderSize = 0;
+            this.sbtn_cusInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sbtn_cusInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sbtn_cusInfo.ForeColor = System.Drawing.Color.LightGray;
+            this.sbtn_cusInfo.Location = new System.Drawing.Point(0, 0);
+            this.sbtn_cusInfo.Name = "sbtn_cusInfo";
+            this.sbtn_cusInfo.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.sbtn_cusInfo.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_cusInfo.TabIndex = 0;
+            this.sbtn_cusInfo.Text = "上方查詢下方顯示";
+            this.sbtn_cusInfo.UseVisualStyleBackColor = true;
+            this.sbtn_cusInfo.Click += new System.EventHandler(this.sbtn_cusInfo_Click);
+            // 
             // btn_business
             // 
             this.btn_business.Dock = System.Windows.Forms.DockStyle.Top;
@@ -271,101 +287,85 @@
             this.btn_business.UseVisualStyleBackColor = true;
             this.btn_business.Click += new System.EventHandler(this.btn_attendance_Click);
             // 
-            // sbtn_cusInfo
-            // 
-            this.sbtn_cusInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sbtn_cusInfo.FlatAppearance.BorderSize = 0;
-            this.sbtn_cusInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sbtn_cusInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sbtn_cusInfo.ForeColor = System.Drawing.Color.LightGray;
-            this.sbtn_cusInfo.Location = new System.Drawing.Point(0, 0);
-            this.sbtn_cusInfo.Name = "sbtn_cusInfo";
-            this.sbtn_cusInfo.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_cusInfo.Size = new System.Drawing.Size(247, 50);
-            this.sbtn_cusInfo.TabIndex = 0;
-            this.sbtn_cusInfo.Text = "上方查詢下方顯示";
-            this.sbtn_cusInfo.UseVisualStyleBackColor = true;
-            this.sbtn_cusInfo.Click += new System.EventHandler(this.sbtn_cusInfo_Click);
-            // 
             // panel_basicSubMenu
             // 
             this.panel_basicSubMenu.AutoSize = true;
             this.panel_basicSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.panel_basicSubMenu.Controls.Add(this.sbtn_serviceManage);
-            this.panel_basicSubMenu.Controls.Add(this.sbtn_providerAdd);
-            this.panel_basicSubMenu.Controls.Add(this.sbtn_providerInfo);
+            this.panel_basicSubMenu.Controls.Add(this.sbtn_FUCK_restart);
+            this.panel_basicSubMenu.Controls.Add(this.sbtn_FUCK_test);
+            this.panel_basicSubMenu.Controls.Add(this.sbtn_FUCK_launch);
             this.panel_basicSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_basicSubMenu.Location = new System.Drawing.Point(0, 195);
             this.panel_basicSubMenu.Name = "panel_basicSubMenu";
             this.panel_basicSubMenu.Size = new System.Drawing.Size(247, 150);
             this.panel_basicSubMenu.TabIndex = 3;
             // 
-            // sbtn_serviceManage
+            // sbtn_FUCK_restart
             // 
-            this.sbtn_serviceManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sbtn_serviceManage.FlatAppearance.BorderSize = 0;
-            this.sbtn_serviceManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sbtn_serviceManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sbtn_serviceManage.ForeColor = System.Drawing.Color.LightGray;
-            this.sbtn_serviceManage.Location = new System.Drawing.Point(0, 100);
-            this.sbtn_serviceManage.Name = "sbtn_serviceManage";
-            this.sbtn_serviceManage.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_serviceManage.Size = new System.Drawing.Size(247, 50);
-            this.sbtn_serviceManage.TabIndex = 1;
-            this.sbtn_serviceManage.Text = "美髮服務項目";
-            this.sbtn_serviceManage.UseVisualStyleBackColor = true;
-            this.sbtn_serviceManage.Click += new System.EventHandler(this.sbtn_serviceManage_Click);
+            this.sbtn_FUCK_restart.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtn_FUCK_restart.FlatAppearance.BorderSize = 0;
+            this.sbtn_FUCK_restart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sbtn_FUCK_restart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sbtn_FUCK_restart.ForeColor = System.Drawing.Color.LightGray;
+            this.sbtn_FUCK_restart.Location = new System.Drawing.Point(0, 100);
+            this.sbtn_FUCK_restart.Name = "sbtn_FUCK_restart";
+            this.sbtn_FUCK_restart.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.sbtn_FUCK_restart.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_FUCK_restart.TabIndex = 1;
+            this.sbtn_FUCK_restart.Text = "重啟F.U.C.K";
+            this.sbtn_FUCK_restart.UseVisualStyleBackColor = true;
+            this.sbtn_FUCK_restart.Click += new System.EventHandler(this.sbtn_FUCK_restart_Click);
             // 
-            // sbtn_providerAdd
+            // sbtn_FUCK_test
             // 
-            this.sbtn_providerAdd.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sbtn_providerAdd.FlatAppearance.BorderSize = 0;
-            this.sbtn_providerAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sbtn_providerAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sbtn_providerAdd.ForeColor = System.Drawing.Color.LightGray;
-            this.sbtn_providerAdd.Location = new System.Drawing.Point(0, 50);
-            this.sbtn_providerAdd.Name = "sbtn_providerAdd";
-            this.sbtn_providerAdd.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_providerAdd.Size = new System.Drawing.Size(247, 50);
-            this.sbtn_providerAdd.TabIndex = 2;
-            this.sbtn_providerAdd.Text = "新增廠商";
-            this.sbtn_providerAdd.UseVisualStyleBackColor = true;
-            this.sbtn_providerAdd.Click += new System.EventHandler(this.sbtn_providerAdd_Click);
+            this.sbtn_FUCK_test.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtn_FUCK_test.FlatAppearance.BorderSize = 0;
+            this.sbtn_FUCK_test.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sbtn_FUCK_test.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sbtn_FUCK_test.ForeColor = System.Drawing.Color.LightGray;
+            this.sbtn_FUCK_test.Location = new System.Drawing.Point(0, 50);
+            this.sbtn_FUCK_test.Name = "sbtn_FUCK_test";
+            this.sbtn_FUCK_test.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.sbtn_FUCK_test.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_FUCK_test.TabIndex = 2;
+            this.sbtn_FUCK_test.Text = "測試F.U.C.K";
+            this.sbtn_FUCK_test.UseVisualStyleBackColor = true;
+            this.sbtn_FUCK_test.Click += new System.EventHandler(this.sbtn_FUCK_test_Click);
             // 
-            // sbtn_providerInfo
+            // sbtn_FUCK_launch
             // 
-            this.sbtn_providerInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sbtn_providerInfo.FlatAppearance.BorderSize = 0;
-            this.sbtn_providerInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sbtn_providerInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sbtn_providerInfo.ForeColor = System.Drawing.Color.LightGray;
-            this.sbtn_providerInfo.Location = new System.Drawing.Point(0, 0);
-            this.sbtn_providerInfo.Name = "sbtn_providerInfo";
-            this.sbtn_providerInfo.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_providerInfo.Size = new System.Drawing.Size(247, 50);
-            this.sbtn_providerInfo.TabIndex = 0;
-            this.sbtn_providerInfo.Text = "廠商基本資料";
-            this.sbtn_providerInfo.UseVisualStyleBackColor = true;
-            this.sbtn_providerInfo.Click += new System.EventHandler(this.sbtn_providerInfo_Click);
+            this.sbtn_FUCK_launch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtn_FUCK_launch.FlatAppearance.BorderSize = 0;
+            this.sbtn_FUCK_launch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sbtn_FUCK_launch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sbtn_FUCK_launch.ForeColor = System.Drawing.Color.LightGray;
+            this.sbtn_FUCK_launch.Location = new System.Drawing.Point(0, 0);
+            this.sbtn_FUCK_launch.Name = "sbtn_FUCK_launch";
+            this.sbtn_FUCK_launch.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.sbtn_FUCK_launch.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_FUCK_launch.TabIndex = 0;
+            this.sbtn_FUCK_launch.Text = "啟動F.U.C.K";
+            this.sbtn_FUCK_launch.UseVisualStyleBackColor = true;
+            this.sbtn_FUCK_launch.Click += new System.EventHandler(this.sbtn_FUCK_launch_Click);
             // 
-            // btn_basic
+            // btn_serviceFUCKoptions
             // 
-            this.btn_basic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_basic.FlatAppearance.BorderSize = 0;
-            this.btn_basic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_basic.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_basic.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_basic.Image = ((System.Drawing.Image)(resources.GetObject("btn_basic.Image")));
-            this.btn_basic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_basic.Location = new System.Drawing.Point(0, 140);
-            this.btn_basic.Name = "btn_basic";
-            this.btn_basic.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_basic.Size = new System.Drawing.Size(247, 55);
-            this.btn_basic.TabIndex = 2;
-            this.btn_basic.Text = "  基本資料管理";
-            this.btn_basic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_basic.UseVisualStyleBackColor = true;
-            this.btn_basic.Click += new System.EventHandler(this.btn_dept_Click);
+            this.btn_serviceFUCKoptions.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_serviceFUCKoptions.FlatAppearance.BorderSize = 0;
+            this.btn_serviceFUCKoptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_serviceFUCKoptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_serviceFUCKoptions.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_serviceFUCKoptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_serviceFUCKoptions.Image")));
+            this.btn_serviceFUCKoptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_serviceFUCKoptions.Location = new System.Drawing.Point(0, 140);
+            this.btn_serviceFUCKoptions.Name = "btn_serviceFUCKoptions";
+            this.btn_serviceFUCKoptions.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_serviceFUCKoptions.Size = new System.Drawing.Size(247, 55);
+            this.btn_serviceFUCKoptions.TabIndex = 2;
+            this.btn_serviceFUCKoptions.Text = "  啟動服務";
+            this.btn_serviceFUCKoptions.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_serviceFUCKoptions.UseVisualStyleBackColor = true;
+            this.btn_serviceFUCKoptions.Click += new System.EventHandler(this.btn_dept_Click);
             // 
             // btn_home
             // 
@@ -524,8 +524,8 @@
         private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.Panel panel_logo;
         private System.Windows.Forms.Panel panel_basicSubMenu;
-        private System.Windows.Forms.Button sbtn_providerInfo;
-        private System.Windows.Forms.Button sbtn_serviceManage;
+        private System.Windows.Forms.Button sbtn_FUCK_launch;
+        private System.Windows.Forms.Button sbtn_FUCK_restart;
         private System.Windows.Forms.Panel panel_businessSubMenu;
         private System.Windows.Forms.Button sbtn_business_other;
         private System.Windows.Forms.Button sbtn_business_income;
@@ -540,10 +540,10 @@
         private System.Windows.Forms.Label label_time;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.Button btn_basic;
+        public System.Windows.Forms.Button btn_serviceFUCKoptions;
         public System.Windows.Forms.Button btn_business;
         public System.Windows.Forms.Button btn_systemManage;
         public System.Windows.Forms.Button btn_financialReport;
-        private System.Windows.Forms.Button sbtn_providerAdd;
+        private System.Windows.Forms.Button sbtn_FUCK_test;
     }
 }

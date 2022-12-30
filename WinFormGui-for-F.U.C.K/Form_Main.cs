@@ -130,7 +130,7 @@ namespace SHRMS
 
         private void btn_dept_Click(object sender, EventArgs e)
         {
-            selectedBackground(btn_basic);
+            selectedBackground(btn_serviceFUCKoptions);
             showSubMenu(panel_basicSubMenu);
         }
 
@@ -156,23 +156,23 @@ namespace SHRMS
             openChildForm(frm);
         }
 
-        private void sbtn_providerInfo_Click(object sender, EventArgs e)
+        private void sbtn_FUCK_launch_Click(object sender, EventArgs e)
         {
-            selectedBackground_sub(sbtn_providerInfo);
+            selectedBackground_sub(sbtn_FUCK_launch);
             childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
             openChildForm(frm);
         }
 
-        private void sbtn_providerAdd_Click(object sender, EventArgs e)
+        private void sbtn_FUCK_test_Click(object sender, EventArgs e)
         {
-            selectedBackground_sub(sbtn_providerAdd);
+            selectedBackground_sub(sbtn_FUCK_test);
             childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
             openChildForm(frm);
         }
 
-        private void sbtn_serviceManage_Click(object sender, EventArgs e)
+        private void sbtn_FUCK_restart_Click(object sender, EventArgs e)
         {
-            selectedBackground_sub(sbtn_serviceManage);
+            selectedBackground_sub(sbtn_FUCK_restart);
             childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
             openChildForm(frm);
         }
