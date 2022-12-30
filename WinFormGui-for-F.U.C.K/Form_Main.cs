@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
 using SHRMS.childForm;
+using System.Diagnostics;
 
 namespace SHRMS
 {
@@ -159,8 +160,18 @@ namespace SHRMS
         private void sbtn_FUCK_launch_Click(object sender, EventArgs e)
         {
             selectedBackground_sub(sbtn_FUCK_launch);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
+
+            // https://stackoverflow.com/questions/1271938/how-to-run-batch-file-from-c-sharp-in-the-background            
+            Process FUCKprocess = new Process();
+            ProcessStartInfo fuckStartInfo = new ProcessStartInfo();
+
+            // https://stackoverflow.com/questions/1469764/run-command-prompt-commands
+            fuckStartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            fuckStartInfo.FileName = "cmd.exe";
+            fuckStartInfo.Arguments = "/C node --version";
+
+            FUCKprocess.StartInfo = fuckStartInfo;
+            FUCKprocess.Start();
         }
 
         private void sbtn_FUCK_test_Click(object sender, EventArgs e)
