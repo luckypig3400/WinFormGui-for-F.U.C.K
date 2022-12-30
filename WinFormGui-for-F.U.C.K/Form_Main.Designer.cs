@@ -100,7 +100,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HairSalonMS.Properties.Resources.fuck_logo;
+            this.pictureBox2.Image = global::WinFormGuiForF.U.C.K.Properties.Resources.fuck_logo;
             this.pictureBox2.Location = new System.Drawing.Point(19, 9);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
@@ -410,7 +410,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HairSalonMS.Properties.Resources.fuck_logo;
+            this.pictureBox1.Image = global::WinFormGuiForF.U.C.K.Properties.Resources.fuck_logo;
             this.pictureBox1.Location = new System.Drawing.Point(10, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);

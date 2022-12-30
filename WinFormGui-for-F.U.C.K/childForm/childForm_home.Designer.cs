@@ -37,7 +37,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::HairSalonMS.Properties.Resources.fuck_logo;
+            this.pictureBox1.Image = global::WinFormGuiForF.U.C.K.Properties.Resources.fuck_logo;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(391, 61);
             this.pictureBox1.Name = "pictureBox1";

@@ -8,8 +8,8 @@
     <ProjectGuid>{054ABE9D-5E00-4E1E-A5B0-FA31884DA73D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HairSalonMS</RootNamespace>
-    <AssemblyName>HairSalonMS</AssemblyName>
+    <RootNamespace>WinFormGuiForF.U.C.K</RootNamespace>
+    <AssemblyName>WinFormGui-for-F.U.C.K</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -39,7 +39,7 @@
   <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup>
-    <ApplicationIcon>icons8_user_shield.ico</ApplicationIcon>
+    <ApplicationIcon>fuck-logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
@@ -131,6 +131,70 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="FHIR-Universal-Conversion-Kit\build_and_run.bat" />
+    <None Include="FHIR-Universal-Conversion-Kit\csv2json_HTML_ver\csv2jsonTest.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\csv2json_nodeJS_ver\csvFiles\test.csv" />
+    <None Include="FHIR-Universal-Conversion-Kit\csv2json_nodeJS_ver\output\output.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\csv2json_nodeJS_ver\package-lock.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\csv2json_nodeJS_ver\package.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\Dockerfile" />
+    <None Include="FHIR-Universal-Conversion-Kit\FDA-data-crawler\package-lock.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\FDA-data-crawler\package.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\LICENSE" />
+    <None Include="FHIR-Universal-Conversion-Kit\README.md" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\condition.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\encounter.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\medication.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\medicationRequest.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\MiTW2022\patient-track1_scenario1.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\MiTW2022\patient-track1_scenario2.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\MiTW2022\patient-track1_scenario3.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\observation.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\organization.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\patient.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\practitioner.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\sendRequests\procedure.rest" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\.editorconfig" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\.eslintignore" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\.eslintrc" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\.npmrc" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\.sailsrc" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\api\controllers\.gitkeep" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\api\helpers\.gitkeep" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\api\models\.gitkeep" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\api\policies\.gitkeep" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\config\locales\de.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\config\locales\en.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\config\locales\es.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\config\locales\fr.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\lib\fuck\fhir_schema\schema.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\lib\fuck\resources\bundle.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\lib\fuck\source.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\package-lock.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\src\package.json" />
+    <None Include="FHIR-Universal-Conversion-Kit\start_server" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Condition.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Encounter.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Location.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Medication.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\MedicationRequest.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Observation.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Organization.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Patient.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Practitioner.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Procedure.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Condition.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Encounter.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Location.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Medication.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\MedicationRequest.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Observation.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Organization.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Patient.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Practitioner.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Procedure.xlsx" />
+    <None Include="FHIR-Universal-Conversion-Kit\twcore\how-to-use-twcore.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -148,6 +212,58 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="fuck-logo.ico" />
+    <Content Include="FHIR-Universal-Conversion-Kit\.gitignore" />
+    <Content Include="FHIR-Universal-Conversion-Kit\csv2json_HTML_ver\csv2json.html" />
+    <Content Include="FHIR-Universal-Conversion-Kit\csv2json_HTML_ver\csv2json.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\csv2json_nodeJS_ver\resource2json.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\F.U.C.K_logo.png" />
+    <Content Include="FHIR-Universal-Conversion-Kit\FDA-data-crawler\app.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\fuck-logo.png" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\conditionMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\dental.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\DiagnosticReport.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\encounterMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\example.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\example2.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\location.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\medication-TWCore.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\medicationMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\medicationRequest-track3-mitw2022.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\medicationRequestMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\observationMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\organizationMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\patient-t1s1.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\patient-t1s2.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\patient-t1s3.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\patientMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\practitionerMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\procedureMS.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\api\controllers\convert.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\api\responses\badRequest.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\api\responses\err.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\api\responses\forbidden.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\api\responses\ok.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\api\responses\serverError.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\app.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\blueprints.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\bootstrap.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\custom.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\datastores.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\env\production.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\errcode.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\globals.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\http.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\i18n.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\log.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\models.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\policies.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\routes.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\security.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\session.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\sockets.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\config\views.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\lib\fuck\index.js" />
+    <Content Include="FHIR-Universal-Conversion-Kit\src\lib\fuck\resources.js" />
     <Content Include="icons8_user_shield.ico" />
     <None Include="Resources\fuck-logo.png" />
   </ItemGroup>
