@@ -157,18 +157,18 @@ namespace SHRMS
             openChildForm(frm);
         }
 
+        // https://stackoverflow.com/questions/1271938/how-to-run-batch-file-from-c-sharp-in-the-background            
+        Process FUCKprocess = new Process();
+        ProcessStartInfo fuckStartInfo = new ProcessStartInfo();
+
         private void sbtn_FUCK_launch_Click(object sender, EventArgs e)
         {
             selectedBackground_sub(sbtn_FUCK_launch);
 
-            // https://stackoverflow.com/questions/1271938/how-to-run-batch-file-from-c-sharp-in-the-background            
-            Process FUCKprocess = new Process();
-            ProcessStartInfo fuckStartInfo = new ProcessStartInfo();
-
             // https://stackoverflow.com/questions/1469764/run-command-prompt-commands
-            fuckStartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //fuckStartInfo.WindowStyle = ProcessWindowStyle.Hidden; //隱藏cmd視窗
             fuckStartInfo.FileName = "cmd.exe";
-            fuckStartInfo.Arguments = "/C node --version";
+            fuckStartInfo.Arguments = "/C cd FHIR-Universal-Conversion-Kit/src && npm install && node app.js";
 
             FUCKprocess.StartInfo = fuckStartInfo;
             FUCKprocess.Start();
@@ -184,8 +184,8 @@ namespace SHRMS
         private void sbtn_FUCK_restart_Click(object sender, EventArgs e)
         {
             selectedBackground_sub(sbtn_FUCK_restart);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
-            openChildForm(frm);
+
+            FUCKprocess.Kill();
         }
 
         private void sbtn_cusInfo_Click(object sender, EventArgs e)
