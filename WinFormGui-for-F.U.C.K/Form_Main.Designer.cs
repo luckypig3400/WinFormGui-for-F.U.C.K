@@ -93,7 +93,7 @@
             this.label8.Location = new System.Drawing.Point(61, 15);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(610, 25);
+            this.label8.Size = new System.Drawing.Size(489, 20);
             this.label8.TabIndex = 2;
             this.label8.Text = "WFGF.U.C.K--Windows Form Gui for FHIR-Universal-Conversion-Kit";
             this.label8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
@@ -355,17 +355,17 @@
             this.btn_serviceFUCKoptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_serviceFUCKoptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_serviceFUCKoptions.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_serviceFUCKoptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_serviceFUCKoptions.Image")));
+            this.btn_serviceFUCKoptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_business.Image")));
             this.btn_serviceFUCKoptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_serviceFUCKoptions.Location = new System.Drawing.Point(0, 140);
             this.btn_serviceFUCKoptions.Name = "btn_serviceFUCKoptions";
             this.btn_serviceFUCKoptions.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_serviceFUCKoptions.Size = new System.Drawing.Size(247, 55);
             this.btn_serviceFUCKoptions.TabIndex = 2;
-            this.btn_serviceFUCKoptions.Text = "  啟動服務";
+            this.btn_serviceFUCKoptions.Text = "  服務選單";
             this.btn_serviceFUCKoptions.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_serviceFUCKoptions.UseVisualStyleBackColor = true;
-            this.btn_serviceFUCKoptions.Click += new System.EventHandler(this.btn_dept_Click);
+            this.btn_serviceFUCKoptions.Click += new System.EventHandler(this.btn_serviceFUCKoptions_Click);
             // 
             // btn_home
             // 
@@ -404,7 +404,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(150)))), ((int)(((byte)(219)))));
             this.label1.Location = new System.Drawing.Point(80, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 25);
+            this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "WFGF.U.C.K";
             // 
@@ -438,7 +438,7 @@
             this.label_time.ForeColor = System.Drawing.Color.White;
             this.label_time.Location = new System.Drawing.Point(693, 10);
             this.label_time.Name = "label_time";
-            this.label_time.Size = new System.Drawing.Size(114, 25);
+            this.label_time.Size = new System.Drawing.Size(89, 20);
             this.label_time.TabIndex = 0;
             this.label_time.Text = "HH:MM:SS";
             // 
@@ -449,7 +449,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(7, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(514, 25);
+            this.label2.Size = new System.Drawing.Size(415, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "C# Windows Form GUI for FHIR-Universal-Conversion-Kit";
             // 
@@ -461,7 +461,7 @@
             this.label_logOut.ForeColor = System.Drawing.Color.White;
             this.label_logOut.Location = new System.Drawing.Point(947, 9);
             this.label_logOut.Name = "label_logOut";
-            this.label_logOut.Size = new System.Drawing.Size(82, 25);
+            this.label_logOut.Size = new System.Drawing.Size(64, 20);
             this.label_logOut.TabIndex = 0;
             this.label_logOut.Text = "F.U.C.K";
             this.label_logOut.Click += new System.EventHandler(this.label_logOut_Click);
@@ -483,7 +483,7 @@
             // 
             // Form_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 800);
             this.Controls.Add(this.panel_childForm);
