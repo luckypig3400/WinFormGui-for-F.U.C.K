@@ -8,10 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
-using SHRMS.childForm;
+using WFGF.U.C.K.childForm;
 using System.Diagnostics;
 
-namespace SHRMS
+namespace WFGF.U.C.K
 {
     public partial class Form_Main : Form
     {

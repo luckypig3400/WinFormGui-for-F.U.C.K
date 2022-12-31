@@ -1,4 +1,4 @@
-﻿namespace SHRMS
+﻿namespace WFGF.U.C.K
 {
     partial class Form_Main
     {

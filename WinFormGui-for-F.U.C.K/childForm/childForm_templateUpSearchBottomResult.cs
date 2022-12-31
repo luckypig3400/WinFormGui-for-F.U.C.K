@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SHRMS.childForm
+namespace WFGF.U.C.K.childForm
 {
     public partial class childForm_templateUpSearchBottomResult : Form
     {

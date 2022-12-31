@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-namespace SHRMS.childForm
+namespace WFGF.U.C.K.childForm
 {
     public partial class childForm_templateRightSearchLeftResult : Form
     {

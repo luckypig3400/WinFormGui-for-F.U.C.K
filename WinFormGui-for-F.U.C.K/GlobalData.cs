@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SHRMS
+namespace WFGF.U.C.K
 {
     class GlobalData
     {

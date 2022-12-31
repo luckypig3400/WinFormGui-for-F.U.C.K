@@ -1,4 +1,4 @@
-﻿namespace SHRMS.childForm
+﻿namespace WFGF.U.C.K.childForm
 {
     partial class childForm_templateRightSearchLeftResult
     {
