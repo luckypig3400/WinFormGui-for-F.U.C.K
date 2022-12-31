@@ -3,9 +3,9 @@
 
 ## TODO List
 - [x] Change App icon in Taskbar
-- [ ] Test to run command line in background
-- [ ] Import F.U.C.K (FHIR Universal Conversion Kit) in project
-- [ ] Launch F.U.C.K in background
+- [x] Test to run command line in background
+- [x] Import F.U.C.K (FHIR Universal Conversion Kit) in project
+- [x] Launch F.U.C.K in background
 - [ ] Simple RESTful Client
 - [ ] F.U.C.K profile editor
 - [ ] Excel file reader
