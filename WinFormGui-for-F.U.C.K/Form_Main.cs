@@ -186,19 +186,32 @@ namespace WFGF.U.C.K
             selectedBackground_sub(sbtn_FUCK_restart);
 
             kill_FUCK_servirce();
+
+            // https://stackoverflow.com/questions/1469764/run-command-prompt-commands
+            fuckStartInfo.WindowStyle = ProcessWindowStyle.Hidden; //隱藏cmd視窗
+            fuckStartInfo.FileName = "cmd.exe";
+            fuckStartInfo.Arguments = "/C cd FHIR-Universal-Conversion-Kit/src && npm install && node app.js";
+            FUCKprocess.StartInfo = fuckStartInfo;
+            FUCKprocess.Start();
         }
 
         public void kill_FUCK_servirce()
         {
-            FUCKprocess.Kill();// 關閉cmd視窗
-            foreach (var node in Process.GetProcessesByName("node"))
+            try
             {
-                // 找出所有在背景執行的node.js並關閉，雖然會關到其他服務使用的node.js但這是最簡單的辦法
-                // https://stackoverflow.com/questions/51302514/stop-command-line-process-started-in-c-sharp-on-close-of-application
-                node.Kill();
+                FUCKprocess.Kill();// 關閉cmd視窗
+                foreach (var node in Process.GetProcessesByName("node"))
+                {
+                    // 找出所有在背景執行的node.js並關閉，雖然會關到其他服務使用的node.js但這是最簡單的辦法
+                    // https://stackoverflow.com/questions/51302514/stop-command-line-process-started-in-c-sharp-on-close-of-application
+                    node.Kill();
 
-                // 另外可參考比較複雜的註冊child process並關閉的方法
-                // https://stackoverflow.com/questions/3342941/kill-child-process-when-parent-process-is-killed
+                    // 另外可參考比較複雜的註冊child process並關閉的方法
+                    // https://stackoverflow.com/questions/3342941/kill-child-process-when-parent-process-is-killed
+                }
+            }
+            catch {
+                MessageBox.Show("F.U.C.K已終止或尚未啟動!", "溫馨提醒", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
