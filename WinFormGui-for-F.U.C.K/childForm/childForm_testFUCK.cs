@@ -26,11 +26,6 @@ namespace WFGF.U.C.K.childForm
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
         }
 
-        private void btn_selectA_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("根據URL輸入框，POST測試資料");
-        }
-
         MaterialSkinManager themeManager = MaterialSkinManager.Instance;
 
         private void enableDarkThemeSwitch_CheckedChanged(object sender, EventArgs e)
@@ -39,6 +34,11 @@ namespace WFGF.U.C.K.childForm
                 themeManager.Theme = MaterialSkinManager.Themes.DARK;
             else
                 themeManager.Theme= MaterialSkinManager.Themes.LIGHT;
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(url_textBox.Text, "根據URL輸入框，POST測試資料");
         }
     }
 }

@@ -37,9 +37,11 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.url_textBox = new MaterialSkin.Controls.MaterialTextBox();
             this.panel_right = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel_top.SuspendLayout();
             this.panel_left.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel_right.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_top
@@ -128,6 +130,7 @@
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // materialLabel2
             // 
@@ -160,11 +163,23 @@
             // 
             // panel_right
             // 
+            this.panel_right.Controls.Add(this.richTextBox1);
             this.panel_right.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_right.Location = new System.Drawing.Point(508, 108);
             this.panel_right.Name = "panel_right";
             this.panel_right.Size = new System.Drawing.Size(549, 599);
             this.panel_right.TabIndex = 6;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(6, 6);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(540, 590);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
             // 
             // childForm_testFUCK
             // 
@@ -180,6 +195,7 @@
             this.panel_left.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel_right.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -195,5 +211,6 @@
         private MaterialSkin.Controls.MaterialSwitch enableDarkThemeSwitch;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialButton materialButton1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
