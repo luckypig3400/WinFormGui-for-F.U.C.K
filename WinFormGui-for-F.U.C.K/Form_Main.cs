@@ -130,7 +130,7 @@ namespace WFGF.U.C.K
             openChildForm(frm);
         }
 
-        private void btn_dept_Click(object sender, EventArgs e)
+        private void btn_serviceFUCKoptions_Click(object sender, EventArgs e)
         {
             selectedBackground(btn_serviceFUCKoptions);
             showSubMenu(panel_basicSubMenu);
@@ -171,7 +171,21 @@ namespace WFGF.U.C.K
             fuckStartInfo.FileName = "cmd.exe";
             fuckStartInfo.Arguments = "/C cd FHIR-Universal-Conversion-Kit/src && npm install && node app.js";
             FUCKprocess.StartInfo = fuckStartInfo;
-            FUCKprocess.Start();
+
+            // check if FUCKprocess already started
+            try
+            {// 服務尚未啟動，抓不到Process ID 所以會Error
+                if (FUCKprocess.Id != 0)
+                {
+                    MessageBox.Show("服務已經在運行中...", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("首次啟動:依電腦性能不同，大約\n需等待10~30秒安裝相依套件\n\n日後啟動:約3秒完成\n\n建議使用下方選項測試是否順利啟動!",
+                "服務啟動通知", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FUCKprocess.Start();
+            }
         }
 
         private void sbtn_FUCK_test_Click(object sender, EventArgs e)
