@@ -87,6 +87,7 @@ namespace WFGF.U.C.K
 
         private void btn_close_Click(object sender, EventArgs e)
         {
+            kill_FUCK_servirce(); // 離開APP前關閉F.U.C.K
             Application.Exit();
         }
 
@@ -166,7 +167,7 @@ namespace WFGF.U.C.K
             selectedBackground_sub(sbtn_FUCK_launch);
 
             // https://stackoverflow.com/questions/1469764/run-command-prompt-commands
-            //fuckStartInfo.WindowStyle = ProcessWindowStyle.Hidden; //隱藏cmd視窗
+            fuckStartInfo.WindowStyle = ProcessWindowStyle.Hidden; //隱藏cmd視窗
             fuckStartInfo.FileName = "cmd.exe";
             fuckStartInfo.Arguments = "/C cd FHIR-Universal-Conversion-Kit/src && npm install && node app.js";
             FUCKprocess.StartInfo = fuckStartInfo;
@@ -184,6 +185,11 @@ namespace WFGF.U.C.K
         {
             selectedBackground_sub(sbtn_FUCK_restart);
 
+            kill_FUCK_servirce();
+        }
+
+        public void kill_FUCK_servirce()
+        {
             FUCKprocess.Kill();// 關閉cmd視窗
             foreach (var node in Process.GetProcessesByName("node"))
             {
@@ -227,8 +233,9 @@ namespace WFGF.U.C.K
         {
             // Form_sign frm_sign = new Form_sign();
             // frm_sign.Show();//不能用ShowDialog()
-           
+
             // 原本模板有登入介面，刪除後改為直接離開此程式
+            kill_FUCK_servirce(); // 離開APP前關閉F.U.C.K
             this.Close();
             this.Dispose();
         }
