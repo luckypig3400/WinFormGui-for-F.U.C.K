@@ -191,7 +191,7 @@ namespace WFGF.U.C.K
         private void sbtn_FUCK_test_Click(object sender, EventArgs e)
         {
             selectedBackground_sub(sbtn_FUCK_test);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
+            childForm_testFUCK frm = new childForm_testFUCK();
             openChildForm(frm);
         }
 
