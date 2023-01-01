@@ -34,9 +34,30 @@ namespace WFGF.U.C.K.childForm
         private void enableDarkThemeSwitch_CheckedChanged(object sender, EventArgs e)
         {
             if (enableDarkThemeSwitch.Checked)
+            {
                 themeManager.Theme = MaterialSkinManager.Themes.DARK;
+
+                dataGridView1.RowsDefaultCellStyle.BackColor = System.Drawing.SystemColors.WindowFrame;
+                dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(255, 50, 50, 50);
+
+                // https://stackoverflow.com/questions/1247800/how-to-change-the-color-of-winform-datagridview-header
+                dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.Black;
+                dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.White;
+                dataGridView1.RowHeadersDefaultCellStyle.BackColor = System.Drawing.Color.Black;
+                dataGridView1.RowHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            }
             else
+            {
                 themeManager.Theme = MaterialSkinManager.Themes.LIGHT;
+
+                dataGridView1.RowsDefaultCellStyle.BackColor = System.Drawing.Color.White;
+                dataGridView1.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
+
+                dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.SystemColors.Control;
+                dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+                dataGridView1.RowHeadersDefaultCellStyle.BackColor = System.Drawing.SystemColors.Control;
+                dataGridView1.RowHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            }
         }
 
         private void fileListComboBox_Click(object sender, EventArgs e)
