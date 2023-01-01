@@ -37,14 +37,20 @@
             this.btn_max = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
             this.panel_bigMenu = new System.Windows.Forms.Panel();
-            this.btn_systemManage = new System.Windows.Forms.Button();
-            this.btn_financialReport = new System.Windows.Forms.Button();
+            this.btn_csv2json = new System.Windows.Forms.Button();
             this.panel_businessSubMenu = new System.Windows.Forms.Panel();
             this.sbtn_business_other = new System.Windows.Forms.Button();
             this.sbtn_business_income = new System.Windows.Forms.Button();
             this.sbtn_cusInfo = new System.Windows.Forms.Button();
             this.btn_business = new System.Windows.Forms.Button();
+            this.panel_ExcelSubMenu = new System.Windows.Forms.Panel();
+            this.sbtn_Excel_Editor = new System.Windows.Forms.Button();
+            this.sbtn_Excel_Reader = new System.Windows.Forms.Button();
+            this.btn_Excel = new System.Windows.Forms.Button();
+            this.btn_FUCKprofileEditor = new System.Windows.Forms.Button();
+            this.btn_simpleRestCleint = new System.Windows.Forms.Button();
             this.panel_basicSubMenu = new System.Windows.Forms.Panel();
+            this.sbtn_killNodeJS = new System.Windows.Forms.Button();
             this.sbtn_FUCK_restart = new System.Windows.Forms.Button();
             this.sbtn_FUCK_test = new System.Windows.Forms.Button();
             this.sbtn_FUCK_launch = new System.Windows.Forms.Button();
@@ -59,11 +65,11 @@
             this.label_logOut = new System.Windows.Forms.Label();
             this.panel_childForm = new System.Windows.Forms.Panel();
             this.timer_time = new System.Windows.Forms.Timer(this.components);
-            this.sbtn_killNodeJS = new System.Windows.Forms.Button();
             this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_bigMenu.SuspendLayout();
             this.panel_businessSubMenu.SuspendLayout();
+            this.panel_ExcelSubMenu.SuspendLayout();
             this.panel_basicSubMenu.SuspendLayout();
             this.panel_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -155,10 +161,13 @@
             // 
             this.panel_bigMenu.AutoScroll = true;
             this.panel_bigMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(59)))));
-            this.panel_bigMenu.Controls.Add(this.btn_systemManage);
-            this.panel_bigMenu.Controls.Add(this.btn_financialReport);
             this.panel_bigMenu.Controls.Add(this.panel_businessSubMenu);
             this.panel_bigMenu.Controls.Add(this.btn_business);
+            this.panel_bigMenu.Controls.Add(this.btn_csv2json);
+            this.panel_bigMenu.Controls.Add(this.panel_ExcelSubMenu);
+            this.panel_bigMenu.Controls.Add(this.btn_Excel);
+            this.panel_bigMenu.Controls.Add(this.btn_FUCKprofileEditor);
+            this.panel_bigMenu.Controls.Add(this.btn_simpleRestCleint);
             this.panel_bigMenu.Controls.Add(this.panel_basicSubMenu);
             this.panel_bigMenu.Controls.Add(this.btn_serviceFUCKoptions);
             this.panel_bigMenu.Controls.Add(this.btn_home);
@@ -170,43 +179,24 @@
             this.panel_bigMenu.Size = new System.Drawing.Size(247, 750);
             this.panel_bigMenu.TabIndex = 0;
             // 
-            // btn_systemManage
+            // btn_csv2json
             // 
-            this.btn_systemManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_systemManage.FlatAppearance.BorderSize = 0;
-            this.btn_systemManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_systemManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_systemManage.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_systemManage.Image = ((System.Drawing.Image)(resources.GetObject("btn_systemManage.Image")));
-            this.btn_systemManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_systemManage.Location = new System.Drawing.Point(0, 655);
-            this.btn_systemManage.Name = "btn_systemManage";
-            this.btn_systemManage.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_systemManage.Size = new System.Drawing.Size(247, 55);
-            this.btn_systemManage.TabIndex = 14;
-            this.btn_systemManage.Text = "  系統管理";
-            this.btn_systemManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_systemManage.UseVisualStyleBackColor = true;
-            this.btn_systemManage.Click += new System.EventHandler(this.btn_systemManage_Click);
-            // 
-            // btn_financialReport
-            // 
-            this.btn_financialReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_financialReport.FlatAppearance.BorderSize = 0;
-            this.btn_financialReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_financialReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_financialReport.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_financialReport.Image = ((System.Drawing.Image)(resources.GetObject("btn_financialReport.Image")));
-            this.btn_financialReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_financialReport.Location = new System.Drawing.Point(0, 600);
-            this.btn_financialReport.Name = "btn_financialReport";
-            this.btn_financialReport.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_financialReport.Size = new System.Drawing.Size(247, 55);
-            this.btn_financialReport.TabIndex = 12;
-            this.btn_financialReport.Text = "  財務報表";
-            this.btn_financialReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_financialReport.UseVisualStyleBackColor = true;
-            this.btn_financialReport.Click += new System.EventHandler(this.btn_apply_Click);
+            this.btn_csv2json.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_csv2json.FlatAppearance.BorderSize = 0;
+            this.btn_csv2json.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_csv2json.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_csv2json.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_csv2json.Image = ((System.Drawing.Image)(resources.GetObject("btn_csv2json.Image")));
+            this.btn_csv2json.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_csv2json.Location = new System.Drawing.Point(0, 663);
+            this.btn_csv2json.Name = "btn_csv2json";
+            this.btn_csv2json.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_csv2json.Size = new System.Drawing.Size(230, 55);
+            this.btn_csv2json.TabIndex = 14;
+            this.btn_csv2json.Text = "  CSV轉JSON";
+            this.btn_csv2json.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_csv2json.UseVisualStyleBackColor = true;
+            this.btn_csv2json.Click += new System.EventHandler(this.btn_systemManage_Click);
             // 
             // panel_businessSubMenu
             // 
@@ -216,9 +206,9 @@
             this.panel_businessSubMenu.Controls.Add(this.sbtn_business_income);
             this.panel_businessSubMenu.Controls.Add(this.sbtn_cusInfo);
             this.panel_businessSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_businessSubMenu.Location = new System.Drawing.Point(0, 450);
+            this.panel_businessSubMenu.Location = new System.Drawing.Point(0, 773);
             this.panel_businessSubMenu.Name = "panel_businessSubMenu";
-            this.panel_businessSubMenu.Size = new System.Drawing.Size(247, 150);
+            this.panel_businessSubMenu.Size = new System.Drawing.Size(230, 150);
             this.panel_businessSubMenu.TabIndex = 9;
             // 
             // sbtn_business_other
@@ -231,7 +221,7 @@
             this.sbtn_business_other.Location = new System.Drawing.Point(0, 100);
             this.sbtn_business_other.Name = "sbtn_business_other";
             this.sbtn_business_other.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_business_other.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_business_other.Size = new System.Drawing.Size(230, 50);
             this.sbtn_business_other.TabIndex = 1;
             this.sbtn_business_other.Text = "右側查詢左側顯示";
             this.sbtn_business_other.UseVisualStyleBackColor = true;
@@ -247,7 +237,7 @@
             this.sbtn_business_income.Location = new System.Drawing.Point(0, 50);
             this.sbtn_business_income.Name = "sbtn_business_income";
             this.sbtn_business_income.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_business_income.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_business_income.Size = new System.Drawing.Size(230, 50);
             this.sbtn_business_income.TabIndex = 0;
             this.sbtn_business_income.Text = "左側查詢右側顯示";
             this.sbtn_business_income.UseVisualStyleBackColor = true;
@@ -263,7 +253,7 @@
             this.sbtn_cusInfo.Location = new System.Drawing.Point(0, 0);
             this.sbtn_cusInfo.Name = "sbtn_cusInfo";
             this.sbtn_cusInfo.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_cusInfo.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_cusInfo.Size = new System.Drawing.Size(230, 50);
             this.sbtn_cusInfo.TabIndex = 0;
             this.sbtn_cusInfo.Text = "上方查詢下方顯示";
             this.sbtn_cusInfo.UseVisualStyleBackColor = true;
@@ -278,15 +268,114 @@
             this.btn_business.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_business.Image = ((System.Drawing.Image)(resources.GetObject("btn_business.Image")));
             this.btn_business.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_business.Location = new System.Drawing.Point(0, 395);
+            this.btn_business.Location = new System.Drawing.Point(0, 718);
             this.btn_business.Name = "btn_business";
             this.btn_business.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_business.Size = new System.Drawing.Size(247, 55);
+            this.btn_business.Size = new System.Drawing.Size(230, 55);
             this.btn_business.TabIndex = 8;
             this.btn_business.Text = "  介面模板";
             this.btn_business.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_business.UseVisualStyleBackColor = true;
             this.btn_business.Click += new System.EventHandler(this.btn_attendance_Click);
+            // 
+            // panel_ExcelSubMenu
+            // 
+            this.panel_ExcelSubMenu.AutoSize = true;
+            this.panel_ExcelSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.panel_ExcelSubMenu.Controls.Add(this.sbtn_Excel_Editor);
+            this.panel_ExcelSubMenu.Controls.Add(this.sbtn_Excel_Reader);
+            this.panel_ExcelSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_ExcelSubMenu.Location = new System.Drawing.Point(0, 563);
+            this.panel_ExcelSubMenu.Name = "panel_ExcelSubMenu";
+            this.panel_ExcelSubMenu.Size = new System.Drawing.Size(230, 100);
+            this.panel_ExcelSubMenu.TabIndex = 16;
+            // 
+            // sbtn_Excel_Editor
+            // 
+            this.sbtn_Excel_Editor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtn_Excel_Editor.FlatAppearance.BorderSize = 0;
+            this.sbtn_Excel_Editor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sbtn_Excel_Editor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sbtn_Excel_Editor.ForeColor = System.Drawing.Color.LightGray;
+            this.sbtn_Excel_Editor.Location = new System.Drawing.Point(0, 50);
+            this.sbtn_Excel_Editor.Name = "sbtn_Excel_Editor";
+            this.sbtn_Excel_Editor.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.sbtn_Excel_Editor.Size = new System.Drawing.Size(230, 50);
+            this.sbtn_Excel_Editor.TabIndex = 1;
+            this.sbtn_Excel_Editor.Text = "編輯Excel";
+            this.sbtn_Excel_Editor.UseVisualStyleBackColor = true;
+            // 
+            // sbtn_Excel_Reader
+            // 
+            this.sbtn_Excel_Reader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtn_Excel_Reader.FlatAppearance.BorderSize = 0;
+            this.sbtn_Excel_Reader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sbtn_Excel_Reader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sbtn_Excel_Reader.ForeColor = System.Drawing.Color.LightGray;
+            this.sbtn_Excel_Reader.Location = new System.Drawing.Point(0, 0);
+            this.sbtn_Excel_Reader.Name = "sbtn_Excel_Reader";
+            this.sbtn_Excel_Reader.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.sbtn_Excel_Reader.Size = new System.Drawing.Size(230, 50);
+            this.sbtn_Excel_Reader.TabIndex = 0;
+            this.sbtn_Excel_Reader.Text = "預覽Excel";
+            this.sbtn_Excel_Reader.UseVisualStyleBackColor = true;
+            // 
+            // btn_Excel
+            // 
+            this.btn_Excel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Excel.FlatAppearance.BorderSize = 0;
+            this.btn_Excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Excel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Excel.Image = ((System.Drawing.Image)(resources.GetObject("btn_Excel.Image")));
+            this.btn_Excel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Excel.Location = new System.Drawing.Point(0, 508);
+            this.btn_Excel.Name = "btn_Excel";
+            this.btn_Excel.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_Excel.Size = new System.Drawing.Size(230, 55);
+            this.btn_Excel.TabIndex = 17;
+            this.btn_Excel.Text = "  TWcore Excel";
+            this.btn_Excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Excel.UseVisualStyleBackColor = true;
+            // 
+            // btn_FUCKprofileEditor
+            // 
+            this.btn_FUCKprofileEditor.AutoSize = true;
+            this.btn_FUCKprofileEditor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_FUCKprofileEditor.FlatAppearance.BorderSize = 0;
+            this.btn_FUCKprofileEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_FUCKprofileEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_FUCKprofileEditor.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_FUCKprofileEditor.Image = ((System.Drawing.Image)(resources.GetObject("btn_FUCKprofileEditor.Image")));
+            this.btn_FUCKprofileEditor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_FUCKprofileEditor.Location = new System.Drawing.Point(0, 450);
+            this.btn_FUCKprofileEditor.Name = "btn_FUCKprofileEditor";
+            this.btn_FUCKprofileEditor.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_FUCKprofileEditor.Size = new System.Drawing.Size(230, 58);
+            this.btn_FUCKprofileEditor.TabIndex = 12;
+            this.btn_FUCKprofileEditor.Text = "  編輯F.U.C.K\r\n       Profile";
+            this.btn_FUCKprofileEditor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_FUCKprofileEditor.UseVisualStyleBackColor = true;
+            this.btn_FUCKprofileEditor.Click += new System.EventHandler(this.btn_apply_Click);
+            // 
+            // btn_simpleRestCleint
+            // 
+            this.btn_simpleRestCleint.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_simpleRestCleint.FlatAppearance.BorderSize = 0;
+            this.btn_simpleRestCleint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_simpleRestCleint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_simpleRestCleint.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_simpleRestCleint.Image = ((System.Drawing.Image)(resources.GetObject("btn_simpleRestCleint.Image")));
+            this.btn_simpleRestCleint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_simpleRestCleint.Location = new System.Drawing.Point(0, 395);
+            this.btn_simpleRestCleint.Name = "btn_simpleRestCleint";
+            this.btn_simpleRestCleint.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_simpleRestCleint.Size = new System.Drawing.Size(230, 55);
+            this.btn_simpleRestCleint.TabIndex = 15;
+            this.btn_simpleRestCleint.Text = "  簡易RestClient";
+            this.btn_simpleRestCleint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_simpleRestCleint.UseVisualStyleBackColor = true;
+            this.btn_simpleRestCleint.Click += new System.EventHandler(this.btn_simpleRestCleint_Click);
             // 
             // panel_basicSubMenu
             // 
@@ -299,8 +388,24 @@
             this.panel_basicSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_basicSubMenu.Location = new System.Drawing.Point(0, 195);
             this.panel_basicSubMenu.Name = "panel_basicSubMenu";
-            this.panel_basicSubMenu.Size = new System.Drawing.Size(247, 200);
+            this.panel_basicSubMenu.Size = new System.Drawing.Size(230, 200);
             this.panel_basicSubMenu.TabIndex = 3;
+            // 
+            // sbtn_killNodeJS
+            // 
+            this.sbtn_killNodeJS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtn_killNodeJS.FlatAppearance.BorderSize = 0;
+            this.sbtn_killNodeJS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sbtn_killNodeJS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sbtn_killNodeJS.ForeColor = System.Drawing.Color.LightGray;
+            this.sbtn_killNodeJS.Location = new System.Drawing.Point(0, 150);
+            this.sbtn_killNodeJS.Name = "sbtn_killNodeJS";
+            this.sbtn_killNodeJS.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.sbtn_killNodeJS.Size = new System.Drawing.Size(230, 50);
+            this.sbtn_killNodeJS.TabIndex = 3;
+            this.sbtn_killNodeJS.Text = "停止所有Node.js服務";
+            this.sbtn_killNodeJS.UseVisualStyleBackColor = true;
+            this.sbtn_killNodeJS.Click += new System.EventHandler(this.sbtn_killNodeJS_Click);
             // 
             // sbtn_FUCK_restart
             // 
@@ -312,7 +417,7 @@
             this.sbtn_FUCK_restart.Location = new System.Drawing.Point(0, 100);
             this.sbtn_FUCK_restart.Name = "sbtn_FUCK_restart";
             this.sbtn_FUCK_restart.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_FUCK_restart.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_FUCK_restart.Size = new System.Drawing.Size(230, 50);
             this.sbtn_FUCK_restart.TabIndex = 1;
             this.sbtn_FUCK_restart.Text = "重啟F.U.C.K";
             this.sbtn_FUCK_restart.UseVisualStyleBackColor = true;
@@ -328,7 +433,7 @@
             this.sbtn_FUCK_test.Location = new System.Drawing.Point(0, 50);
             this.sbtn_FUCK_test.Name = "sbtn_FUCK_test";
             this.sbtn_FUCK_test.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_FUCK_test.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_FUCK_test.Size = new System.Drawing.Size(230, 50);
             this.sbtn_FUCK_test.TabIndex = 2;
             this.sbtn_FUCK_test.Text = "測試F.U.C.K";
             this.sbtn_FUCK_test.UseVisualStyleBackColor = true;
@@ -344,7 +449,7 @@
             this.sbtn_FUCK_launch.Location = new System.Drawing.Point(0, 0);
             this.sbtn_FUCK_launch.Name = "sbtn_FUCK_launch";
             this.sbtn_FUCK_launch.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_FUCK_launch.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_FUCK_launch.Size = new System.Drawing.Size(230, 50);
             this.sbtn_FUCK_launch.TabIndex = 0;
             this.sbtn_FUCK_launch.Text = "啟動F.U.C.K";
             this.sbtn_FUCK_launch.UseVisualStyleBackColor = true;
@@ -362,7 +467,7 @@
             this.btn_serviceFUCKoptions.Location = new System.Drawing.Point(0, 140);
             this.btn_serviceFUCKoptions.Name = "btn_serviceFUCKoptions";
             this.btn_serviceFUCKoptions.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_serviceFUCKoptions.Size = new System.Drawing.Size(247, 55);
+            this.btn_serviceFUCKoptions.Size = new System.Drawing.Size(230, 55);
             this.btn_serviceFUCKoptions.TabIndex = 2;
             this.btn_serviceFUCKoptions.Text = "  服務選單";
             this.btn_serviceFUCKoptions.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -381,7 +486,7 @@
             this.btn_home.Location = new System.Drawing.Point(0, 85);
             this.btn_home.Name = "btn_home";
             this.btn_home.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_home.Size = new System.Drawing.Size(247, 55);
+            this.btn_home.Size = new System.Drawing.Size(230, 55);
             this.btn_home.TabIndex = 1;
             this.btn_home.Text = "  首 頁";
             this.btn_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -396,7 +501,7 @@
             this.panel_logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_logo.Location = new System.Drawing.Point(0, 0);
             this.panel_logo.Name = "panel_logo";
-            this.panel_logo.Size = new System.Drawing.Size(247, 85);
+            this.panel_logo.Size = new System.Drawing.Size(230, 85);
             this.panel_logo.TabIndex = 0;
             // 
             // label1
@@ -483,22 +588,6 @@
             // 
             this.timer_time.Tick += new System.EventHandler(this.timer_time_Tick);
             // 
-            // sbtn_killNodeJS
-            // 
-            this.sbtn_killNodeJS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sbtn_killNodeJS.FlatAppearance.BorderSize = 0;
-            this.sbtn_killNodeJS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sbtn_killNodeJS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sbtn_killNodeJS.ForeColor = System.Drawing.Color.LightGray;
-            this.sbtn_killNodeJS.Location = new System.Drawing.Point(0, 150);
-            this.sbtn_killNodeJS.Name = "sbtn_killNodeJS";
-            this.sbtn_killNodeJS.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sbtn_killNodeJS.Size = new System.Drawing.Size(247, 50);
-            this.sbtn_killNodeJS.TabIndex = 3;
-            this.sbtn_killNodeJS.Text = "停止所有Node.js服務";
-            this.sbtn_killNodeJS.UseVisualStyleBackColor = true;
-            this.sbtn_killNodeJS.Click += new System.EventHandler(this.sbtn_killNodeJS_Click);
-            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -522,6 +611,7 @@
             this.panel_bigMenu.ResumeLayout(false);
             this.panel_bigMenu.PerformLayout();
             this.panel_businessSubMenu.ResumeLayout(false);
+            this.panel_ExcelSubMenu.ResumeLayout(false);
             this.panel_basicSubMenu.ResumeLayout(false);
             this.panel_logo.ResumeLayout(false);
             this.panel_logo.PerformLayout();
@@ -560,9 +650,14 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Button btn_serviceFUCKoptions;
         public System.Windows.Forms.Button btn_business;
-        public System.Windows.Forms.Button btn_systemManage;
-        public System.Windows.Forms.Button btn_financialReport;
+        public System.Windows.Forms.Button btn_csv2json;
+        public System.Windows.Forms.Button btn_FUCKprofileEditor;
         private System.Windows.Forms.Button sbtn_FUCK_test;
         private System.Windows.Forms.Button sbtn_killNodeJS;
+        public System.Windows.Forms.Button btn_simpleRestCleint;
+        private System.Windows.Forms.Panel panel_ExcelSubMenu;
+        private System.Windows.Forms.Button sbtn_Excel_Editor;
+        private System.Windows.Forms.Button sbtn_Excel_Reader;
+        public System.Windows.Forms.Button btn_Excel;
     }
 }

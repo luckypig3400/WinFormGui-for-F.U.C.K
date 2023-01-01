@@ -215,6 +215,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\post.png" />
     <None Include="fuck-logo.ico" />
     <Content Include="FHIR-Universal-Conversion-Kit\build_and_run.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

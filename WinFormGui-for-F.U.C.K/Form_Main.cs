@@ -144,7 +144,7 @@ namespace WFGF.U.C.K
 
         private void btn_apply_Click(object sender, EventArgs e)
         {
-            selectedBackground(btn_financialReport);
+            selectedBackground(btn_FUCKprofileEditor);
             hideSubMenu();
             childForm_developing frm = new childForm_developing();
             openChildForm(frm); 
@@ -152,7 +152,7 @@ namespace WFGF.U.C.K
 
         private void btn_systemManage_Click(object sender, EventArgs e)
         {
-            selectedBackground(btn_systemManage);
+            selectedBackground(btn_csv2json);
             hideSubMenu();
             childForm_systemManage frm = new childForm_systemManage();
             openChildForm(frm);
@@ -308,6 +308,11 @@ namespace WFGF.U.C.K
             {
                 // do nothing
             }
+        }
+
+        private void btn_simpleRestCleint_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
