@@ -40,6 +40,7 @@
             this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.jsonInputTextbox = new System.Windows.Forms.RichTextBox();
             this.responseOutputTextBox = new System.Windows.Forms.RichTextBox();
+            this.loadExampleJSONBtn = new MaterialSkin.Controls.MaterialButton();
             this.panel1.SuspendLayout();
             this.panel_center.SuspendLayout();
             this.panel_bottom.SuspendLayout();
@@ -71,6 +72,7 @@
             // 
             // panel_center
             // 
+            this.panel_center.Controls.Add(this.loadExampleJSONBtn);
             this.panel_center.Controls.Add(this.sendRequestBtn);
             this.panel_center.Controls.Add(this.requestURL);
             this.panel_center.Controls.Add(this.requestMethod);
@@ -179,6 +181,7 @@
             this.sendRequestBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.sendRequestBtn.UseAccentColor = false;
             this.sendRequestBtn.UseVisualStyleBackColor = true;
+            this.sendRequestBtn.Click += new System.EventHandler(this.sendRequestBtn_Click);
             // 
             // enableDarkThemeSwitch
             // 
@@ -218,6 +221,27 @@
             this.responseOutputTextBox.TabIndex = 1;
             this.responseOutputTextBox.Text = "";
             // 
+            // loadExampleJSONBtn
+            // 
+            this.loadExampleJSONBtn.AutoSize = false;
+            this.loadExampleJSONBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.loadExampleJSONBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.loadExampleJSONBtn.Depth = 0;
+            this.loadExampleJSONBtn.HighEmphasis = true;
+            this.loadExampleJSONBtn.Icon = null;
+            this.loadExampleJSONBtn.Location = new System.Drawing.Point(333, 61);
+            this.loadExampleJSONBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.loadExampleJSONBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loadExampleJSONBtn.Name = "loadExampleJSONBtn";
+            this.loadExampleJSONBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.loadExampleJSONBtn.Size = new System.Drawing.Size(180, 25);
+            this.loadExampleJSONBtn.TabIndex = 56;
+            this.loadExampleJSONBtn.Text = "載入測試用範例JSON";
+            this.loadExampleJSONBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.loadExampleJSONBtn.UseAccentColor = false;
+            this.loadExampleJSONBtn.UseVisualStyleBackColor = true;
+            this.loadExampleJSONBtn.Click += new System.EventHandler(this.loadExampleJSONBtn_Click);
+            // 
             // childForm_simpleRestClient
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -251,5 +275,6 @@
         private MaterialSkin.Controls.MaterialSwitch enableDarkThemeSwitch;
         private System.Windows.Forms.RichTextBox responseOutputTextBox;
         private System.Windows.Forms.RichTextBox jsonInputTextbox;
+        private MaterialSkin.Controls.MaterialButton loadExampleJSONBtn;
     }
 }

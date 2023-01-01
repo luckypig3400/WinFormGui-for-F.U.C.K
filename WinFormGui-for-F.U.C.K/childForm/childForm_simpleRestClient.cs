@@ -33,5 +33,28 @@ namespace WFGF.U.C.K.childForm
             else
                 themeManager.Theme = MaterialSkinManager.Themes.LIGHT;
         }
+
+        private void sendRequestBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadExampleJSONBtn_Click(object sender, EventArgs e)
+        {
+            string exampleJsonString =
+                @"{
+    ""profile"": ""dental"",
+    ""data"": [
+        {
+            ""doctor_id"": 69
+        },
+        {
+            ""doctor_id"": 168
+        }
+    ]
+}";
+
+            jsonInputTextbox.Text = exampleJsonString;
+        }
     }
 }
