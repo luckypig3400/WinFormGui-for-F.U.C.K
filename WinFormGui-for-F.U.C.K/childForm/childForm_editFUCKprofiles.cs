@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -32,6 +33,16 @@ namespace WFGF.U.C.K.childForm
                 themeManager.Theme= MaterialSkinManager.Themes.DARK;
             else
                 themeManager.Theme = MaterialSkinManager.Themes.LIGHT;
+        }
+
+        private void fileListComboBox_Click(object sender, EventArgs e)
+        {
+            fileListComboBox.Items.Clear(); // 每次點選清單，先清空上次讀取到的項目
+
+            // 讀取F.U.C.K profile資料夾的檔案清單
+            // https://stackoverflow.com/questions/36363675/getting-list-of-files-from-directory-into-combobox
+            string[] files = Directory.GetFiles("./FHIR-Universal-Conversion-Kit/profile");
+            fileListComboBox.Items.AddRange(files.Select((string filePath) => Path.GetFileName(filePath)).ToArray());
         }
     }
 }

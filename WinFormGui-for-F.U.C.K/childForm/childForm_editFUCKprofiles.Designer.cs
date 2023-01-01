@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -44,7 +45,6 @@
             this.panel_datagridview = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -62,6 +62,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1054, 44);
             this.panel1.TabIndex = 1;
+            // 
+            // enableDarkThemeSwitch
+            // 
+            this.enableDarkThemeSwitch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.enableDarkThemeSwitch.AutoSize = true;
+            this.enableDarkThemeSwitch.Depth = 0;
+            this.enableDarkThemeSwitch.Location = new System.Drawing.Point(882, 4);
+            this.enableDarkThemeSwitch.Margin = new System.Windows.Forms.Padding(0);
+            this.enableDarkThemeSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.enableDarkThemeSwitch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.enableDarkThemeSwitch.Name = "enableDarkThemeSwitch";
+            this.enableDarkThemeSwitch.Ripple = true;
+            this.enableDarkThemeSwitch.Size = new System.Drawing.Size(154, 37);
+            this.enableDarkThemeSwitch.TabIndex = 2;
+            this.enableDarkThemeSwitch.Text = "啟用深色模式";
+            this.enableDarkThemeSwitch.UseVisualStyleBackColor = true;
+            this.enableDarkThemeSwitch.CheckedChanged += new System.EventHandler(this.enableDarkThemeSwitch_CheckedChanged);
             // 
             // materialLabel1
             // 
@@ -150,7 +167,7 @@
             this.loadFileDialogBtn.NoAccentTextColor = System.Drawing.Color.Empty;
             this.loadFileDialogBtn.Size = new System.Drawing.Size(322, 55);
             this.loadFileDialogBtn.TabIndex = 2;
-            this.loadFileDialogBtn.Text = "手動選擇其他檔案";
+            this.loadFileDialogBtn.Text = "或是手動選擇其他檔案";
             this.loadFileDialogBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.loadFileDialogBtn.UseAccentColor = false;
             this.loadFileDialogBtn.UseVisualStyleBackColor = true;
@@ -176,6 +193,7 @@
             this.fileListComboBox.Size = new System.Drawing.Size(398, 49);
             this.fileListComboBox.StartIndex = 0;
             this.fileListComboBox.TabIndex = 1;
+            this.fileListComboBox.Click += new System.EventHandler(this.fileListComboBox_Click);
             // 
             // materialLabel2
             // 
@@ -290,23 +308,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(555, 599);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
-            // 
-            // enableDarkThemeSwitch
-            // 
-            this.enableDarkThemeSwitch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.enableDarkThemeSwitch.AutoSize = true;
-            this.enableDarkThemeSwitch.Depth = 0;
-            this.enableDarkThemeSwitch.Location = new System.Drawing.Point(882, 4);
-            this.enableDarkThemeSwitch.Margin = new System.Windows.Forms.Padding(0);
-            this.enableDarkThemeSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.enableDarkThemeSwitch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.enableDarkThemeSwitch.Name = "enableDarkThemeSwitch";
-            this.enableDarkThemeSwitch.Ripple = true;
-            this.enableDarkThemeSwitch.Size = new System.Drawing.Size(154, 37);
-            this.enableDarkThemeSwitch.TabIndex = 2;
-            this.enableDarkThemeSwitch.Text = "啟用深色模式";
-            this.enableDarkThemeSwitch.UseVisualStyleBackColor = true;
-            this.enableDarkThemeSwitch.CheckedChanged += new System.EventHandler(this.enableDarkThemeSwitch_CheckedChanged);
             // 
             // childForm_editFUCKprofiles
             // 
