@@ -224,6 +224,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\toolkit.png" />
+    <None Include="Resources\exchange.png" />
+    <None Include="Resources\HL7_FHIR_logo-removebg-preview.png" />
     <None Include="Resources\post.png" />
     <None Include="fuck-logo.ico" />
     <Content Include="FHIR-Universal-Conversion-Kit\build_and_run.bat">

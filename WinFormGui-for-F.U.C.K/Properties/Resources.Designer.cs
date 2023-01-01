@@ -63,6 +63,16 @@ namespace WinFormGuiForF.U.C.K.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap exchange {
+            get {
+                object obj = ResourceManager.GetObject("exchange", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap fuck_logo {
             get {
                 object obj = ResourceManager.GetObject("fuck-logo", resourceCulture);
@@ -73,9 +83,29 @@ namespace WinFormGuiForF.U.C.K.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap HL7_FHIR_logo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("HL7_FHIR_logo-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap post {
             get {
                 object obj = ResourceManager.GetObject("post", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap toolkit {
+            get {
+                object obj = ResourceManager.GetObject("toolkit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
