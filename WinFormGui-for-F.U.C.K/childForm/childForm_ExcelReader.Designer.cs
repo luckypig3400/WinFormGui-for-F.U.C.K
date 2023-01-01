@@ -40,6 +40,8 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.sheetPickerComboBox = new MaterialSkin.Controls.MaterialComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -100,6 +102,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.groupBox2.Controls.Add(this.sheetPickerComboBox);
+            this.groupBox2.Controls.Add(this.materialLabel4);
             this.groupBox2.Controls.Add(this.currentFilePathOutput);
             this.groupBox2.Controls.Add(this.materialLabel3);
             this.groupBox2.Controls.Add(this.loadFileDialogBtn);
@@ -107,9 +111,9 @@
             this.groupBox2.Controls.Add(this.materialLabel2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox2.Location = new System.Drawing.Point(7, 58);
+            this.groupBox2.Location = new System.Drawing.Point(7, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(480, 413);
+            this.groupBox2.Size = new System.Drawing.Size(480, 491);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "讀取檔案";
@@ -121,7 +125,7 @@
             this.currentFilePathOutput.Depth = 0;
             this.currentFilePathOutput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.currentFilePathOutput.LeadingIcon = null;
-            this.currentFilePathOutput.Location = new System.Drawing.Point(45, 225);
+            this.currentFilePathOutput.Location = new System.Drawing.Point(49, 321);
             this.currentFilePathOutput.MaxLength = 65536;
             this.currentFilePathOutput.MouseState = MaterialSkin.MouseState.OUT;
             this.currentFilePathOutput.Multiline = false;
@@ -138,7 +142,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel3.Location = new System.Drawing.Point(45, 172);
+            this.materialLabel3.Location = new System.Drawing.Point(45, 286);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(186, 24);
@@ -153,7 +157,7 @@
             this.loadFileDialogBtn.Depth = 0;
             this.loadFileDialogBtn.HighEmphasis = true;
             this.loadFileDialogBtn.Icon = null;
-            this.loadFileDialogBtn.Location = new System.Drawing.Point(85, 325);
+            this.loadFileDialogBtn.Location = new System.Drawing.Point(84, 164);
             this.loadFileDialogBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.loadFileDialogBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.loadFileDialogBtn.Name = "loadFileDialogBtn";
@@ -180,7 +184,7 @@
             this.fileListComboBox.FormattingEnabled = true;
             this.fileListComboBox.IntegralHeight = false;
             this.fileListComboBox.ItemHeight = 43;
-            this.fileListComboBox.Location = new System.Drawing.Point(45, 94);
+            this.fileListComboBox.Location = new System.Drawing.Point(45, 90);
             this.fileListComboBox.MaxDropDownItems = 4;
             this.fileListComboBox.MouseState = MaterialSkin.MouseState.OUT;
             this.fileListComboBox.Name = "fileListComboBox";
@@ -222,6 +226,41 @@
             this.dataGridView1.Size = new System.Drawing.Size(561, 599);
             this.dataGridView1.TabIndex = 0;
             // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel4.Location = new System.Drawing.Point(45, 382);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(278, 24);
+            this.materialLabel4.TabIndex = 6;
+            this.materialLabel4.Text = "選擇文件中的一個Sheet來讀取:";
+            // 
+            // sheetPickerComboBox
+            // 
+            this.sheetPickerComboBox.AutoResize = false;
+            this.sheetPickerComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sheetPickerComboBox.Depth = 0;
+            this.sheetPickerComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.sheetPickerComboBox.DropDownHeight = 174;
+            this.sheetPickerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sheetPickerComboBox.DropDownWidth = 121;
+            this.sheetPickerComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.sheetPickerComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.sheetPickerComboBox.FormattingEnabled = true;
+            this.sheetPickerComboBox.IntegralHeight = false;
+            this.sheetPickerComboBox.ItemHeight = 43;
+            this.sheetPickerComboBox.Location = new System.Drawing.Point(49, 417);
+            this.sheetPickerComboBox.MaxDropDownItems = 4;
+            this.sheetPickerComboBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.sheetPickerComboBox.Name = "sheetPickerComboBox";
+            this.sheetPickerComboBox.Size = new System.Drawing.Size(398, 49);
+            this.sheetPickerComboBox.StartIndex = 0;
+            this.sheetPickerComboBox.TabIndex = 7;
+            // 
             // childForm_ExcelReader
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -256,5 +295,7 @@
         private MaterialSkin.Controls.MaterialTextBox currentFilePathOutput;
         private MaterialSkin.Controls.MaterialSwitch enableDarkThemeSwitch;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private MaterialSkin.Controls.MaterialComboBox sheetPickerComboBox;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
     }
 }
