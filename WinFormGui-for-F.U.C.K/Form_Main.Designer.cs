@@ -37,12 +37,12 @@
             this.btn_max = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
             this.panel_bigMenu = new System.Windows.Forms.Panel();
-            this.btn_csv2json = new System.Windows.Forms.Button();
             this.panel_businessSubMenu = new System.Windows.Forms.Panel();
             this.sbtn_business_other = new System.Windows.Forms.Button();
             this.sbtn_business_income = new System.Windows.Forms.Button();
             this.sbtn_cusInfo = new System.Windows.Forms.Button();
             this.btn_business = new System.Windows.Forms.Button();
+            this.btn_csv2json = new System.Windows.Forms.Button();
             this.panel_ExcelSubMenu = new System.Windows.Forms.Panel();
             this.sbtn_Excel_Editor = new System.Windows.Forms.Button();
             this.sbtn_Excel_Reader = new System.Windows.Forms.Button();
@@ -179,25 +179,6 @@
             this.panel_bigMenu.Size = new System.Drawing.Size(247, 750);
             this.panel_bigMenu.TabIndex = 0;
             // 
-            // btn_csv2json
-            // 
-            this.btn_csv2json.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_csv2json.FlatAppearance.BorderSize = 0;
-            this.btn_csv2json.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_csv2json.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_csv2json.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_csv2json.Image = ((System.Drawing.Image)(resources.GetObject("btn_csv2json.Image")));
-            this.btn_csv2json.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_csv2json.Location = new System.Drawing.Point(0, 663);
-            this.btn_csv2json.Name = "btn_csv2json";
-            this.btn_csv2json.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_csv2json.Size = new System.Drawing.Size(230, 55);
-            this.btn_csv2json.TabIndex = 14;
-            this.btn_csv2json.Text = "  CSV轉JSON";
-            this.btn_csv2json.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_csv2json.UseVisualStyleBackColor = true;
-            this.btn_csv2json.Click += new System.EventHandler(this.btn_systemManage_Click);
-            // 
             // panel_businessSubMenu
             // 
             this.panel_businessSubMenu.AutoSize = true;
@@ -278,6 +259,25 @@
             this.btn_business.UseVisualStyleBackColor = true;
             this.btn_business.Click += new System.EventHandler(this.btn_attendance_Click);
             // 
+            // btn_csv2json
+            // 
+            this.btn_csv2json.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_csv2json.FlatAppearance.BorderSize = 0;
+            this.btn_csv2json.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_csv2json.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_csv2json.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_csv2json.Image = ((System.Drawing.Image)(resources.GetObject("btn_csv2json.Image")));
+            this.btn_csv2json.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_csv2json.Location = new System.Drawing.Point(0, 663);
+            this.btn_csv2json.Name = "btn_csv2json";
+            this.btn_csv2json.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_csv2json.Size = new System.Drawing.Size(230, 55);
+            this.btn_csv2json.TabIndex = 14;
+            this.btn_csv2json.Text = "  CSV轉JSON";
+            this.btn_csv2json.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_csv2json.UseVisualStyleBackColor = true;
+            this.btn_csv2json.Click += new System.EventHandler(this.btn_systemManage_Click);
+            // 
             // panel_ExcelSubMenu
             // 
             this.panel_ExcelSubMenu.AutoSize = true;
@@ -357,7 +357,7 @@
             this.btn_FUCKprofileEditor.Text = "  編輯F.U.C.K\r\n       Profile";
             this.btn_FUCKprofileEditor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_FUCKprofileEditor.UseVisualStyleBackColor = true;
-            this.btn_FUCKprofileEditor.Click += new System.EventHandler(this.btn_apply_Click);
+            this.btn_FUCKprofileEditor.Click += new System.EventHandler(this.btn_FUCKprofileEditor_Click);
             // 
             // btn_simpleRestCleint
             // 
@@ -605,7 +605,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "Form_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_Main";
+            this.Text = "WinFormGui-for-F.U.C.K";
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -145,11 +145,10 @@ namespace WFGF.U.C.K
             showSubMenu(panel_businessSubMenu);
         }
 
-        private void btn_apply_Click(object sender, EventArgs e)
+        private void btn_FUCKprofileEditor_Click(object sender, EventArgs e)
         {
             selectedBackground(btn_FUCKprofileEditor);
-            hideSubMenu();
-            childForm_developing frm = new childForm_developing();
+            childForm_editFUCKprofiles frm = new childForm_editFUCKprofiles();
             openChildForm(frm); 
         }
 
