@@ -29,6 +29,7 @@ namespace WFGF.U.C.K
         {
             panel_businessSubMenu.Visible = false;
             panel_basicSubMenu.Visible = false;
+            panel_ExcelSubMenu.Visible = false;
         }
 
         private void hideSubMenu()
@@ -37,6 +38,8 @@ namespace WFGF.U.C.K
                 panel_businessSubMenu.Visible = false;
             if (panel_basicSubMenu.Visible == true)
                 panel_basicSubMenu.Visible = false;
+            if (panel_ExcelSubMenu.Visible == true)
+                panel_ExcelSubMenu.Visible = false;
         }
 
         private void showSubMenu(Panel SubMenu)
@@ -312,7 +315,15 @@ namespace WFGF.U.C.K
 
         private void btn_simpleRestCleint_Click(object sender, EventArgs e)
         {
+            selectedBackground(btn_simpleRestCleint);
+            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
+            openChildForm(frm);
+        }
 
+        private void btn_Excel_Click(object sender, EventArgs e)
+        {
+            selectedBackground(btn_Excel);
+            showSubMenu(panel_ExcelSubMenu);
         }
     }
 }

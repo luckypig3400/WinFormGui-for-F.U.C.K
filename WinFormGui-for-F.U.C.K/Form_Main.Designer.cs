@@ -337,6 +337,7 @@
             this.btn_Excel.Text = "  TWcore Excel";
             this.btn_Excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Excel.UseVisualStyleBackColor = true;
+            this.btn_Excel.Click += new System.EventHandler(this.btn_Excel_Click);
             // 
             // btn_FUCKprofileEditor
             // 
