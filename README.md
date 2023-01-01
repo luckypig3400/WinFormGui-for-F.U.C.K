@@ -7,10 +7,11 @@
 - [x] Import F.U.C.K (FHIR Universal Conversion Kit) in project
 - [x] Launch F.U.C.K in background
 - [x] Simple RESTful Client
-- [ ] F.U.C.K profile editor
+- [x] F.U.C.K profile editor
 - [ ] Excel file reader
-- [ ] CSV to Payload JSON Converter
+- [x] CSV to Payload JSON Converter
 - [ ] Install Setup package (https://docs.google.com/presentation/d/1rmGgxOtJeg2HnomUvsrXdHhg0OTF8h4N)
 - [ ] Store "Simple RESTful Client" & "F.U.C.K profile editor" form state while changing to other page
 - [ ] Excel file writer(Advanced function)
 - [ ] Save F.U.C.K response as txt/Word/PDF files
+- [ ] Convert Excel(.xlsx) to csv if possible

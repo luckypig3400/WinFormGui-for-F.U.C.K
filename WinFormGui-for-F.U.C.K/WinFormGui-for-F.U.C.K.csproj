@@ -185,6 +185,9 @@
     <Compile Include="GlobalData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="childForm\childForm_csv2json.resx">
+      <DependentUpon>childForm_csv2json.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="childForm\childForm_developing.resx">
       <DependentUpon>childForm_developing.cs</DependentUpon>
     </EmbeddedResource>
