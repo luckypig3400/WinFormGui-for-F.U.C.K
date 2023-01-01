@@ -332,5 +332,12 @@ namespace WFGF.U.C.K
             childForm_ExcelReader frm = new childForm_ExcelReader();
             openChildForm(frm);
         }
+
+        private void sbtn_Excel_Editor_Click(object sender, EventArgs e)
+        {
+            selectedBackground(sbtn_Excel_Editor);
+            childForm_developing frm = new childForm_developing();
+            openChildForm(frm);
+        }
     }
 }
