@@ -10,6 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+using ExcelDataReader;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+
 namespace WFGF.U.C.K.childForm
 {
     public partial class childForm_ExcelReader : MaterialForm
@@ -29,8 +33,8 @@ namespace WFGF.U.C.K.childForm
 
         private void enableDarkThemeSwitch_CheckedChanged(object sender, EventArgs e)
         {
-            if(enableDarkThemeSwitch.Checked)
-                themeManager.Theme= MaterialSkinManager.Themes.DARK;
+            if (enableDarkThemeSwitch.Checked)
+                themeManager.Theme = MaterialSkinManager.Themes.DARK;
             else
                 themeManager.Theme = MaterialSkinManager.Themes.LIGHT;
         }
@@ -49,10 +53,9 @@ namespace WFGF.U.C.K.childForm
         {
             string filePath = Directory.GetCurrentDirectory();
             filePath += "\\FHIR-Universal-Conversion-Kit\\twcore\\excel-template-with10-sample-data\\" + fileListComboBox.SelectedItem.ToString();
-            currentFilePathOutput.Text= filePath;
+            currentFilePathOutput.Text = filePath;
 
-            string fileContent = System.IO.File.ReadAllText(filePath);
-            // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
+            readExcel(filePath);
         }
 
         private void loadFileDialogBtn_Click(object sender, EventArgs e)
@@ -73,8 +76,61 @@ namespace WFGF.U.C.K.childForm
 
                 currentFilePathOutput.Text = filePath;
 
-                string fileContent = System.IO.File.ReadAllText(filePath);
-                // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
+                readExcel(filePath);
+            }
+        }
+
+        DataTableCollection tableCollection;
+        private void sheetPickerComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt = tableCollection[sheetPickerComboBox.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt;
+        }
+
+        private void readExcel(string excel_path)
+        {
+            if (excel_path == "")
+            {
+                MessageBox.Show("請記得先從清單中選擇或是\n透過手動選擇要讀取的Excel檔案",
+                    "小提醒", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                try
+                {
+                    // 打開excel檔
+                    // https://docs.google.com/document/d/1EFHZr48atBa0ZmJZqlWV_5V182bv80mB/edit#heading=h.ixbbze15oskq
+                    var stream = System.IO.File.Open(excel_path,
+                                                    System.IO.FileMode.Open,
+                                                    System.IO.FileAccess.Read);
+
+                    ExcelDataReader.IExcelDataReader reader =
+                        ExcelDataReader.ExcelReaderFactory.CreateReader(stream);
+
+                    var conf = new ExcelDataSetConfiguration
+                    {
+                        ConfigureDataTable = _ => new ExcelDataTableConfiguration
+                        {
+                            UseHeaderRow = true
+                        }
+                    };
+
+                    DataSet result = reader.AsDataSet(conf);
+                    tableCollection = result.Tables;
+                    sheetPickerComboBox.Items.Clear();
+                    foreach (DataTable table in tableCollection)
+                    {
+                        sheetPickerComboBox.Items.Add(table.TableName);//add sheet to combobox}
+                    }
+
+                    MessageBox.Show("成功讀取該Excel檔案!\n請接著選擇要讀取的工作表(Sheet)",
+                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    MessageBox.Show("無法讀取該檔案!\n請確定該檔案為excel文件以及提供的路徑正確",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

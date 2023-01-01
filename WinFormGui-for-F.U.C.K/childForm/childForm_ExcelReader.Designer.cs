@@ -260,6 +260,7 @@
             this.sheetPickerComboBox.Size = new System.Drawing.Size(398, 49);
             this.sheetPickerComboBox.StartIndex = 0;
             this.sheetPickerComboBox.TabIndex = 7;
+            this.sheetPickerComboBox.SelectedIndexChanged += new System.EventHandler(this.sheetPickerComboBox_SelectedIndexChanged);
             // 
             // childForm_ExcelReader
             // 
