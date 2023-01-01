@@ -33,6 +33,8 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.sheetPickerComboBox = new MaterialSkin.Controls.MaterialComboBox();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.currentFilePathOutput = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.loadFileDialogBtn = new MaterialSkin.Controls.MaterialButton();
@@ -40,8 +42,6 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.sheetPickerComboBox = new MaterialSkin.Controls.MaterialComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -117,6 +117,42 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "讀取檔案";
+            // 
+            // sheetPickerComboBox
+            // 
+            this.sheetPickerComboBox.AutoResize = false;
+            this.sheetPickerComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sheetPickerComboBox.Depth = 0;
+            this.sheetPickerComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.sheetPickerComboBox.DropDownHeight = 174;
+            this.sheetPickerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sheetPickerComboBox.DropDownWidth = 121;
+            this.sheetPickerComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.sheetPickerComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.sheetPickerComboBox.FormattingEnabled = true;
+            this.sheetPickerComboBox.IntegralHeight = false;
+            this.sheetPickerComboBox.ItemHeight = 43;
+            this.sheetPickerComboBox.Location = new System.Drawing.Point(49, 417);
+            this.sheetPickerComboBox.MaxDropDownItems = 4;
+            this.sheetPickerComboBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.sheetPickerComboBox.Name = "sheetPickerComboBox";
+            this.sheetPickerComboBox.Size = new System.Drawing.Size(398, 49);
+            this.sheetPickerComboBox.StartIndex = 0;
+            this.sheetPickerComboBox.TabIndex = 7;
+            this.sheetPickerComboBox.SelectedIndexChanged += new System.EventHandler(this.sheetPickerComboBox_SelectedIndexChanged);
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel4.Location = new System.Drawing.Point(45, 382);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(278, 24);
+            this.materialLabel4.TabIndex = 6;
+            this.materialLabel4.Text = "選擇文件中的一個Sheet來讀取:";
             // 
             // currentFilePathOutput
             // 
@@ -225,42 +261,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(561, 599);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel4.Location = new System.Drawing.Point(45, 382);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(278, 24);
-            this.materialLabel4.TabIndex = 6;
-            this.materialLabel4.Text = "選擇文件中的一個Sheet來讀取:";
-            // 
-            // sheetPickerComboBox
-            // 
-            this.sheetPickerComboBox.AutoResize = false;
-            this.sheetPickerComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.sheetPickerComboBox.Depth = 0;
-            this.sheetPickerComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.sheetPickerComboBox.DropDownHeight = 174;
-            this.sheetPickerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sheetPickerComboBox.DropDownWidth = 121;
-            this.sheetPickerComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.sheetPickerComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.sheetPickerComboBox.FormattingEnabled = true;
-            this.sheetPickerComboBox.IntegralHeight = false;
-            this.sheetPickerComboBox.ItemHeight = 43;
-            this.sheetPickerComboBox.Location = new System.Drawing.Point(49, 417);
-            this.sheetPickerComboBox.MaxDropDownItems = 4;
-            this.sheetPickerComboBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.sheetPickerComboBox.Name = "sheetPickerComboBox";
-            this.sheetPickerComboBox.Size = new System.Drawing.Size(398, 49);
-            this.sheetPickerComboBox.StartIndex = 0;
-            this.sheetPickerComboBox.TabIndex = 7;
-            this.sheetPickerComboBox.SelectedIndexChanged += new System.EventHandler(this.sheetPickerComboBox_SelectedIndexChanged);
             // 
             // childForm_ExcelReader
             // 
