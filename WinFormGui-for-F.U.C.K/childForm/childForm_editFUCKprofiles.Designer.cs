@@ -259,6 +259,7 @@
             this.reloadFileWithoutSaveBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.reloadFileWithoutSaveBtn.UseAccentColor = false;
             this.reloadFileWithoutSaveBtn.UseVisualStyleBackColor = false;
+            this.reloadFileWithoutSaveBtn.Click += new System.EventHandler(this.reloadFileWithoutSaveBtn_Click);
             // 
             // saveFilelBtn
             // 
@@ -282,6 +283,7 @@
             this.saveFilelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.saveFilelBtn.UseAccentColor = false;
             this.saveFilelBtn.UseVisualStyleBackColor = false;
+            this.saveFilelBtn.Click += new System.EventHandler(this.saveFilelBtn_Click);
             // 
             // panel_datagridview
             // 

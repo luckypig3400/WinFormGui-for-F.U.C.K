@@ -54,5 +54,38 @@ namespace WFGF.U.C.K.childForm
 
             fileEditorTextbox.Text = fileContent;
         }
+
+        private void reloadFileWithoutSaveBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmDialog = MessageBox.Show("真的要在不存檔的情況下\n重新載入此文件嗎?",
+                "Be Careful !", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if(confirmDialog == DialogResult.Yes)
+            {
+                string filePath = "./FHIR-Universal-Conversion-Kit/profile/" + fileListComboBox.SelectedItem.ToString();
+
+                string fileContent = File.ReadAllText(filePath);
+                // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
+                fileEditorTextbox.Text = fileContent;
+            }
+        }
+
+        private void saveFilelBtn_Click(object sender, EventArgs e)
+        {
+            string fileContent = fileEditorTextbox.Text;
+
+            try
+            {
+                string filePath = "./FHIR-Universal-Conversion-Kit/profile/" + fileListComboBox.SelectedItem.ToString();
+                File.WriteAllText(filePath, fileContent);
+                // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file
+
+                MessageBox.Show("檔案順利儲存!\n ヾ(≧▽≦*)o");
+            }
+            catch {
+                MessageBox.Show("檔案可能正被其他程式占用中或是檔案路徑有誤\n\n請檢查路徑是否存在及關閉可能正在使用該檔案的程式!",
+                    "無法存檔!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
