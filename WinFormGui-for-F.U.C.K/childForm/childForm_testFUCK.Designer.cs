@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(childForm_testFUCK));
             this.panel_top = new System.Windows.Forms.Panel();
             this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
@@ -38,6 +39,8 @@
             this.url_textBox = new MaterialSkin.Controls.MaterialTextBox();
             this.panel_right = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.panel_top.SuspendLayout();
             this.panel_left.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -88,6 +91,8 @@
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(37)))), ((int)(((byte)(70)))));
+            this.panel_left.Controls.Add(this.materialLabel3);
+            this.panel_left.Controls.Add(this.richTextBox2);
             this.panel_left.Controls.Add(this.groupBox1);
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(3, 108);
@@ -175,11 +180,35 @@
             this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Font = new System.Drawing.Font("新細明體", 12F);
             this.richTextBox1.Location = new System.Drawing.Point(6, 6);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(540, 590);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox2.Location = new System.Drawing.Point(12, 242);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(480, 354);
+            this.richTextBox2.TabIndex = 9;
+            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel3.Location = new System.Drawing.Point(16, 207);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(165, 19);
+            this.materialLabel3.TabIndex = 13;
+            this.materialLabel3.Text = "預期測試成功回傳結果:";
             // 
             // childForm_testFUCK
             // 
@@ -193,6 +222,7 @@
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
             this.panel_left.ResumeLayout(false);
+            this.panel_left.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel_right.ResumeLayout(false);
@@ -212,5 +242,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }

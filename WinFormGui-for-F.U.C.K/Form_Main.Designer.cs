@@ -59,6 +59,7 @@
             this.label_logOut = new System.Windows.Forms.Label();
             this.panel_childForm = new System.Windows.Forms.Panel();
             this.timer_time = new System.Windows.Forms.Timer(this.components);
+            this.sbtn_killNodeJS = new System.Windows.Forms.Button();
             this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_bigMenu.SuspendLayout();
@@ -178,7 +179,7 @@
             this.btn_systemManage.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_systemManage.Image = ((System.Drawing.Image)(resources.GetObject("btn_systemManage.Image")));
             this.btn_systemManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_systemManage.Location = new System.Drawing.Point(0, 605);
+            this.btn_systemManage.Location = new System.Drawing.Point(0, 655);
             this.btn_systemManage.Name = "btn_systemManage";
             this.btn_systemManage.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_systemManage.Size = new System.Drawing.Size(247, 55);
@@ -197,7 +198,7 @@
             this.btn_financialReport.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_financialReport.Image = ((System.Drawing.Image)(resources.GetObject("btn_financialReport.Image")));
             this.btn_financialReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_financialReport.Location = new System.Drawing.Point(0, 550);
+            this.btn_financialReport.Location = new System.Drawing.Point(0, 600);
             this.btn_financialReport.Name = "btn_financialReport";
             this.btn_financialReport.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_financialReport.Size = new System.Drawing.Size(247, 55);
@@ -215,7 +216,7 @@
             this.panel_businessSubMenu.Controls.Add(this.sbtn_business_income);
             this.panel_businessSubMenu.Controls.Add(this.sbtn_cusInfo);
             this.panel_businessSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_businessSubMenu.Location = new System.Drawing.Point(0, 400);
+            this.panel_businessSubMenu.Location = new System.Drawing.Point(0, 450);
             this.panel_businessSubMenu.Name = "panel_businessSubMenu";
             this.panel_businessSubMenu.Size = new System.Drawing.Size(247, 150);
             this.panel_businessSubMenu.TabIndex = 9;
@@ -277,7 +278,7 @@
             this.btn_business.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_business.Image = ((System.Drawing.Image)(resources.GetObject("btn_business.Image")));
             this.btn_business.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_business.Location = new System.Drawing.Point(0, 345);
+            this.btn_business.Location = new System.Drawing.Point(0, 395);
             this.btn_business.Name = "btn_business";
             this.btn_business.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_business.Size = new System.Drawing.Size(247, 55);
@@ -291,13 +292,14 @@
             // 
             this.panel_basicSubMenu.AutoSize = true;
             this.panel_basicSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.panel_basicSubMenu.Controls.Add(this.sbtn_killNodeJS);
             this.panel_basicSubMenu.Controls.Add(this.sbtn_FUCK_restart);
             this.panel_basicSubMenu.Controls.Add(this.sbtn_FUCK_test);
             this.panel_basicSubMenu.Controls.Add(this.sbtn_FUCK_launch);
             this.panel_basicSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_basicSubMenu.Location = new System.Drawing.Point(0, 195);
             this.panel_basicSubMenu.Name = "panel_basicSubMenu";
-            this.panel_basicSubMenu.Size = new System.Drawing.Size(247, 150);
+            this.panel_basicSubMenu.Size = new System.Drawing.Size(247, 200);
             this.panel_basicSubMenu.TabIndex = 3;
             // 
             // sbtn_FUCK_restart
@@ -355,7 +357,7 @@
             this.btn_serviceFUCKoptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_serviceFUCKoptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_serviceFUCKoptions.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_serviceFUCKoptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_business.Image")));
+            this.btn_serviceFUCKoptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_serviceFUCKoptions.Image")));
             this.btn_serviceFUCKoptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_serviceFUCKoptions.Location = new System.Drawing.Point(0, 140);
             this.btn_serviceFUCKoptions.Name = "btn_serviceFUCKoptions";
@@ -481,6 +483,22 @@
             // 
             this.timer_time.Tick += new System.EventHandler(this.timer_time_Tick);
             // 
+            // sbtn_killNodeJS
+            // 
+            this.sbtn_killNodeJS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtn_killNodeJS.FlatAppearance.BorderSize = 0;
+            this.sbtn_killNodeJS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sbtn_killNodeJS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sbtn_killNodeJS.ForeColor = System.Drawing.Color.LightGray;
+            this.sbtn_killNodeJS.Location = new System.Drawing.Point(0, 150);
+            this.sbtn_killNodeJS.Name = "sbtn_killNodeJS";
+            this.sbtn_killNodeJS.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.sbtn_killNodeJS.Size = new System.Drawing.Size(247, 50);
+            this.sbtn_killNodeJS.TabIndex = 3;
+            this.sbtn_killNodeJS.Text = "停止所有Node.js服務";
+            this.sbtn_killNodeJS.UseVisualStyleBackColor = true;
+            this.sbtn_killNodeJS.Click += new System.EventHandler(this.sbtn_killNodeJS_Click);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -545,5 +563,6 @@
         public System.Windows.Forms.Button btn_systemManage;
         public System.Windows.Forms.Button btn_financialReport;
         private System.Windows.Forms.Button sbtn_FUCK_test;
+        private System.Windows.Forms.Button sbtn_killNodeJS;
     }
 }

@@ -164,8 +164,6 @@ namespace WFGF.U.C.K
 
         private void sbtn_FUCK_launch_Click(object sender, EventArgs e)
         {
-            selectedBackground_sub(sbtn_FUCK_launch);
-
             // https://stackoverflow.com/questions/1469764/run-command-prompt-commands
             fuckStartInfo.WindowStyle = ProcessWindowStyle.Hidden; //隱藏cmd視窗
             fuckStartInfo.FileName = "cmd.exe";
@@ -197,8 +195,6 @@ namespace WFGF.U.C.K
 
         private void sbtn_FUCK_restart_Click(object sender, EventArgs e)
         {
-            selectedBackground_sub(sbtn_FUCK_restart);
-
             kill_FUCK_servirce();
 
             // https://stackoverflow.com/questions/1469764/run-command-prompt-commands
@@ -207,6 +203,9 @@ namespace WFGF.U.C.K
             fuckStartInfo.Arguments = "/C cd FHIR-Universal-Conversion-Kit/src && npm install && node app.js";
             FUCKprocess.StartInfo = fuckStartInfo;
             FUCKprocess.Start();
+
+            MessageBox.Show("成功停止F.U.C.K服務 !\n\n請稍候3~5秒再進行測試", "服務正在重啟中...",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void kill_FUCK_servirce()
@@ -285,6 +284,30 @@ namespace WFGF.U.C.K
         private void btn_close_MouseLeave(object sender, EventArgs e)
         {
             btn_close.BackColor = Color.FromArgb(34, 40, 49);
+        }
+
+        private void sbtn_killNodeJS_Click(object sender, EventArgs e)
+        {
+            // https://stackoverflow.com/questions/3036829/how-do-i-create-a-message-box-with-yes-no-choices-and-a-dialogresult
+            DialogResult confirmResult = MessageBox.Show("若您的F.U.C.K服務一直無法通過測試\n可以嘗試停止電腦中所有Node.exe\n\n確定要停止所有Node.js服務?",
+                "注意!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (confirmResult == DialogResult.Yes)
+            {
+                foreach (var node in Process.GetProcessesByName("node"))
+                {
+                    // 找出所有在背景執行的node.js並關閉，雖然會關到其他服務使用的node.js但這是最簡單的辦法
+                    // https://stackoverflow.com/questions/51302514/stop-command-line-process-started-in-c-sharp-on-close-of-application
+                    node.Kill();
+                }
+
+                MessageBox.Show("成功停止所有Node.js服務\n您可以啟動F.U.C.K服務再行測試\n\n若問題仍未解決您可以考慮尋找電腦中\n占用 1337 port的程式並暫時將其停止!",
+                    "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                // do nothing
+            }
         }
     }
 }
