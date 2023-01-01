@@ -60,7 +60,17 @@ namespace WFGF.U.C.K.childForm
             }
             else if("GET" == requestMethod.SelectedItem.ToString())
             {
-                MessageBox.Show("Method: GET");
+                try
+                {
+                    // https://stackoverflow.com/questions/4015324/send-http-post-request-in-net
+                    var responseString = await client.GetStringAsync(requestURL.Text);
+                    responseOutputTextBox.Text = responseString;
+                }
+                catch(Exception getError)
+                {
+                    MessageBox.Show(getError.ToString(), "GET Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
