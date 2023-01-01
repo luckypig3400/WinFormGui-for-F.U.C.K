@@ -171,6 +171,7 @@
             this.loadFileDialogBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.loadFileDialogBtn.UseAccentColor = false;
             this.loadFileDialogBtn.UseVisualStyleBackColor = true;
+            this.loadFileDialogBtn.Click += new System.EventHandler(this.loadFileDialogBtn_Click);
             // 
             // fileListComboBox
             // 

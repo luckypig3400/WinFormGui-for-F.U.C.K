@@ -104,5 +104,25 @@ namespace WFGF.U.C.K.childForm
                     "無法存檔!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void loadFileDialogBtn_Click(object sender, EventArgs e)
+        {
+            var filePath = string.Empty;
+
+            // https://learn.microsoft.com/zh-tw/dotnet/api/system.windows.forms.openfiledialog?view=windowsdesktop-7.0
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "javascript files (*.js)|*.js|All files (*.*)|*.*";
+            openFileDialog.FilterIndex = 1;
+            //openFileDialog.RestoreDirectory = true;
+            openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + "\\FHIR-Universal-Conversion-Kit\\profile\\";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                //Get the path of specified file
+                filePath = openFileDialog.FileName;
+
+                currentFilePathOutput.Text = filePath;
+            }
+        }
     }
 }
