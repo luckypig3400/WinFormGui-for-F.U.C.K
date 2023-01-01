@@ -135,8 +135,7 @@
             this.currentFilePathOutput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.currentFilePathOutput.Size = new System.Drawing.Size(398, 50);
             this.currentFilePathOutput.TabIndex = 5;
-            this.currentFilePathOutput.Text = "C:\\git_repos\\WinFormGui-for-F.U.C.K\\WinFormGui-for-F.U.C.K\\bin\\Debug\\FHIR-Univers" +
-    "al-Conversion-Kit\\csv2json_nodeJS_ver\\csvFiles\\owodfgsfdgfd.cav";
+            this.currentFilePathOutput.Text = "";
             this.currentFilePathOutput.TrailingIcon = null;
             // 
             // materialLabel3

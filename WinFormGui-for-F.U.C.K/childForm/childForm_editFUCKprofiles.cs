@@ -47,7 +47,9 @@ namespace WFGF.U.C.K.childForm
 
         private void fileListComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string filePath = "./FHIR-Universal-Conversion-Kit/profile/" + fileListComboBox.SelectedItem.ToString();
+            string filePath = Directory.GetCurrentDirectory();
+            filePath += "\\FHIR-Universal-Conversion-Kit\\profile\\" + fileListComboBox.SelectedItem.ToString();
+            currentFilePathOutput.Text= filePath;
 
             string fileContent = System.IO.File.ReadAllText(filePath);
             // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
@@ -62,18 +64,17 @@ namespace WFGF.U.C.K.childForm
 
             if(confirmDialog == DialogResult.Yes)
             {
-                string filePath = "./FHIR-Universal-Conversion-Kit/profile/";
-                if (fileListComboBox.SelectedItem != null)
-                {
-                    filePath = "./FHIR-Universal-Conversion-Kit/profile/" + fileListComboBox.SelectedItem.ToString();
+                string filePath = currentFilePathOutput.Text;
 
+                try
+                {
                     string fileContent = File.ReadAllText(filePath);
                     // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
                     fileEditorTextbox.Text = fileContent;
                 }
-                else
-                {
-                    MessageBox.Show("您還沒有選取任何檔案喔!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                catch {
+                    MessageBox.Show("檔案不存在或路徑有誤\n\n請檢查檔案路徑是否存在且輸入正確!",
+                    "無法讀檔!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -84,20 +85,12 @@ namespace WFGF.U.C.K.childForm
 
             try
             {
-                string filePath = "./FHIR-Universal-Conversion-Kit/profile/";
-                if (fileListComboBox.SelectedItem != null)
-                {
-                    filePath = "./FHIR-Universal-Conversion-Kit/profile/" + fileListComboBox.SelectedItem.ToString();
-
-                    File.WriteAllText(filePath, fileContent);
-                    // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file
-
-                    MessageBox.Show("檔案順利儲存!\n ヾ(≧▽≦*)o");
-                }
-                else
-                {
-                    MessageBox.Show("您還沒有選取任何檔案喔!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                string filePath = currentFilePathOutput.Text;
+                
+                File.WriteAllText(filePath, fileContent);
+                // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file
+                
+                MessageBox.Show("檔案順利儲存!\n ヾ(≧▽≦*)o");
             }
             catch {
                 MessageBox.Show("檔案可能正被其他程式占用中或是檔案路徑有誤\n\n請檢查路徑是否存在及關閉可能正在使用該檔案的程式!",
@@ -122,6 +115,10 @@ namespace WFGF.U.C.K.childForm
                 filePath = openFileDialog.FileName;
 
                 currentFilePathOutput.Text = filePath;
+
+                string fileContent = System.IO.File.ReadAllText(filePath);
+                // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
+                fileEditorTextbox.Text = fileContent;
             }
         }
     }
