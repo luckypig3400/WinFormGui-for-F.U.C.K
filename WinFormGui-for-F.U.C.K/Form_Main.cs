@@ -316,7 +316,7 @@ namespace WFGF.U.C.K
         private void btn_simpleRestCleint_Click(object sender, EventArgs e)
         {
             selectedBackground(btn_simpleRestCleint);
-            childForm_templateRightSearchLeftResult frm = new childForm_templateRightSearchLeftResult();
+            childForm_simpleRestClient frm = new childForm_simpleRestClient();
             openChildForm(frm);
         }
 

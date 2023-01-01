@@ -122,6 +122,12 @@
     <Compile Include="childForm\childForm_developing.Designer.cs">
       <DependentUpon>childForm_developing.cs</DependentUpon>
     </Compile>
+    <Compile Include="childForm\childForm_simpleRestClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childForm\childForm_simpleRestClient.Designer.cs">
+      <DependentUpon>childForm_simpleRestClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="childForm\childForm_testFUCK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="childForm\childForm_developing.resx">
       <DependentUpon>childForm_developing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childForm\childForm_simpleRestClient.resx">
+      <DependentUpon>childForm_simpleRestClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="childForm\childForm_testFUCK.resx">
       <DependentUpon>childForm_testFUCK.cs</DependentUpon>
