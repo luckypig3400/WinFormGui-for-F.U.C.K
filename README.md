@@ -1,5 +1,24 @@
 # WinFormGui-for-F.U.C.K
- C# Windows Form GUI for FHIR-Universal-Conversion-Kit
+ C# Windows Form GUI for FHIR-Universal-Conversion-Kit (F.U.C.K)
+
+## About this project
+### Windows Form GUI for FHIR-Universal-Conversion-Kit
++ 在北護CyLab連中岳老師的指導下，學習了基礎FHIR相關知識 👍
++ 111學年度第1學期 陳彥宏老師C#.NET程式開發與應用課程 **期末專案**
++ 期中報告只有介面沒有功能 + 美髮系統釐清業界實際需求太複雜 `(*>﹏<*)′
++ 期末專案截止前兩周緊急撤換主題 💯
++ 跨年連假為沉澱心靈 專心寫Code的好時機 ⏲️
++ Most important below❗ 👇👇👇
+### This project makes [F.U.C.K](https://github.com/Lorex/FHIR-Universal-Conversion-Kit) much easier to get started 🎉
+
+## How to Use
+
+### See the User Manual in [HackMD](#wait-for-doc-link)
+
+## 😸 Special Thanks 🎉
+### [FHIR-Universal-Conversion-Kit (F.U.C.K)](https://github.com/Lorex/FHIR-Universal-Conversion-Kit)
+
+So many thanks to the author: [Lorex](https://github.com/Lorex), who created this wonderful and powerful "FHIR Universal Conversion Kit", also known as "**F.U.C.K**" 😄
 
 ## TODO List
 - [x] Change App icon in Taskbar
@@ -11,6 +30,7 @@
 - [ ] Excel file reader
 - [x] CSV to Payload JSON Converter
 - [ ] Install Setup package (https://docs.google.com/presentation/d/1rmGgxOtJeg2HnomUvsrXdHhg0OTF8h4N)
+- [ ] Write Manual in Hack.MD
 - [ ] Store "Simple RESTful Client" & "F.U.C.K profile editor" form state while changing to other page
 - [ ] Excel file writer(Advanced function)
 - [ ] Save F.U.C.K response as txt/Word/PDF files
