@@ -24,5 +24,14 @@ namespace WFGF.U.C.K.childForm
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Purple800, Primary.Purple900, Primary.Purple500, Accent.Purple200, TextShade.WHITE);
         }
 
+        MaterialSkinManager themeManager = MaterialSkinManager.Instance;
+
+        private void enableDarkThemeSwitch_CheckedChanged(object sender, EventArgs e)
+        {
+            if(enableDarkThemeSwitch.Checked)
+                themeManager.Theme= MaterialSkinManager.Themes.DARK;
+            else
+                themeManager.Theme = MaterialSkinManager.Themes.LIGHT;
+        }
     }
 }

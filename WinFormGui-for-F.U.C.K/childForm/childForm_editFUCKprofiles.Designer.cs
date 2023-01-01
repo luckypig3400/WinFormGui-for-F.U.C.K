@@ -44,6 +44,7 @@
             this.panel_datagridview = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(137)))), ((int)(((byte)(152)))));
+            this.panel1.Controls.Add(this.enableDarkThemeSwitch);
             this.panel1.Controls.Add(this.materialLabel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(3, 64);
@@ -289,6 +291,23 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
+            // enableDarkThemeSwitch
+            // 
+            this.enableDarkThemeSwitch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.enableDarkThemeSwitch.AutoSize = true;
+            this.enableDarkThemeSwitch.Depth = 0;
+            this.enableDarkThemeSwitch.Location = new System.Drawing.Point(882, 4);
+            this.enableDarkThemeSwitch.Margin = new System.Windows.Forms.Padding(0);
+            this.enableDarkThemeSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.enableDarkThemeSwitch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.enableDarkThemeSwitch.Name = "enableDarkThemeSwitch";
+            this.enableDarkThemeSwitch.Ripple = true;
+            this.enableDarkThemeSwitch.Size = new System.Drawing.Size(154, 37);
+            this.enableDarkThemeSwitch.TabIndex = 2;
+            this.enableDarkThemeSwitch.Text = "啟用深色模式";
+            this.enableDarkThemeSwitch.UseVisualStyleBackColor = true;
+            this.enableDarkThemeSwitch.CheckedChanged += new System.EventHandler(this.enableDarkThemeSwitch_CheckedChanged);
+            // 
             // childForm_editFUCKprofiles
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -329,5 +348,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialTextBox currentFilePathOutput;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialSwitch enableDarkThemeSwitch;
     }
 }
