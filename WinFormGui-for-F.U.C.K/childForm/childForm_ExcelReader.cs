@@ -61,10 +61,10 @@ namespace WFGF.U.C.K.childForm
 
             // https://learn.microsoft.com/zh-tw/dotnet/api/system.windows.forms.openfiledialog?view=windowsdesktop-7.0
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "javascript files (*.js)|*.js|All files (*.*)|*.*";
+            openFileDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
             openFileDialog.FilterIndex = 1;
             //openFileDialog.RestoreDirectory = true;
-            openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + "\\FHIR-Universal-Conversion-Kit\\profile\\";
+            openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + "\\FHIR-Universal-Conversion-Kit\\twcore\\";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
