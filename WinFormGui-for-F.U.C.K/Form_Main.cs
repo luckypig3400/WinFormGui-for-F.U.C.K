@@ -325,5 +325,12 @@ namespace WFGF.U.C.K
             selectedBackground(btn_Excel);
             showSubMenu(panel_ExcelSubMenu);
         }
+
+        private void sbtn_Excel_Reader_Click(object sender, EventArgs e)
+        {
+            selectedBackground(sbtn_Excel_Reader);
+            childForm_ExcelReader frm = new childForm_ExcelReader();
+            openChildForm(frm);
+        }
     }
 }

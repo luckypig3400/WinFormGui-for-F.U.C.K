@@ -32,48 +32,48 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
             this.panel_top = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_min = new System.Windows.Forms.Button();
+            this.btn_max = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
             this.panel_bigMenu = new System.Windows.Forms.Panel();
             this.panel_businessSubMenu = new System.Windows.Forms.Panel();
             this.sbtn_business_other = new System.Windows.Forms.Button();
             this.sbtn_business_income = new System.Windows.Forms.Button();
             this.sbtn_cusInfo = new System.Windows.Forms.Button();
+            this.btn_business = new System.Windows.Forms.Button();
+            this.btn_csv2json = new System.Windows.Forms.Button();
             this.panel_ExcelSubMenu = new System.Windows.Forms.Panel();
             this.sbtn_Excel_Editor = new System.Windows.Forms.Button();
             this.sbtn_Excel_Reader = new System.Windows.Forms.Button();
+            this.btn_Excel = new System.Windows.Forms.Button();
+            this.btn_FUCKprofileEditor = new System.Windows.Forms.Button();
+            this.btn_simpleRestCleint = new System.Windows.Forms.Button();
             this.panel_basicSubMenu = new System.Windows.Forms.Panel();
             this.sbtn_killNodeJS = new System.Windows.Forms.Button();
             this.sbtn_FUCK_restart = new System.Windows.Forms.Button();
             this.sbtn_FUCK_test = new System.Windows.Forms.Button();
             this.sbtn_FUCK_launch = new System.Windows.Forms.Button();
+            this.btn_serviceFUCKoptions = new System.Windows.Forms.Button();
+            this.btn_home = new System.Windows.Forms.Button();
             this.panel_logo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_bottom = new System.Windows.Forms.Panel();
             this.label_time = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_logOut = new System.Windows.Forms.Label();
             this.panel_childForm = new System.Windows.Forms.Panel();
             this.timer_time = new System.Windows.Forms.Timer(this.components);
-            this.btn_business = new System.Windows.Forms.Button();
-            this.btn_csv2json = new System.Windows.Forms.Button();
-            this.btn_Excel = new System.Windows.Forms.Button();
-            this.btn_FUCKprofileEditor = new System.Windows.Forms.Button();
-            this.btn_simpleRestCleint = new System.Windows.Forms.Button();
-            this.btn_serviceFUCKoptions = new System.Windows.Forms.Button();
-            this.btn_home = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btn_min = new System.Windows.Forms.Button();
-            this.btn_max = new System.Windows.Forms.Button();
-            this.btn_close = new System.Windows.Forms.Button();
             this.panel_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_bigMenu.SuspendLayout();
             this.panel_businessSubMenu.SuspendLayout();
             this.panel_ExcelSubMenu.SuspendLayout();
             this.panel_basicSubMenu.SuspendLayout();
             this.panel_logo.SuspendLayout();
-            this.panel_bottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel_bottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_top
@@ -104,6 +104,58 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "WFGF.U.C.K--Windows Form Gui for FHIR-Universal-Conversion-Kit";
             this.label8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WinFormGuiForF.U.C.K.Properties.Resources.fuck_logo;
+            this.pictureBox2.Location = new System.Drawing.Point(19, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // btn_min
+            // 
+            this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_min.FlatAppearance.BorderSize = 0;
+            this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_min.Image = ((System.Drawing.Image)(resources.GetObject("btn_min.Image")));
+            this.btn_min.Location = new System.Drawing.Point(1132, 0);
+            this.btn_min.Name = "btn_min";
+            this.btn_min.Size = new System.Drawing.Size(50, 50);
+            this.btn_min.TabIndex = 0;
+            this.btn_min.UseVisualStyleBackColor = true;
+            this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
+            // 
+            // btn_max
+            // 
+            this.btn_max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_max.FlatAppearance.BorderSize = 0;
+            this.btn_max.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_max.Image = ((System.Drawing.Image)(resources.GetObject("btn_max.Image")));
+            this.btn_max.Location = new System.Drawing.Point(1181, 0);
+            this.btn_max.Name = "btn_max";
+            this.btn_max.Size = new System.Drawing.Size(50, 50);
+            this.btn_max.TabIndex = 0;
+            this.btn_max.UseVisualStyleBackColor = true;
+            this.btn_max.Click += new System.EventHandler(this.btn_max_Click);
+            // 
+            // btn_close
+            // 
+            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
+            this.btn_close.Location = new System.Drawing.Point(1230, 0);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(50, 50);
+            this.btn_close.TabIndex = 0;
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            this.btn_close.MouseLeave += new System.EventHandler(this.btn_close_MouseLeave);
+            this.btn_close.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_close_MouseMove);
             // 
             // panel_bigMenu
             // 
@@ -188,6 +240,44 @@
             this.sbtn_cusInfo.UseVisualStyleBackColor = true;
             this.sbtn_cusInfo.Click += new System.EventHandler(this.sbtn_cusInfo_Click);
             // 
+            // btn_business
+            // 
+            this.btn_business.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_business.FlatAppearance.BorderSize = 0;
+            this.btn_business.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_business.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_business.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_business.Image = ((System.Drawing.Image)(resources.GetObject("btn_business.Image")));
+            this.btn_business.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_business.Location = new System.Drawing.Point(0, 718);
+            this.btn_business.Name = "btn_business";
+            this.btn_business.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_business.Size = new System.Drawing.Size(230, 55);
+            this.btn_business.TabIndex = 8;
+            this.btn_business.Text = "  介面模板";
+            this.btn_business.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_business.UseVisualStyleBackColor = true;
+            this.btn_business.Click += new System.EventHandler(this.btn_attendance_Click);
+            // 
+            // btn_csv2json
+            // 
+            this.btn_csv2json.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_csv2json.FlatAppearance.BorderSize = 0;
+            this.btn_csv2json.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_csv2json.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_csv2json.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_csv2json.Image = ((System.Drawing.Image)(resources.GetObject("btn_csv2json.Image")));
+            this.btn_csv2json.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_csv2json.Location = new System.Drawing.Point(0, 663);
+            this.btn_csv2json.Name = "btn_csv2json";
+            this.btn_csv2json.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_csv2json.Size = new System.Drawing.Size(230, 55);
+            this.btn_csv2json.TabIndex = 14;
+            this.btn_csv2json.Text = "  CSV轉JSON";
+            this.btn_csv2json.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_csv2json.UseVisualStyleBackColor = true;
+            this.btn_csv2json.Click += new System.EventHandler(this.btn_csv2json_Click);
+            // 
             // panel_ExcelSubMenu
             // 
             this.panel_ExcelSubMenu.AutoSize = true;
@@ -229,6 +319,65 @@
             this.sbtn_Excel_Reader.TabIndex = 0;
             this.sbtn_Excel_Reader.Text = "預覽Excel";
             this.sbtn_Excel_Reader.UseVisualStyleBackColor = true;
+            this.sbtn_Excel_Reader.Click += new System.EventHandler(this.sbtn_Excel_Reader_Click);
+            // 
+            // btn_Excel
+            // 
+            this.btn_Excel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Excel.FlatAppearance.BorderSize = 0;
+            this.btn_Excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Excel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Excel.Image = ((System.Drawing.Image)(resources.GetObject("btn_Excel.Image")));
+            this.btn_Excel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Excel.Location = new System.Drawing.Point(0, 508);
+            this.btn_Excel.Name = "btn_Excel";
+            this.btn_Excel.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_Excel.Size = new System.Drawing.Size(230, 55);
+            this.btn_Excel.TabIndex = 17;
+            this.btn_Excel.Text = "  TWcore Excel";
+            this.btn_Excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Excel.UseVisualStyleBackColor = true;
+            this.btn_Excel.Click += new System.EventHandler(this.btn_Excel_Click);
+            // 
+            // btn_FUCKprofileEditor
+            // 
+            this.btn_FUCKprofileEditor.AutoSize = true;
+            this.btn_FUCKprofileEditor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_FUCKprofileEditor.FlatAppearance.BorderSize = 0;
+            this.btn_FUCKprofileEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_FUCKprofileEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_FUCKprofileEditor.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_FUCKprofileEditor.Image = ((System.Drawing.Image)(resources.GetObject("btn_FUCKprofileEditor.Image")));
+            this.btn_FUCKprofileEditor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_FUCKprofileEditor.Location = new System.Drawing.Point(0, 450);
+            this.btn_FUCKprofileEditor.Name = "btn_FUCKprofileEditor";
+            this.btn_FUCKprofileEditor.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_FUCKprofileEditor.Size = new System.Drawing.Size(230, 58);
+            this.btn_FUCKprofileEditor.TabIndex = 12;
+            this.btn_FUCKprofileEditor.Text = "  編輯F.U.C.K\r\n       Profile";
+            this.btn_FUCKprofileEditor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_FUCKprofileEditor.UseVisualStyleBackColor = true;
+            this.btn_FUCKprofileEditor.Click += new System.EventHandler(this.btn_FUCKprofileEditor_Click);
+            // 
+            // btn_simpleRestCleint
+            // 
+            this.btn_simpleRestCleint.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_simpleRestCleint.FlatAppearance.BorderSize = 0;
+            this.btn_simpleRestCleint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_simpleRestCleint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_simpleRestCleint.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_simpleRestCleint.Image = ((System.Drawing.Image)(resources.GetObject("btn_simpleRestCleint.Image")));
+            this.btn_simpleRestCleint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_simpleRestCleint.Location = new System.Drawing.Point(0, 395);
+            this.btn_simpleRestCleint.Name = "btn_simpleRestCleint";
+            this.btn_simpleRestCleint.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_simpleRestCleint.Size = new System.Drawing.Size(230, 55);
+            this.btn_simpleRestCleint.TabIndex = 15;
+            this.btn_simpleRestCleint.Text = "  簡易RestClient";
+            this.btn_simpleRestCleint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_simpleRestCleint.UseVisualStyleBackColor = true;
+            this.btn_simpleRestCleint.Click += new System.EventHandler(this.btn_simpleRestCleint_Click);
             // 
             // panel_basicSubMenu
             // 
@@ -308,6 +457,44 @@
             this.sbtn_FUCK_launch.UseVisualStyleBackColor = true;
             this.sbtn_FUCK_launch.Click += new System.EventHandler(this.sbtn_FUCK_launch_Click);
             // 
+            // btn_serviceFUCKoptions
+            // 
+            this.btn_serviceFUCKoptions.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_serviceFUCKoptions.FlatAppearance.BorderSize = 0;
+            this.btn_serviceFUCKoptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_serviceFUCKoptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_serviceFUCKoptions.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_serviceFUCKoptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_serviceFUCKoptions.Image")));
+            this.btn_serviceFUCKoptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_serviceFUCKoptions.Location = new System.Drawing.Point(0, 140);
+            this.btn_serviceFUCKoptions.Name = "btn_serviceFUCKoptions";
+            this.btn_serviceFUCKoptions.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_serviceFUCKoptions.Size = new System.Drawing.Size(230, 55);
+            this.btn_serviceFUCKoptions.TabIndex = 2;
+            this.btn_serviceFUCKoptions.Text = "  服務選單";
+            this.btn_serviceFUCKoptions.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_serviceFUCKoptions.UseVisualStyleBackColor = true;
+            this.btn_serviceFUCKoptions.Click += new System.EventHandler(this.btn_serviceFUCKoptions_Click);
+            // 
+            // btn_home
+            // 
+            this.btn_home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_home.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
+            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.Location = new System.Drawing.Point(0, 85);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_home.Size = new System.Drawing.Size(230, 55);
+            this.btn_home.TabIndex = 1;
+            this.btn_home.Text = "  首 頁";
+            this.btn_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
+            // 
             // panel_logo
             // 
             this.panel_logo.AutoSize = true;
@@ -329,6 +516,16 @@
             this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "WFGF.U.C.K";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinFormGuiForF.U.C.K.Properties.Resources.fuck_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel_bottom
             // 
@@ -393,202 +590,6 @@
             // 
             this.timer_time.Tick += new System.EventHandler(this.timer_time_Tick);
             // 
-            // btn_business
-            // 
-            this.btn_business.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_business.FlatAppearance.BorderSize = 0;
-            this.btn_business.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_business.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_business.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_business.Image = ((System.Drawing.Image)(resources.GetObject("btn_business.Image")));
-            this.btn_business.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_business.Location = new System.Drawing.Point(0, 718);
-            this.btn_business.Name = "btn_business";
-            this.btn_business.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_business.Size = new System.Drawing.Size(230, 55);
-            this.btn_business.TabIndex = 8;
-            this.btn_business.Text = "  介面模板";
-            this.btn_business.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_business.UseVisualStyleBackColor = true;
-            this.btn_business.Click += new System.EventHandler(this.btn_attendance_Click);
-            // 
-            // btn_csv2json
-            // 
-            this.btn_csv2json.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_csv2json.FlatAppearance.BorderSize = 0;
-            this.btn_csv2json.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_csv2json.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_csv2json.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_csv2json.Image = ((System.Drawing.Image)(resources.GetObject("btn_csv2json.Image")));
-            this.btn_csv2json.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_csv2json.Location = new System.Drawing.Point(0, 663);
-            this.btn_csv2json.Name = "btn_csv2json";
-            this.btn_csv2json.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_csv2json.Size = new System.Drawing.Size(230, 55);
-            this.btn_csv2json.TabIndex = 14;
-            this.btn_csv2json.Text = "  CSV轉JSON";
-            this.btn_csv2json.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_csv2json.UseVisualStyleBackColor = true;
-            this.btn_csv2json.Click += new System.EventHandler(this.btn_csv2json_Click);
-            // 
-            // btn_Excel
-            // 
-            this.btn_Excel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Excel.FlatAppearance.BorderSize = 0;
-            this.btn_Excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_Excel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Excel.Image = ((System.Drawing.Image)(resources.GetObject("btn_Excel.Image")));
-            this.btn_Excel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Excel.Location = new System.Drawing.Point(0, 508);
-            this.btn_Excel.Name = "btn_Excel";
-            this.btn_Excel.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_Excel.Size = new System.Drawing.Size(230, 55);
-            this.btn_Excel.TabIndex = 17;
-            this.btn_Excel.Text = "  TWcore Excel";
-            this.btn_Excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Excel.UseVisualStyleBackColor = true;
-            this.btn_Excel.Click += new System.EventHandler(this.btn_Excel_Click);
-            // 
-            // btn_FUCKprofileEditor
-            // 
-            this.btn_FUCKprofileEditor.AutoSize = true;
-            this.btn_FUCKprofileEditor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_FUCKprofileEditor.FlatAppearance.BorderSize = 0;
-            this.btn_FUCKprofileEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_FUCKprofileEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_FUCKprofileEditor.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_FUCKprofileEditor.Image = ((System.Drawing.Image)(resources.GetObject("btn_FUCKprofileEditor.Image")));
-            this.btn_FUCKprofileEditor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_FUCKprofileEditor.Location = new System.Drawing.Point(0, 450);
-            this.btn_FUCKprofileEditor.Name = "btn_FUCKprofileEditor";
-            this.btn_FUCKprofileEditor.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_FUCKprofileEditor.Size = new System.Drawing.Size(230, 58);
-            this.btn_FUCKprofileEditor.TabIndex = 12;
-            this.btn_FUCKprofileEditor.Text = "  編輯F.U.C.K\r\n       Profile";
-            this.btn_FUCKprofileEditor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_FUCKprofileEditor.UseVisualStyleBackColor = true;
-            this.btn_FUCKprofileEditor.Click += new System.EventHandler(this.btn_FUCKprofileEditor_Click);
-            // 
-            // btn_simpleRestCleint
-            // 
-            this.btn_simpleRestCleint.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_simpleRestCleint.FlatAppearance.BorderSize = 0;
-            this.btn_simpleRestCleint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_simpleRestCleint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_simpleRestCleint.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_simpleRestCleint.Image = ((System.Drawing.Image)(resources.GetObject("btn_simpleRestCleint.Image")));
-            this.btn_simpleRestCleint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_simpleRestCleint.Location = new System.Drawing.Point(0, 395);
-            this.btn_simpleRestCleint.Name = "btn_simpleRestCleint";
-            this.btn_simpleRestCleint.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_simpleRestCleint.Size = new System.Drawing.Size(230, 55);
-            this.btn_simpleRestCleint.TabIndex = 15;
-            this.btn_simpleRestCleint.Text = "  簡易RestClient";
-            this.btn_simpleRestCleint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_simpleRestCleint.UseVisualStyleBackColor = true;
-            this.btn_simpleRestCleint.Click += new System.EventHandler(this.btn_simpleRestCleint_Click);
-            // 
-            // btn_serviceFUCKoptions
-            // 
-            this.btn_serviceFUCKoptions.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_serviceFUCKoptions.FlatAppearance.BorderSize = 0;
-            this.btn_serviceFUCKoptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_serviceFUCKoptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_serviceFUCKoptions.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_serviceFUCKoptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_serviceFUCKoptions.Image")));
-            this.btn_serviceFUCKoptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_serviceFUCKoptions.Location = new System.Drawing.Point(0, 140);
-            this.btn_serviceFUCKoptions.Name = "btn_serviceFUCKoptions";
-            this.btn_serviceFUCKoptions.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_serviceFUCKoptions.Size = new System.Drawing.Size(230, 55);
-            this.btn_serviceFUCKoptions.TabIndex = 2;
-            this.btn_serviceFUCKoptions.Text = "  服務選單";
-            this.btn_serviceFUCKoptions.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_serviceFUCKoptions.UseVisualStyleBackColor = true;
-            this.btn_serviceFUCKoptions.Click += new System.EventHandler(this.btn_serviceFUCKoptions_Click);
-            // 
-            // btn_home
-            // 
-            this.btn_home.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_home.FlatAppearance.BorderSize = 0;
-            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_home.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
-            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_home.Location = new System.Drawing.Point(0, 85);
-            this.btn_home.Name = "btn_home";
-            this.btn_home.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_home.Size = new System.Drawing.Size(230, 55);
-            this.btn_home.TabIndex = 1;
-            this.btn_home.Text = "  首 頁";
-            this.btn_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_home.UseVisualStyleBackColor = true;
-            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WinFormGuiForF.U.C.K.Properties.Resources.fuck_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WinFormGuiForF.U.C.K.Properties.Resources.fuck_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(19, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // btn_min
-            // 
-            this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_min.FlatAppearance.BorderSize = 0;
-            this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_min.Image = ((System.Drawing.Image)(resources.GetObject("btn_min.Image")));
-            this.btn_min.Location = new System.Drawing.Point(1132, 0);
-            this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(50, 50);
-            this.btn_min.TabIndex = 0;
-            this.btn_min.UseVisualStyleBackColor = true;
-            this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
-            // 
-            // btn_max
-            // 
-            this.btn_max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_max.FlatAppearance.BorderSize = 0;
-            this.btn_max.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_max.Image = ((System.Drawing.Image)(resources.GetObject("btn_max.Image")));
-            this.btn_max.Location = new System.Drawing.Point(1181, 0);
-            this.btn_max.Name = "btn_max";
-            this.btn_max.Size = new System.Drawing.Size(50, 50);
-            this.btn_max.TabIndex = 0;
-            this.btn_max.UseVisualStyleBackColor = true;
-            this.btn_max.Click += new System.EventHandler(this.btn_max_Click);
-            // 
-            // btn_close
-            // 
-            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_close.FlatAppearance.BorderSize = 0;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
-            this.btn_close.Location = new System.Drawing.Point(1230, 0);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(50, 50);
-            this.btn_close.TabIndex = 0;
-            this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            this.btn_close.MouseLeave += new System.EventHandler(this.btn_close_MouseLeave);
-            this.btn_close.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_close_MouseMove);
-            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -608,6 +609,7 @@
             this.Text = "WinFormGui-for-F.U.C.K";
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel_bigMenu.ResumeLayout(false);
             this.panel_bigMenu.PerformLayout();
             this.panel_businessSubMenu.ResumeLayout(false);
@@ -615,10 +617,9 @@
             this.panel_basicSubMenu.ResumeLayout(false);
             this.panel_logo.ResumeLayout(false);
             this.panel_logo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_bottom.ResumeLayout(false);
             this.panel_bottom.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
