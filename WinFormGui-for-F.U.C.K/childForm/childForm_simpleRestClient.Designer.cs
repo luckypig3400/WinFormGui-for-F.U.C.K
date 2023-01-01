@@ -34,15 +34,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_bottom = new System.Windows.Forms.Panel();
-            this.dataGridView_emp = new System.Windows.Forms.DataGridView();
             this.requestMethod = new MaterialSkin.Controls.MaterialComboBox();
             this.requestURL = new MaterialSkin.Controls.MaterialTextBox();
             this.sendRequestBtn = new MaterialSkin.Controls.MaterialButton();
             this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            this.jsonInputTextbox = new System.Windows.Forms.RichTextBox();
+            this.responseOutputTextBox = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.panel_center.SuspendLayout();
             this.panel_bottom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_emp)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -107,24 +107,13 @@
             // 
             // panel_bottom
             // 
-            this.panel_bottom.Controls.Add(this.dataGridView_emp);
+            this.panel_bottom.Controls.Add(this.responseOutputTextBox);
+            this.panel_bottom.Controls.Add(this.jsonInputTextbox);
             this.panel_bottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_bottom.Location = new System.Drawing.Point(3, 197);
             this.panel_bottom.Name = "panel_bottom";
             this.panel_bottom.Size = new System.Drawing.Size(1054, 510);
             this.panel_bottom.TabIndex = 54;
-            // 
-            // dataGridView_emp
-            // 
-            this.dataGridView_emp.AllowUserToAddRows = false;
-            this.dataGridView_emp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_emp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView_emp.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView_emp.Name = "dataGridView_emp";
-            this.dataGridView_emp.RowHeadersWidth = 51;
-            this.dataGridView_emp.RowTemplate.Height = 23;
-            this.dataGridView_emp.Size = new System.Drawing.Size(1054, 510);
-            this.dataGridView_emp.TabIndex = 0;
             // 
             // requestMethod
             // 
@@ -161,7 +150,7 @@
             this.requestURL.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.requestURL.LeadingIcon = null;
             this.requestURL.Location = new System.Drawing.Point(156, 5);
-            this.requestURL.MaxLength = 50;
+            this.requestURL.MaxLength = 65536;
             this.requestURL.MouseState = MaterialSkin.MouseState.OUT;
             this.requestURL.Multiline = false;
             this.requestURL.Name = "requestURL";
@@ -208,6 +197,27 @@
             this.enableDarkThemeSwitch.UseVisualStyleBackColor = true;
             this.enableDarkThemeSwitch.CheckedChanged += new System.EventHandler(this.enableDarkThemeSwitch_CheckedChanged);
             // 
+            // jsonInputTextbox
+            // 
+            this.jsonInputTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.jsonInputTextbox.Location = new System.Drawing.Point(3, 3);
+            this.jsonInputTextbox.Name = "jsonInputTextbox";
+            this.jsonInputTextbox.Size = new System.Drawing.Size(510, 504);
+            this.jsonInputTextbox.TabIndex = 0;
+            this.jsonInputTextbox.Text = "";
+            // 
+            // responseOutputTextBox
+            // 
+            this.responseOutputTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.responseOutputTextBox.Location = new System.Drawing.Point(541, 3);
+            this.responseOutputTextBox.Name = "responseOutputTextBox";
+            this.responseOutputTextBox.Size = new System.Drawing.Size(510, 504);
+            this.responseOutputTextBox.TabIndex = 1;
+            this.responseOutputTextBox.Text = "";
+            // 
             // childForm_simpleRestClient
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -223,7 +233,6 @@
             this.panel_center.ResumeLayout(false);
             this.panel_center.PerformLayout();
             this.panel_bottom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_emp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,12 +243,13 @@
         private System.Windows.Forms.Panel panel_center;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel_bottom;
-        private System.Windows.Forms.DataGridView dataGridView_emp;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialButton sendRequestBtn;
         private MaterialSkin.Controls.MaterialTextBox requestURL;
         private MaterialSkin.Controls.MaterialComboBox requestMethod;
         private MaterialSkin.Controls.MaterialSwitch enableDarkThemeSwitch;
+        private System.Windows.Forms.RichTextBox responseOutputTextBox;
+        private System.Windows.Forms.RichTextBox jsonInputTextbox;
     }
 }
