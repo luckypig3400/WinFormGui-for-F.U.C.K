@@ -412,6 +412,7 @@
             this.btn_business.Text = "  介面模板";
             this.btn_business.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_business.UseVisualStyleBackColor = true;
+            this.btn_business.Visible = false;
             this.btn_business.Click += new System.EventHandler(this.btn_attendance_Click);
             // 
             // btn_csv2json
