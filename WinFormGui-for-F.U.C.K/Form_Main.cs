@@ -10,6 +10,7 @@ using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
 using WFGF.U.C.K.childForm;
 using System.Diagnostics;
+using WinFormGuiForF.U.C.K.childForm;
 
 namespace WFGF.U.C.K
 {
@@ -152,11 +153,11 @@ namespace WFGF.U.C.K
             openChildForm(frm); 
         }
 
-        private void btn_systemManage_Click(object sender, EventArgs e)
+        private void btn_csv2json_Click(object sender, EventArgs e)
         {
             selectedBackground(btn_csv2json);
             hideSubMenu();
-            childForm_systemManage frm = new childForm_systemManage();
+            childForm_csv2json frm = new childForm_csv2json();
             openChildForm(frm);
         }
 

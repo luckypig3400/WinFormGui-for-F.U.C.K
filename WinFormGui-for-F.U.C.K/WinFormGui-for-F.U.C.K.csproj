@@ -116,6 +116,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="childForm\childForm_csv2json.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childForm\childForm_csv2json.Designer.cs">
+      <DependentUpon>childForm_csv2json.cs</DependentUpon>
+    </Compile>
     <Compile Include="childForm\childForm_developing.cs">
       <SubType>Form</SubType>
     </Compile>
