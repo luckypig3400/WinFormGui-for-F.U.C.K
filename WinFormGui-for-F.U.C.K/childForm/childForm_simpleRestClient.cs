@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Windows.Forms;
 
@@ -34,9 +35,33 @@ namespace WFGF.U.C.K.childForm
                 themeManager.Theme = MaterialSkinManager.Themes.LIGHT;
         }
 
-        private void sendRequestBtn_Click(object sender, EventArgs e)
-        {
+        public static readonly HttpClient client = new HttpClient();
+        // https://stackoverflow.com/questions/4015324/send-http-post-request-in-net
 
+        private async void sendRequestBtn_Click(object sender, EventArgs e)
+        {
+            if("POST" == requestMethod.SelectedItem.ToString())
+            {
+                string jsonString = jsonInputTextbox.Text;
+                var postData = new StringContent(jsonString, Encoding.UTF8, "application/json");
+                // https://stackoverflow.com/questions/6117101/posting-jsonobject-with-httpclient-from-web-api
+
+                try
+                {
+                    var response = await client.PostAsync(requestURL.Text, postData);
+                    var resString = await response.Content.ReadAsStringAsync();
+                    responseOutputTextBox.Text = resString;
+                }
+                catch
+                {
+                    MessageBox.Show("F.U.C.K服務沒有回應\n請檢查是否已正確啟動F.U.C.K\n或是URL是否填寫正確",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else if("GET" == requestMethod.SelectedItem.ToString())
+            {
+                MessageBox.Show("Method: GET");
+            }
         }
 
         private void loadExampleJSONBtn_Click(object sender, EventArgs e)
