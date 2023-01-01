@@ -44,7 +44,7 @@
             this.saveFilelBtn = new MaterialSkin.Controls.MaterialButton();
             this.panel_datagridview = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.fileEditorTextbox = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -193,6 +193,7 @@
             this.fileListComboBox.Size = new System.Drawing.Size(398, 49);
             this.fileListComboBox.StartIndex = 0;
             this.fileListComboBox.TabIndex = 1;
+            this.fileListComboBox.SelectedIndexChanged += new System.EventHandler(this.fileListComboBox_SelectedIndexChanged);
             this.fileListComboBox.Click += new System.EventHandler(this.fileListComboBox_Click);
             // 
             // materialLabel2
@@ -293,21 +294,21 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.richTextBox1);
+            this.panel2.Controls.Add(this.fileEditorTextbox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 108);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(555, 599);
             this.panel2.TabIndex = 5;
             // 
-            // richTextBox1
+            // fileEditorTextbox
             // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(555, 599);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.fileEditorTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fileEditorTextbox.Location = new System.Drawing.Point(0, 0);
+            this.fileEditorTextbox.Name = "fileEditorTextbox";
+            this.fileEditorTextbox.Size = new System.Drawing.Size(555, 599);
+            this.fileEditorTextbox.TabIndex = 0;
+            this.fileEditorTextbox.Text = "";
             // 
             // childForm_editFUCKprofiles
             // 
@@ -340,7 +341,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox fileEditorTextbox;
         private MaterialSkin.Controls.MaterialButton reloadFileWithoutSaveBtn;
         private MaterialSkin.Controls.MaterialButton saveFilelBtn;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;

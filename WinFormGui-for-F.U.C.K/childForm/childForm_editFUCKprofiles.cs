@@ -44,5 +44,15 @@ namespace WFGF.U.C.K.childForm
             string[] files = Directory.GetFiles("./FHIR-Universal-Conversion-Kit/profile");
             fileListComboBox.Items.AddRange(files.Select((string filePath) => Path.GetFileName(filePath)).ToArray());
         }
+
+        private void fileListComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string filePath = "./FHIR-Universal-Conversion-Kit/profile/" + fileListComboBox.SelectedItem.ToString();
+
+            string fileContent = System.IO.File.ReadAllText(filePath);
+            // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
+
+            fileEditorTextbox.Text = fileContent;
+        }
     }
 }
