@@ -34,7 +34,9 @@ So many thanks to the author: [Lorex](https://github.com/Lorex), who created thi
 - [x] F.U.C.K profile editor
 - [x] Excel file reader
 - [x] CSV to Payload JSON Converter
-- [ ] Install Setup package (https://docs.google.com/presentation/d/1rmGgxOtJeg2HnomUvsrXdHhg0OTF8h4N)
+- [x] Install Setup package (https://docs.google.com/presentation/d/1rmGgxOtJeg2HnomUvsrXdHhg0OTF8h4N)
+- [ ] Fix install with Setup.exe can't run npm install for F.U.C.K packages
+- [x] Create Manual in Hack.MD
 - [ ] Write Manual in Hack.MD
 - [ ] Store "Simple RESTful Client" & "F.U.C.K profile editor" form state while changing to other page
 - [ ] Loading Animation while waiting for response in "Simple RESTful Client"
