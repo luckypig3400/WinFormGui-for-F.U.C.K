@@ -5702,15 +5702,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WinFormGui-for-F.U.C.K-installer"
-        "ProductCode" = "8:{B55B49A4-E903-4E6A-B352-E33E2D861ED0}"
-        "PackageCode" = "8:{BE4B8745-9740-43B0-9222-6278AFA77F5E}"
+        "ProductCode" = "8:{E325B207-98A2-41B9-9629-B126DA0B9751}"
+        "PackageCode" = "8:{521A158C-CFCD-4A8B-A74C-BDBE7A36028A}"
         "UpgradeCode" = "8:{39DB9675-7ECC-464C-A2AA-5AE1C98C72CD}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.7"
+        "ProductVersion" = "8:1.0.8"
         "Manufacturer" = "8:NTUNHS-CyLab"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -5840,7 +5840,7 @@
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E32231A2D3754DBB99B3CC85CBBF749A"
             {
             "Name" = "8:uninstall WinFormGui-for-F.U.C.K"
-            "Arguments" = "8:/x {B55B49A4-E903-4E6A-B352-E33E2D861ED0}"
+            "Arguments" = "8:/x {E325B207-98A2-41B9-9629-B126DA0B9751}"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
@@ -6264,6 +6264,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5AF0ABD266234983A606B4C2D5F7ED83"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_43283CCBB4DA4CAE872084F02D1406C1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:ContentFiles"
+            "OutputProjectGuid" = "8:{054ABE9D-5E00-4E1E-A5B0-FA31884DA73D}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9B1C266629FF48C3A03F8CF4F1DF20A5"
             {
             "SourcePath" = "8:..\\WinFormGui-for-F.U.C.K\\obj\\x86\\Debug\\WinFormGui-for-F.U.C.K.exe"
