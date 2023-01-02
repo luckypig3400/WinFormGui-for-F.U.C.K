@@ -1714,6 +1714,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -5726,15 +5734,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WinFormGui-for-F.U.C.K-installer"
-        "ProductCode" = "8:{D45178C5-29A4-42E7-8C60-6A5CDD59C837}"
-        "PackageCode" = "8:{43C08E6F-8F04-4659-9047-F3F96CE87424}"
+        "ProductCode" = "8:{9FA1FF91-3963-48BE-8003-94CF879D80A1}"
+        "PackageCode" = "8:{2EAFDCFA-872D-46DA-B57C-6FEDE75CF018}"
         "UpgradeCode" = "8:{39DB9675-7ECC-464C-A2AA-5AE1C98C72CD}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.1.0"
+        "ProductVersion" = "8:1.1.1"
         "Manufacturer" = "8:NTUNHS-CyLab"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -5864,7 +5872,7 @@
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E32231A2D3754DBB99B3CC85CBBF749A"
             {
             "Name" = "8:uninstall WinFormGui-for-F.U.C.K"
-            "Arguments" = "8:/x {D45178C5-29A4-42E7-8C60-6A5CDD59C837}"
+            "Arguments" = "8:/x {9FA1FF91-3963-48BE-8003-94CF879D80A1}"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
