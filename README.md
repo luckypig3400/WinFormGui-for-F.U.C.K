@@ -7,9 +7,14 @@
 + 111學年度第1學期 陳彥宏老師C#.NET程式開發與應用課程 **期末專案**
 + 期中報告只有介面沒有功能 + 美髮系統釐清業界實際需求太複雜 `(*>﹏<*)′
 + 期末專案截止前兩周緊急撤換主題 💯
-+ 跨年連假為沉澱心靈 專心寫Code的好時機 ⏲️
++ 跨年連假為沉澱心靈 專心寫Code的好時機 🕘
 + Most important below❗ 👇👇👇
 ### This project makes [F.U.C.K](https://github.com/Lorex/FHIR-Universal-Conversion-Kit) much easier to get started 🎉
+
+## System Requirements
++ Windows 10 or Above (Windows 7 might also supported)
++ [Node.js](https://nodejs.org/en/download/) >= 16.8.0
++ [.Net Framework 4.8 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 
 ## How to Use
 
@@ -27,11 +32,12 @@ So many thanks to the author: [Lorex](https://github.com/Lorex), who created thi
 - [x] Launch F.U.C.K in background
 - [x] Simple RESTful Client
 - [x] F.U.C.K profile editor
-- [ ] Excel file reader
+- [x] Excel file reader
 - [x] CSV to Payload JSON Converter
 - [ ] Install Setup package (https://docs.google.com/presentation/d/1rmGgxOtJeg2HnomUvsrXdHhg0OTF8h4N)
 - [ ] Write Manual in Hack.MD
 - [ ] Store "Simple RESTful Client" & "F.U.C.K profile editor" form state while changing to other page
+- [ ] Loading Animation while waiting for response in "Simple RESTful Client"
 - [ ] Excel file writer(Advanced function)
 - [ ] Save F.U.C.K response as txt/Word/PDF files
 - [ ] Convert Excel(.xlsx) to csv if possible
