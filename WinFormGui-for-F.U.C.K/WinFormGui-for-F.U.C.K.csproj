@@ -611,6 +611,7 @@
     <Content Include="FHIR-Universal-Conversion-Kit\src\lib\fuck\resources.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="fuck-logo_32x48x64x128x.ico" />
     <Content Include="icons8_user_shield.ico" />
     <None Include="Resources\fuck-logo.png" />
   </ItemGroup>

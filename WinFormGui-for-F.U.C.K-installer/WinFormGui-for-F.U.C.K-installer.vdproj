@@ -69,6 +69,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_0B2ADA7B18944A04BEE00F6CA7B61075"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1109A52AF0220537D4BD45CAC1192763"
         "OwnerKey" = "8:_9B1C266629FF48C3A03F8CF4F1DF20A5"
         "MsmSig" = "8:_UNDEFINED"
@@ -1991,6 +1997,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0B2ADA7B18944A04BEE00F6CA7B61075"
+            {
+            "SourcePath" = "8:..\\WinFormGui-for-F.U.C.K\\fuck-logo_32x48x64x128x.ico"
+            "TargetName" = "8:fuck-logo_32x48x64x128x.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43283CCBB4DA4CAE872084F02D1406C1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1109A52AF0220537D4BD45CAC1192763"
@@ -5636,6 +5662,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_8C4E7F55FFD84F6C8903E438676E2F5B"
+                    {
+                    "Name" = "8:WinFormGui-for-F.U.C.K"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_9DE2C2A6FCA6412BB713DD323D3D5D82"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_7C78D8E51AB34CAC9CE13D56D8DBAE34"
@@ -5665,16 +5702,16 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WinFormGui-for-F.U.C.K-installer"
-        "ProductCode" = "8:{1A18C080-DA31-4518-AC2E-B7BBAC3693F7}"
-        "PackageCode" = "8:{F7776334-FE86-49C5-BD7E-92DC9AFD04F1}"
+        "ProductCode" = "8:{B55B49A4-E903-4E6A-B352-E33E2D861ED0}"
+        "PackageCode" = "8:{BE4B8745-9740-43B0-9222-6278AFA77F5E}"
         "UpgradeCode" = "8:{39DB9675-7ECC-464C-A2AA-5AE1C98C72CD}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.6"
-        "Manufacturer" = "8:NTUNHS"
+        "ProductVersion" = "8:1.0.7"
+        "Manufacturer" = "8:NTUNHS-CyLab"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:WinFormGui-for-F.U.C.K-installer"
@@ -5797,21 +5834,35 @@
             "Target" = "8:_9B1C266629FF48C3A03F8CF4F1DF20A5"
             "Folder" = "8:_7C78D8E51AB34CAC9CE13D56D8DBAE34"
             "WorkingFolder" = "8:_43283CCBB4DA4CAE872084F02D1406C1"
-            "Icon" = "8:"
+            "Icon" = "8:_0B2ADA7B18944A04BEE00F6CA7B61075"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E32231A2D3754DBB99B3CC85CBBF749A"
             {
             "Name" = "8:uninstall WinFormGui-for-F.U.C.K"
-            "Arguments" = "8:/x {1A18C080-DA31-4518-AC2E-B7BBAC3693F7}"
+            "Arguments" = "8:/x {B55B49A4-E903-4E6A-B352-E33E2D861ED0}"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_EBEBA3ADE0974B60821BF06923501BC5"
-            "Folder" = "8:_5BA58CA0F7784C31A63DC3BE3ABEFC2E"
+            "Folder" = "8:_8C4E7F55FFD84F6C8903E438676E2F5B"
             "WorkingFolder" = "8:_43283CCBB4DA4CAE872084F02D1406C1"
             "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F498D14A6B38419FBB6D7D9AFBB79D75"
+            {
+            "Name" = "8:WinFormGui-for-F.U.C.K"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_9B1C266629FF48C3A03F8CF4F1DF20A5"
+            "Folder" = "8:_8C4E7F55FFD84F6C8903E438676E2F5B"
+            "WorkingFolder" = "8:_43283CCBB4DA4CAE872084F02D1406C1"
+            "Icon" = "8:_0B2ADA7B18944A04BEE00F6CA7B61075"
             "Feature" = "8:"
             }
         }
