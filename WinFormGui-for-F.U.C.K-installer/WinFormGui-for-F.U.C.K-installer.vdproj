@@ -904,12 +904,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EBA9EC56AECE062D7758B563AEE1D33E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_9B1C266629FF48C3A03F8CF4F1DF20A5"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1657,6 +1651,12 @@
         "OwnerKey" = "8:_C535CF9FE3B12EB1E29680E5A2F9D033"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_EBA9EC56AECE062D7758B563AEE1D33E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -1675,6 +1675,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -1691,6 +1707,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -5702,15 +5726,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WinFormGui-for-F.U.C.K-installer"
-        "ProductCode" = "8:{E325B207-98A2-41B9-9629-B126DA0B9751}"
-        "PackageCode" = "8:{521A158C-CFCD-4A8B-A74C-BDBE7A36028A}"
+        "ProductCode" = "8:{D45178C5-29A4-42E7-8C60-6A5CDD59C837}"
+        "PackageCode" = "8:{43C08E6F-8F04-4659-9047-F3F96CE87424}"
         "UpgradeCode" = "8:{39DB9675-7ECC-464C-A2AA-5AE1C98C72CD}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.8"
+        "ProductVersion" = "8:1.1.0"
         "Manufacturer" = "8:NTUNHS-CyLab"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -5840,7 +5864,7 @@
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E32231A2D3754DBB99B3CC85CBBF749A"
             {
             "Name" = "8:uninstall WinFormGui-for-F.U.C.K"
-            "Arguments" = "8:/x {E325B207-98A2-41B9-9629-B126DA0B9751}"
+            "Arguments" = "8:/x {D45178C5-29A4-42E7-8C60-6A5CDD59C837}"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
