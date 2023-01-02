@@ -42,6 +42,7 @@
             this.sbtn_business_income = new System.Windows.Forms.Button();
             this.sbtn_cusInfo = new System.Windows.Forms.Button();
             this.btn_business = new System.Windows.Forms.Button();
+            this.debugBtn = new System.Windows.Forms.Button();
             this.btn_csv2json = new System.Windows.Forms.Button();
             this.panel_ExcelSubMenu = new System.Windows.Forms.Panel();
             this.sbtn_Excel_Editor = new System.Windows.Forms.Button();
@@ -65,7 +66,6 @@
             this.label_logOut = new System.Windows.Forms.Label();
             this.panel_childForm = new System.Windows.Forms.Panel();
             this.timer_time = new System.Windows.Forms.Timer(this.components);
-            this.debugBtn = new System.Windows.Forms.Button();
             this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_bigMenu.SuspendLayout();
@@ -261,6 +261,25 @@
             this.btn_business.UseVisualStyleBackColor = true;
             this.btn_business.Visible = false;
             this.btn_business.Click += new System.EventHandler(this.btn_attendance_Click);
+            // 
+            // debugBtn
+            // 
+            this.debugBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.debugBtn.FlatAppearance.BorderSize = 0;
+            this.debugBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.debugBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.debugBtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.debugBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.debugBtn.Location = new System.Drawing.Point(0, 728);
+            this.debugBtn.Name = "debugBtn";
+            this.debugBtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.debugBtn.Size = new System.Drawing.Size(226, 55);
+            this.debugBtn.TabIndex = 18;
+            this.debugBtn.Text = "  Debug按鈕";
+            this.debugBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.debugBtn.UseVisualStyleBackColor = true;
+            this.debugBtn.Visible = false;
+            this.debugBtn.Click += new System.EventHandler(this.debugBtn_Click);
             // 
             // btn_csv2json
             // 
@@ -593,24 +612,6 @@
             // timer_time
             // 
             this.timer_time.Tick += new System.EventHandler(this.timer_time_Tick);
-            // 
-            // debugBtn
-            // 
-            this.debugBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.debugBtn.FlatAppearance.BorderSize = 0;
-            this.debugBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.debugBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.debugBtn.ForeColor = System.Drawing.Color.Gainsboro;
-            this.debugBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.debugBtn.Location = new System.Drawing.Point(0, 728);
-            this.debugBtn.Name = "debugBtn";
-            this.debugBtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.debugBtn.Size = new System.Drawing.Size(226, 55);
-            this.debugBtn.TabIndex = 18;
-            this.debugBtn.Text = "  Debug按鈕";
-            this.debugBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.debugBtn.UseVisualStyleBackColor = true;
-            this.debugBtn.Click += new System.EventHandler(this.debugBtn_Click);
             // 
             // Form_Main
             // 
