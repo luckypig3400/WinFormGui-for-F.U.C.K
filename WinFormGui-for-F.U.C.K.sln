@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormGui-for-F.U.C.K", "WinFormGui-for-F.U.C.K\WinFormGui-for-F.U.C.K.csproj", "{054ABE9D-5E00-4E1E-A5B0-FA31884DA73D}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WinFormGui-for-F.U.C.K-installer", "WinFormGui-for-F.U.C.K-installer\WinFormGui-for-F.U.C.K-installer.vdproj", "{826C45F5-72B2-4C2B-85CD-986AE72A29DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,8 @@ Global
 		{054ABE9D-5E00-4E1E-A5B0-FA31884DA73D}.Debug|x86.Build.0 = Debug|x86
 		{054ABE9D-5E00-4E1E-A5B0-FA31884DA73D}.Release|x86.ActiveCfg = Release|x86
 		{054ABE9D-5E00-4E1E-A5B0-FA31884DA73D}.Release|x86.Build.0 = Release|x86
+		{826C45F5-72B2-4C2B-85CD-986AE72A29DC}.Debug|x86.ActiveCfg = Debug
+		{826C45F5-72B2-4C2B-85CD-986AE72A29DC}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
