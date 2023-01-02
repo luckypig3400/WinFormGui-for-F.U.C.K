@@ -90,7 +90,8 @@ namespace WFGF.U.C.K.childForm
                 File.WriteAllText(filePath, fileContent);
                 // https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file
                 
-                MessageBox.Show("檔案順利儲存!\n ヾ(≧▽≦*)o");
+                MessageBox.Show("檔案順利儲存! ヾ(≧▽≦*)o\n\n記得要 重啟F.U.C.K服務 更動的文件才會生效",
+                    "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch {
                 MessageBox.Show("檔案可能正被其他程式占用中或是檔案路徑有誤\n\n請檢查路徑是否存在及關閉可能正在使用該檔案的程式!",
