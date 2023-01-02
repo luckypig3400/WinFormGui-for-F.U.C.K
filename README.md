@@ -18,7 +18,7 @@
 
 ## How to Use
 
-### See the User Manual in [HackMD](#wait-for-doc-link)
+### See the User Manual in [HackMD](https://hackmd.io/@LuckyPig/WinFormGui-for-FUCK_manual)
 
 ## 😸 Special Thanks 🎉
 ### [FHIR-Universal-Conversion-Kit (F.U.C.K)](https://github.com/Lorex/FHIR-Universal-Conversion-Kit)
@@ -35,9 +35,9 @@ So many thanks to the author: [Lorex](https://github.com/Lorex), who created thi
 - [x] Excel file reader
 - [x] CSV to Payload JSON Converter
 - [x] Install Setup package (https://docs.google.com/presentation/d/1rmGgxOtJeg2HnomUvsrXdHhg0OTF8h4N)
-- [ ] Fix install with Setup.exe can't run npm install for F.U.C.K packages
+- [x] Fix install with Setup.exe can't run npm install for F.U.C.K packages
 - [x] Create Manual in Hack.MD
-- [ ] Write Manual in Hack.MD
+- [x] Write Manual in Hack.MD
 - [ ] Store "Simple RESTful Client" & "F.U.C.K profile editor" form state while changing to other page
 - [ ] Loading Animation while waiting for response in "Simple RESTful Client"
 - [ ] Excel file writer(Advanced function)
