@@ -114,10 +114,10 @@ namespace WFGF.U.C.K
             {
                 if (item is Form)
                 {
-                    if (((Form)item).Name == "childForm_simpleRestClient")
+                    if (((Form)item).Name == "childForm_simpleRestClient" || ((Form)item).Name == "childForm_editFUCKprofiles")
                     {
                         ((Form)item).Visible = false;
-                        // 不關閉Simple Rest Client的視窗
+                        // 不關閉Simple Rest Client的以及F.U.C.K Profile編輯器的視窗
                     }
                     else
                         ((Form)item).Close();
@@ -152,11 +152,23 @@ namespace WFGF.U.C.K
             showSubMenu(panel_businessSubMenu);
         }
 
+        childForm_editFUCKprofiles profileEditorForm;
+
         private void btn_FUCKprofileEditor_Click(object sender, EventArgs e)
         {
             selectedBackground(btn_FUCKprofileEditor);
-            childForm_editFUCKprofiles frm = new childForm_editFUCKprofiles();
-            openChildForm(frm); 
+
+            if (!GlobalData.profileEditorFormHasBeenOpened)
+            {
+                profileEditorForm = new childForm_editFUCKprofiles();
+                openChildForm(profileEditorForm);
+                GlobalData.profileEditorFormHasBeenOpened = true;
+            }
+            else
+            {
+                profileEditorForm.reloadEditorTheme();
+                profileEditorForm.Visible = true;
+            }
         }
 
         private void btn_csv2json_Click(object sender, EventArgs e)
@@ -333,8 +345,8 @@ namespace WFGF.U.C.K
             }
             else
             {
-                restClientForm.Visible = true;
                 restClientForm.reloadTheme();
+                restClientForm.Visible = true;
             }
         }
 
