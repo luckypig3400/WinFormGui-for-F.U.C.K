@@ -38,7 +38,7 @@ So many thanks to the author: [Lorex](https://github.com/Lorex), who created thi
 - [x] Fix install with Setup.exe can't run npm install for F.U.C.K packages
 - [x] Create Manual in Hack.MD
 - [x] Write Manual in Hack.MD
-- [ ] Store "Simple RESTful Client" & "F.U.C.K profile editor" form state while changing to other page
+- [x] Store "Simple RESTful Client" & "F.U.C.K profile editor" form state while changing to other page
 - [ ] Loading Animation while waiting for response in "Simple RESTful Client"
 - [ ] Excel file writer(Advanced function)
 - [ ] Save F.U.C.K response as txt/Word/PDF files
