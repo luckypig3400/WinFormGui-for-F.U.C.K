@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.panel_center = new System.Windows.Forms.Panel();
+            this.loadExampleJSONBtn = new MaterialSkin.Controls.MaterialButton();
+            this.sendRequestBtn = new MaterialSkin.Controls.MaterialButton();
+            this.requestURL = new MaterialSkin.Controls.MaterialTextBox();
+            this.requestMethod = new MaterialSkin.Controls.MaterialComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_bottom = new System.Windows.Forms.Panel();
-            this.requestMethod = new MaterialSkin.Controls.MaterialComboBox();
-            this.requestURL = new MaterialSkin.Controls.MaterialTextBox();
-            this.sendRequestBtn = new MaterialSkin.Controls.MaterialButton();
-            this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
-            this.jsonInputTextbox = new System.Windows.Forms.RichTextBox();
             this.responseOutputTextBox = new System.Windows.Forms.RichTextBox();
-            this.loadExampleJSONBtn = new MaterialSkin.Controls.MaterialButton();
+            this.jsonInputTextbox = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.panel_center.SuspendLayout();
             this.panel_bottom.SuspendLayout();
@@ -57,6 +57,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1054, 44);
             this.panel1.TabIndex = 3;
+            // 
+            // enableDarkThemeSwitch
+            // 
+            this.enableDarkThemeSwitch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.enableDarkThemeSwitch.AutoSize = true;
+            this.enableDarkThemeSwitch.Depth = 0;
+            this.enableDarkThemeSwitch.Location = new System.Drawing.Point(870, 4);
+            this.enableDarkThemeSwitch.Margin = new System.Windows.Forms.Padding(0);
+            this.enableDarkThemeSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.enableDarkThemeSwitch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.enableDarkThemeSwitch.Name = "enableDarkThemeSwitch";
+            this.enableDarkThemeSwitch.Ripple = true;
+            this.enableDarkThemeSwitch.Size = new System.Drawing.Size(154, 37);
+            this.enableDarkThemeSwitch.TabIndex = 1;
+            this.enableDarkThemeSwitch.Text = "啟用深色模式";
+            this.enableDarkThemeSwitch.UseVisualStyleBackColor = true;
+            this.enableDarkThemeSwitch.CheckedChanged += new System.EventHandler(this.enableDarkThemeSwitch_CheckedChanged);
             // 
             // materialLabel1
             // 
@@ -84,82 +101,26 @@
             this.panel_center.Size = new System.Drawing.Size(1054, 89);
             this.panel_center.TabIndex = 53;
             // 
-            // label1
+            // loadExampleJSONBtn
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(828, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 20);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "Reponse (F.U.C.K的回傳結果)";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(3, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(310, 20);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "Request (請注意! 只提供傳遞JSON的功能)";
-            // 
-            // panel_bottom
-            // 
-            this.panel_bottom.Controls.Add(this.responseOutputTextBox);
-            this.panel_bottom.Controls.Add(this.jsonInputTextbox);
-            this.panel_bottom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_bottom.Location = new System.Drawing.Point(3, 197);
-            this.panel_bottom.Name = "panel_bottom";
-            this.panel_bottom.Size = new System.Drawing.Size(1054, 510);
-            this.panel_bottom.TabIndex = 54;
-            // 
-            // requestMethod
-            // 
-            this.requestMethod.AutoResize = false;
-            this.requestMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.requestMethod.Depth = 0;
-            this.requestMethod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.requestMethod.DropDownHeight = 174;
-            this.requestMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.requestMethod.DropDownWidth = 121;
-            this.requestMethod.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.requestMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.requestMethod.FormattingEnabled = true;
-            this.requestMethod.IntegralHeight = false;
-            this.requestMethod.ItemHeight = 43;
-            this.requestMethod.Items.AddRange(new object[] {
-            "POST",
-            "GET"});
-            this.requestMethod.Location = new System.Drawing.Point(16, 6);
-            this.requestMethod.MaxDropDownItems = 4;
-            this.requestMethod.MouseState = MaterialSkin.MouseState.OUT;
-            this.requestMethod.Name = "requestMethod";
-            this.requestMethod.Size = new System.Drawing.Size(121, 49);
-            this.requestMethod.StartIndex = 0;
-            this.requestMethod.TabIndex = 53;
-            // 
-            // requestURL
-            // 
-            this.requestURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.requestURL.AnimateReadOnly = false;
-            this.requestURL.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.requestURL.Depth = 0;
-            this.requestURL.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.requestURL.LeadingIcon = null;
-            this.requestURL.Location = new System.Drawing.Point(156, 5);
-            this.requestURL.MaxLength = 65536;
-            this.requestURL.MouseState = MaterialSkin.MouseState.OUT;
-            this.requestURL.Multiline = false;
-            this.requestURL.Name = "requestURL";
-            this.requestURL.Size = new System.Drawing.Size(695, 50);
-            this.requestURL.TabIndex = 54;
-            this.requestURL.Text = "http://localhost:1337";
-            this.requestURL.TrailingIcon = null;
+            this.loadExampleJSONBtn.AutoSize = false;
+            this.loadExampleJSONBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.loadExampleJSONBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.loadExampleJSONBtn.Depth = 0;
+            this.loadExampleJSONBtn.HighEmphasis = true;
+            this.loadExampleJSONBtn.Icon = null;
+            this.loadExampleJSONBtn.Location = new System.Drawing.Point(333, 61);
+            this.loadExampleJSONBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.loadExampleJSONBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loadExampleJSONBtn.Name = "loadExampleJSONBtn";
+            this.loadExampleJSONBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.loadExampleJSONBtn.Size = new System.Drawing.Size(180, 25);
+            this.loadExampleJSONBtn.TabIndex = 56;
+            this.loadExampleJSONBtn.Text = "載入測試用範例JSON";
+            this.loadExampleJSONBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.loadExampleJSONBtn.UseAccentColor = false;
+            this.loadExampleJSONBtn.UseVisualStyleBackColor = true;
+            this.loadExampleJSONBtn.Click += new System.EventHandler(this.loadExampleJSONBtn_Click);
             // 
             // sendRequestBtn
             // 
@@ -183,32 +144,82 @@
             this.sendRequestBtn.UseVisualStyleBackColor = true;
             this.sendRequestBtn.Click += new System.EventHandler(this.sendRequestBtn_Click);
             // 
-            // enableDarkThemeSwitch
+            // requestURL
             // 
-            this.enableDarkThemeSwitch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.enableDarkThemeSwitch.AutoSize = true;
-            this.enableDarkThemeSwitch.Depth = 0;
-            this.enableDarkThemeSwitch.Location = new System.Drawing.Point(870, 4);
-            this.enableDarkThemeSwitch.Margin = new System.Windows.Forms.Padding(0);
-            this.enableDarkThemeSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.enableDarkThemeSwitch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.enableDarkThemeSwitch.Name = "enableDarkThemeSwitch";
-            this.enableDarkThemeSwitch.Ripple = true;
-            this.enableDarkThemeSwitch.Size = new System.Drawing.Size(154, 37);
-            this.enableDarkThemeSwitch.TabIndex = 1;
-            this.enableDarkThemeSwitch.Text = "啟用深色模式";
-            this.enableDarkThemeSwitch.UseVisualStyleBackColor = true;
-            this.enableDarkThemeSwitch.CheckedChanged += new System.EventHandler(this.enableDarkThemeSwitch_CheckedChanged);
+            this.requestURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.requestURL.AnimateReadOnly = false;
+            this.requestURL.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.requestURL.Depth = 0;
+            this.requestURL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
+            this.requestURL.LeadingIcon = null;
+            this.requestURL.Location = new System.Drawing.Point(156, 5);
+            this.requestURL.MaxLength = 65536;
+            this.requestURL.MouseState = MaterialSkin.MouseState.OUT;
+            this.requestURL.Multiline = false;
+            this.requestURL.Name = "requestURL";
+            this.requestURL.Size = new System.Drawing.Size(695, 50);
+            this.requestURL.TabIndex = 54;
+            this.requestURL.Text = "http://localhost:1337";
+            this.requestURL.TrailingIcon = null;
             // 
-            // jsonInputTextbox
+            // requestMethod
             // 
-            this.jsonInputTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.jsonInputTextbox.Location = new System.Drawing.Point(3, 3);
-            this.jsonInputTextbox.Name = "jsonInputTextbox";
-            this.jsonInputTextbox.Size = new System.Drawing.Size(510, 504);
-            this.jsonInputTextbox.TabIndex = 0;
-            this.jsonInputTextbox.Text = "";
+            this.requestMethod.AutoResize = false;
+            this.requestMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.requestMethod.Depth = 0;
+            this.requestMethod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.requestMethod.DropDownHeight = 174;
+            this.requestMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.requestMethod.DropDownWidth = 121;
+            this.requestMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.requestMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.requestMethod.FormattingEnabled = true;
+            this.requestMethod.IntegralHeight = false;
+            this.requestMethod.ItemHeight = 43;
+            this.requestMethod.Items.AddRange(new object[] {
+            "POST",
+            "GET"});
+            this.requestMethod.Location = new System.Drawing.Point(16, 6);
+            this.requestMethod.MaxDropDownItems = 4;
+            this.requestMethod.MouseState = MaterialSkin.MouseState.OUT;
+            this.requestMethod.Name = "requestMethod";
+            this.requestMethod.Size = new System.Drawing.Size(121, 49);
+            this.requestMethod.StartIndex = 0;
+            this.requestMethod.TabIndex = 53;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(828, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(279, 25);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Reponse (F.U.C.K的回傳結果)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(3, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(389, 25);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Request (請注意! 只提供傳遞JSON的功能)";
+            // 
+            // panel_bottom
+            // 
+            this.panel_bottom.Controls.Add(this.responseOutputTextBox);
+            this.panel_bottom.Controls.Add(this.jsonInputTextbox);
+            this.panel_bottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_bottom.Location = new System.Drawing.Point(3, 197);
+            this.panel_bottom.Name = "panel_bottom";
+            this.panel_bottom.Size = new System.Drawing.Size(1054, 510);
+            this.panel_bottom.TabIndex = 54;
             // 
             // responseOutputTextBox
             // 
@@ -221,26 +232,15 @@
             this.responseOutputTextBox.TabIndex = 1;
             this.responseOutputTextBox.Text = "";
             // 
-            // loadExampleJSONBtn
+            // jsonInputTextbox
             // 
-            this.loadExampleJSONBtn.AutoSize = false;
-            this.loadExampleJSONBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.loadExampleJSONBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.loadExampleJSONBtn.Depth = 0;
-            this.loadExampleJSONBtn.HighEmphasis = true;
-            this.loadExampleJSONBtn.Icon = null;
-            this.loadExampleJSONBtn.Location = new System.Drawing.Point(333, 61);
-            this.loadExampleJSONBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.loadExampleJSONBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.loadExampleJSONBtn.Name = "loadExampleJSONBtn";
-            this.loadExampleJSONBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.loadExampleJSONBtn.Size = new System.Drawing.Size(180, 25);
-            this.loadExampleJSONBtn.TabIndex = 56;
-            this.loadExampleJSONBtn.Text = "載入測試用範例JSON";
-            this.loadExampleJSONBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.loadExampleJSONBtn.UseAccentColor = false;
-            this.loadExampleJSONBtn.UseVisualStyleBackColor = true;
-            this.loadExampleJSONBtn.Click += new System.EventHandler(this.loadExampleJSONBtn_Click);
+            this.jsonInputTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.jsonInputTextbox.Location = new System.Drawing.Point(3, 3);
+            this.jsonInputTextbox.Name = "jsonInputTextbox";
+            this.jsonInputTextbox.Size = new System.Drawing.Size(510, 504);
+            this.jsonInputTextbox.TabIndex = 0;
+            this.jsonInputTextbox.Text = "";
             // 
             // childForm_simpleRestClient
             // 
@@ -252,6 +252,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "childForm_simpleRestClient";
             this.Text = "childForm_simpleRestClient";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.childForm_simpleRestClient_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel_center.ResumeLayout(false);

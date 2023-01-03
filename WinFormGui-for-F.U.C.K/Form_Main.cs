@@ -319,17 +319,17 @@ namespace WFGF.U.C.K
             }
         }
 
-        childForm_simpleRestClient restClientForm = new childForm_simpleRestClient();
-        bool restClientFormHasBeenOpened = false;
+        childForm_simpleRestClient restClientForm;
 
         private void btn_simpleRestCleint_Click(object sender, EventArgs e)
         {
             selectedBackground(btn_simpleRestCleint);
 
-            if (!restClientFormHasBeenOpened)
+            if (!GlobalData.restClientFormHasBeenOpened)
             {
+                restClientForm = new childForm_simpleRestClient();
                 openChildForm(restClientForm);
-                restClientFormHasBeenOpened = true;
+                GlobalData.restClientFormHasBeenOpened = true;
             }
             else
             {

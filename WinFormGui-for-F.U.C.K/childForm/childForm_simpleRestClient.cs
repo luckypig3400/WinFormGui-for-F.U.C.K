@@ -104,5 +104,10 @@ namespace WFGF.U.C.K.childForm
 
             jsonInputTextbox.Text = exampleJsonString;
         }
+
+        private void childForm_simpleRestClient_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            GlobalData.restClientFormHasBeenOpened = false;
+        }
     }
 }
