@@ -11,6 +11,7 @@ using MySql.Data.MySqlClient;
 using WFGF.U.C.K.childForm;
 using System.Diagnostics;
 using WinFormGuiForF.U.C.K.childForm;
+using System.IO;
 
 namespace WFGF.U.C.K
 {
@@ -370,6 +371,23 @@ namespace WFGF.U.C.K
             selectedBackground(sbtn_Excel_Editor);
             childForm_developing frm = new childForm_developing();
             openChildForm(frm);
+
+            DialogResult confirmResult = MessageBox.Show("功能開發中...\n請您先自行用辦公軟體編輯\n\n請問是否要打開系統內建的\nTWcore Excel範例文件資料夾?",
+                "info", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (confirmResult == DialogResult.Yes)
+            {
+                // open folder
+                string folderPath = Directory.GetCurrentDirectory().ToString() + @"/FHIR-Universal-Conversion-Kit/twcore";
+                try
+                {
+                    Process.Start(folderPath);
+                    // https://stackoverflow.com/questions/1132422/open-a-folder-using-process-start
+                }
+                catch {
+                    MessageBox.Show("檔案或資料夾路徑可能遺失了", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void debugBtn_Click(object sender, EventArgs e)
