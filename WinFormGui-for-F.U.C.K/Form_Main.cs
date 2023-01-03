@@ -114,7 +114,13 @@ namespace WFGF.U.C.K
             {
                 if (item is Form)
                 {
-                    ((Form)item).Close();
+                    if (((Form)item).Name == "childForm_simpleRestClient")
+                    {
+                        ((Form)item).Visible = false;
+                        // 不關閉Simple Rest Client的視窗
+                    }
+                    else
+                        ((Form)item).Close();
                 }
             }
             childForm.TopLevel = false;
@@ -313,11 +319,22 @@ namespace WFGF.U.C.K
             }
         }
 
+        childForm_simpleRestClient restClientForm = new childForm_simpleRestClient();
+        bool restClientFormHasBeenOpened = false;
+
         private void btn_simpleRestCleint_Click(object sender, EventArgs e)
         {
             selectedBackground(btn_simpleRestCleint);
-            childForm_simpleRestClient frm = new childForm_simpleRestClient();
-            openChildForm(frm);
+
+            if (!restClientFormHasBeenOpened)
+            {
+                openChildForm(restClientForm);
+                restClientFormHasBeenOpened = true;
+            }
+            else
+            {
+                restClientForm.Visible = true;
+            }
         }
 
         private void btn_Excel_Click(object sender, EventArgs e)
