@@ -135,5 +135,10 @@ namespace WFGF.U.C.K.childForm
                 fileEditorTextbox.Text = fileContent;
             }
         }
+
+        private void childForm_editFUCKprofiles_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            GlobalData.profileEditorFormHasBeenOpened = false;
+        }
     }
 }

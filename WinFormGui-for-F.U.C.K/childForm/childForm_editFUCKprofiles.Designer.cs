@@ -125,7 +125,7 @@
             this.currentFilePathOutput.AnimateReadOnly = false;
             this.currentFilePathOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.currentFilePathOutput.Depth = 0;
-            this.currentFilePathOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.currentFilePathOutput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.currentFilePathOutput.LeadingIcon = null;
             this.currentFilePathOutput.Location = new System.Drawing.Point(45, 225);
             this.currentFilePathOutput.MaxLength = 65536;
@@ -323,6 +323,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "childForm_editFUCKprofiles";
             this.Text = "childForm_editFUCKprofiles";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.childForm_editFUCKprofiles_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
