@@ -25,6 +25,19 @@ namespace WFGF.U.C.K.childForm
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
         }
 
+        public void reloadTheme()
+        {
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
+
+            if (enableDarkThemeSwitch.Checked)
+                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            else
+                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+        }
+
         MaterialSkinManager themeManager = MaterialSkinManager.Instance;
 
         private void enableDarkThemeSwitch_CheckedChanged(object sender, EventArgs e)

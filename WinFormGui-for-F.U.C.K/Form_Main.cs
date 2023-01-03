@@ -334,6 +334,7 @@ namespace WFGF.U.C.K
             else
             {
                 restClientForm.Visible = true;
+                restClientForm.reloadTheme();
             }
         }
 
