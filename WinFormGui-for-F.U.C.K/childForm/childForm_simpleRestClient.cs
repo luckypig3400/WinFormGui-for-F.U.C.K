@@ -53,7 +53,8 @@ namespace WFGF.U.C.K.childForm
 
         private async void sendRequestBtn_Click(object sender, EventArgs e)
         {
-            if("POST" == requestMethod.SelectedItem.ToString())
+            responseOutputTextBox.Text = "Waiting for server response...";
+            if ("POST" == requestMethod.SelectedItem.ToString())
             {
                 string jsonString = jsonInputTextbox.Text;
                 var postData = new StringContent(jsonString, Encoding.UTF8, "application/json");
@@ -69,6 +70,7 @@ namespace WFGF.U.C.K.childForm
                 {
                     MessageBox.Show("F.U.C.K服務沒有回應\n請檢查是否已正確啟動F.U.C.K\n或是URL是否填寫正確",
                         "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    responseOutputTextBox.Text = "";
                 }
             }
             else if("GET" == requestMethod.SelectedItem.ToString())
@@ -83,6 +85,7 @@ namespace WFGF.U.C.K.childForm
                 {
                     MessageBox.Show(getError.ToString(), "GET Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    responseOutputTextBox.Text = "";
                 }
             }
         }
