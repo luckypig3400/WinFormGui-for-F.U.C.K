@@ -43,3 +43,4 @@ So many thanks to the author: [Lorex](https://github.com/Lorex), who created thi
 - [ ] Excel file writer(Advanced function)
 - [ ] Save F.U.C.K response as txt/Word/PDF files
 - [ ] Convert Excel(.xlsx) to csv if possible
+- [ ] Try to add json prettier for RichTextBox
