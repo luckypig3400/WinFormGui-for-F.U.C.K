@@ -60,7 +60,7 @@ namespace WFGF.U.C.K.childForm
             }
         }
 
-        string subFolderPath = @".\FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\";
+        string subFolderPath = @".\FHIR-Universal-Conversion-Kit\Excel-templates\TWCR\";
 
         private void fileListComboBox_Click(object sender, EventArgs e)
         {
@@ -160,11 +160,13 @@ namespace WFGF.U.C.K.childForm
         private void TWcoreFolderBTN_Click(object sender, EventArgs e)
         {
             subFolderPath = @".\FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\";
+            fileListComboBox_Click(sender, e); // refresh comboBox list items
         }
 
         private void TWCRfolderBTN_Click(object sender, EventArgs e)
         {
             subFolderPath = @".\FHIR-Universal-Conversion-Kit\Excel-templates\TWCR\";
+            fileListComboBox_Click(sender, e); // refresh comboBox list items
         }
     }
 }
