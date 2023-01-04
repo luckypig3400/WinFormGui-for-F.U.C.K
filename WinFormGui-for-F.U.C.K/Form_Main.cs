@@ -278,25 +278,19 @@ namespace WFGF.U.C.K
             label_time.Text = nowTime.ToString();
         }
 
-        private void label_logOut_Click(object sender, EventArgs e)
+        private void label_Lily_Click(object sender, EventArgs e)
         {
-            // Form_sign frm_sign = new Form_sign();
-            // frm_sign.Show();//不能用ShowDialog()
-
-            // 原本模板有登入介面，刪除後改為直接離開此程式
-            kill_FUCK_servirce(); // 離開APP前關閉F.U.C.K
-            this.Close();
-            this.Dispose();
+            MessageBox.Show("o((>ω< ))o", "Lily ❤️");
         }
 
-        private void label_logOut_MouseMove(object sender, MouseEventArgs e)
+        private void label_lily_MouseMove(object sender, MouseEventArgs e)
         {
-            label_logOut.ForeColor = Color.Red;
+            label_lily.ForeColor = Color.Red;
         }
 
-        private void label_logOut_MouseLeave(object sender, EventArgs e)
+        private void label_lily_MouseLeave(object sender, EventArgs e)
         {
-            label_logOut.ForeColor = Color.White;
+            label_lily.ForeColor = Color.White;
         }
 
         private void btn_close_MouseMove(object sender, MouseEventArgs e)

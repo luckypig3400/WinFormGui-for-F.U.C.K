@@ -63,7 +63,7 @@
             this.panel_bottom = new System.Windows.Forms.Panel();
             this.label_time = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label_logOut = new System.Windows.Forms.Label();
+            this.label_lily = new System.Windows.Forms.Label();
             this.panel_childForm = new System.Windows.Forms.Panel();
             this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.panel_top.SuspendLayout();
@@ -555,7 +555,7 @@
             this.panel_bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(37)))), ((int)(((byte)(70)))));
             this.panel_bottom.Controls.Add(this.label_time);
             this.panel_bottom.Controls.Add(this.label2);
-            this.panel_bottom.Controls.Add(this.label_logOut);
+            this.panel_bottom.Controls.Add(this.label_lily);
             this.panel_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_bottom.Location = new System.Drawing.Point(247, 760);
             this.panel_bottom.Name = "panel_bottom";
@@ -585,20 +585,20 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "C# Windows Form GUI for FHIR-Universal-Conversion-Kit";
             // 
-            // label_logOut
+            // label_lily
             // 
-            this.label_logOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_logOut.AutoSize = true;
-            this.label_logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_logOut.ForeColor = System.Drawing.Color.White;
-            this.label_logOut.Location = new System.Drawing.Point(947, 9);
-            this.label_logOut.Name = "label_logOut";
-            this.label_logOut.Size = new System.Drawing.Size(82, 25);
-            this.label_logOut.TabIndex = 0;
-            this.label_logOut.Text = "F.U.C.K";
-            this.label_logOut.Click += new System.EventHandler(this.label_logOut_Click);
-            this.label_logOut.MouseLeave += new System.EventHandler(this.label_logOut_MouseLeave);
-            this.label_logOut.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label_logOut_MouseMove);
+            this.label_lily.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_lily.AutoSize = true;
+            this.label_lily.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_lily.ForeColor = System.Drawing.Color.White;
+            this.label_lily.Location = new System.Drawing.Point(921, 9);
+            this.label_lily.Name = "label_lily";
+            this.label_lily.Size = new System.Drawing.Size(105, 25);
+            this.label_lily.TabIndex = 0;
+            this.label_lily.Text = "Lily Edition";
+            this.label_lily.Click += new System.EventHandler(this.label_Lily_Click);
+            this.label_lily.MouseLeave += new System.EventHandler(this.label_lily_MouseLeave);
+            this.label_lily.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label_lily_MouseMove);
             // 
             // panel_childForm
             // 
@@ -667,7 +667,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel_bottom;
         private System.Windows.Forms.Panel panel_childForm;
-        private System.Windows.Forms.Label label_logOut;
+        private System.Windows.Forms.Label label_lily;
         private System.Windows.Forms.Timer timer_time;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_time;
