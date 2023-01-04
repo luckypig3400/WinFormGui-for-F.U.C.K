@@ -486,55 +486,7 @@
     <Content Include="FHIR-Universal-Conversion-Kit\profile\dental.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\DiagnosticReport.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\encounterMS.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\example.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\example2.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\location.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\medication-TWCore.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\medicationMS.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\medicationRequest-track3-mitw2022.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\medicationRequestMS.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\observationMS.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\organizationMS.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\patient-t1s1.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\patient-t1s2.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\patient-t1s3.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="FHIR-Universal-Conversion-Kit\profile\patientMS.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\practitionerMS.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\profile\procedureMS.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="FHIR-Universal-Conversion-Kit\src\api\controllers\convert.js">
