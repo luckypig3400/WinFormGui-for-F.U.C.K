@@ -396,67 +396,67 @@
     <Content Include="FHIR-Universal-Conversion-Kit\start_server">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Condition.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Condition.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Encounter.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Encounter.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Location.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Location.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Medication.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Medication.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\MedicationRequest.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\MedicationRequest.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Observation.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Observation.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Organization.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Organization.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Patient.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Patient.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Practitioner.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Practitioner.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-empty\Procedure.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-empty\Procedure.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Condition.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Condition.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Encounter.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Encounter.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Location.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Location.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Medication.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Medication.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\MedicationRequest.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\MedicationRequest.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Observation.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Observation.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Organization.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Organization.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Patient.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Patient.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Practitioner.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Practitioner.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\excel-template-with10-sample-data\Procedure.xlsx">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\Procedure.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FHIR-Universal-Conversion-Kit\twcore\how-to-use-twcore.md">
+    <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\how-to-use-twcore.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="FHIR-Universal-Conversion-Kit\.gitignore">
