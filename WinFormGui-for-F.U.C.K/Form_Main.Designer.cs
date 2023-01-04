@@ -358,7 +358,7 @@
             this.btn_Excel.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_Excel.Size = new System.Drawing.Size(226, 55);
             this.btn_Excel.TabIndex = 17;
-            this.btn_Excel.Text = "  TWcore Excel";
+            this.btn_Excel.Text = "  Excel範例文件";
             this.btn_Excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Excel.UseVisualStyleBackColor = true;
             this.btn_Excel.Click += new System.EventHandler(this.btn_Excel_Click);

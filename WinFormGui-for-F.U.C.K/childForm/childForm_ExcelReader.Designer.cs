@@ -33,6 +33,8 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.sheetPickerComboBox = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.currentFilePathOutput = new MaterialSkin.Controls.MaterialTextBox();
@@ -102,6 +104,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.groupBox2.Controls.Add(this.materialButton2);
+            this.groupBox2.Controls.Add(this.materialButton1);
             this.groupBox2.Controls.Add(this.sheetPickerComboBox);
             this.groupBox2.Controls.Add(this.materialLabel4);
             this.groupBox2.Controls.Add(this.currentFilePathOutput);
@@ -113,10 +117,50 @@
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox2.Location = new System.Drawing.Point(7, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(480, 491);
+            this.groupBox2.Size = new System.Drawing.Size(480, 551);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "讀取檔案";
+            // 
+            // materialButton2
+            // 
+            this.materialButton2.AutoSize = false;
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.HighEmphasis = false;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(257, 46);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(186, 41);
+            this.materialButton2.TabIndex = 9;
+            this.materialButton2.Text = "切換至台灣癌登目錄";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSize = false;
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(45, 46);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(186, 41);
+            this.materialButton1.TabIndex = 8;
+            this.materialButton1.Text = "切換至TWcore目錄";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
             // 
             // sheetPickerComboBox
             // 
@@ -132,7 +176,7 @@
             this.sheetPickerComboBox.FormattingEnabled = true;
             this.sheetPickerComboBox.IntegralHeight = false;
             this.sheetPickerComboBox.ItemHeight = 43;
-            this.sheetPickerComboBox.Location = new System.Drawing.Point(49, 417);
+            this.sheetPickerComboBox.Location = new System.Drawing.Point(49, 482);
             this.sheetPickerComboBox.MaxDropDownItems = 4;
             this.sheetPickerComboBox.MouseState = MaterialSkin.MouseState.OUT;
             this.sheetPickerComboBox.Name = "sheetPickerComboBox";
@@ -147,7 +191,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel4.Location = new System.Drawing.Point(45, 382);
+            this.materialLabel4.Location = new System.Drawing.Point(45, 447);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(278, 24);
@@ -161,7 +205,7 @@
             this.currentFilePathOutput.Depth = 0;
             this.currentFilePathOutput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.currentFilePathOutput.LeadingIcon = null;
-            this.currentFilePathOutput.Location = new System.Drawing.Point(49, 321);
+            this.currentFilePathOutput.Location = new System.Drawing.Point(49, 386);
             this.currentFilePathOutput.MaxLength = 65536;
             this.currentFilePathOutput.MouseState = MaterialSkin.MouseState.OUT;
             this.currentFilePathOutput.Multiline = false;
@@ -178,7 +222,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel3.Location = new System.Drawing.Point(45, 286);
+            this.materialLabel3.Location = new System.Drawing.Point(45, 351);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(186, 24);
@@ -193,7 +237,7 @@
             this.loadFileDialogBtn.Depth = 0;
             this.loadFileDialogBtn.HighEmphasis = true;
             this.loadFileDialogBtn.Icon = null;
-            this.loadFileDialogBtn.Location = new System.Drawing.Point(84, 164);
+            this.loadFileDialogBtn.Location = new System.Drawing.Point(84, 229);
             this.loadFileDialogBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.loadFileDialogBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.loadFileDialogBtn.Name = "loadFileDialogBtn";
@@ -220,7 +264,7 @@
             this.fileListComboBox.FormattingEnabled = true;
             this.fileListComboBox.IntegralHeight = false;
             this.fileListComboBox.ItemHeight = 43;
-            this.fileListComboBox.Location = new System.Drawing.Point(45, 90);
+            this.fileListComboBox.Location = new System.Drawing.Point(45, 155);
             this.fileListComboBox.MaxDropDownItems = 4;
             this.fileListComboBox.MouseState = MaterialSkin.MouseState.OUT;
             this.fileListComboBox.Name = "fileListComboBox";
@@ -236,7 +280,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel2.Location = new System.Drawing.Point(45, 41);
+            this.materialLabel2.Location = new System.Drawing.Point(45, 106);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(141, 24);
@@ -257,9 +301,9 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            // https://stackoverflow.com/questions/1247800/how-to-change-the-color-of-winform-datagridview-header
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(561, 599);
             this.dataGridView1.TabIndex = 0;
@@ -300,5 +344,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialComboBox sheetPickerComboBox;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }
