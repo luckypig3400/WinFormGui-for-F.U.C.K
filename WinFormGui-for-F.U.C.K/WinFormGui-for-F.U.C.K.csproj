@@ -459,6 +459,9 @@
     <Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\twcore\how-to-use-twcore.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+	<Content Include="FHIR-Universal-Conversion-Kit\Excel-templates\TWCR\Patient_Profile.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="FHIR-Universal-Conversion-Kit\.gitignore">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -489,7 +492,7 @@
     <Content Include="FHIR-Universal-Conversion-Kit\profile\patientMS.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	<Content Include="FHIR-Universal-Conversion-Kit\profile\patientTWCR.js">
+    <Content Include="FHIR-Universal-Conversion-Kit\profile\patientTWCR.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="FHIR-Universal-Conversion-Kit\src\api\controllers\convert.js">
