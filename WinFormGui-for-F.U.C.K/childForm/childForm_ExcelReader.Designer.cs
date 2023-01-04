@@ -33,8 +33,8 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.TWCRfolderBTN = new MaterialSkin.Controls.MaterialButton();
+            this.TWcoreFolderBTN = new MaterialSkin.Controls.MaterialButton();
             this.sheetPickerComboBox = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.currentFilePathOutput = new MaterialSkin.Controls.MaterialTextBox();
@@ -104,8 +104,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.groupBox2.Controls.Add(this.materialButton2);
-            this.groupBox2.Controls.Add(this.materialButton1);
+            this.groupBox2.Controls.Add(this.TWCRfolderBTN);
+            this.groupBox2.Controls.Add(this.TWcoreFolderBTN);
             this.groupBox2.Controls.Add(this.sheetPickerComboBox);
             this.groupBox2.Controls.Add(this.materialLabel4);
             this.groupBox2.Controls.Add(this.currentFilePathOutput);
@@ -122,45 +122,47 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "讀取檔案";
             // 
-            // materialButton2
+            // TWCRfolderBTN
             // 
-            this.materialButton2.AutoSize = false;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = false;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(257, 46);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(186, 41);
-            this.materialButton2.TabIndex = 9;
-            this.materialButton2.Text = "切換至台灣癌登目錄";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.TWCRfolderBTN.AutoSize = false;
+            this.TWCRfolderBTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.TWCRfolderBTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.TWCRfolderBTN.Depth = 0;
+            this.TWCRfolderBTN.HighEmphasis = false;
+            this.TWCRfolderBTN.Icon = null;
+            this.TWCRfolderBTN.Location = new System.Drawing.Point(257, 46);
+            this.TWCRfolderBTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TWCRfolderBTN.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TWCRfolderBTN.Name = "TWCRfolderBTN";
+            this.TWCRfolderBTN.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.TWCRfolderBTN.Size = new System.Drawing.Size(186, 41);
+            this.TWCRfolderBTN.TabIndex = 9;
+            this.TWCRfolderBTN.Text = "切換至台灣癌登目錄";
+            this.TWCRfolderBTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.TWCRfolderBTN.UseAccentColor = false;
+            this.TWCRfolderBTN.UseVisualStyleBackColor = true;
+            this.TWCRfolderBTN.Click += new System.EventHandler(this.TWCRfolderBTN_Click);
             // 
-            // materialButton1
+            // TWcoreFolderBTN
             // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(45, 46);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(186, 41);
-            this.materialButton1.TabIndex = 8;
-            this.materialButton1.Text = "切換至TWcore目錄";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.TWcoreFolderBTN.AutoSize = false;
+            this.TWcoreFolderBTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.TWcoreFolderBTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.TWcoreFolderBTN.Depth = 0;
+            this.TWcoreFolderBTN.HighEmphasis = true;
+            this.TWcoreFolderBTN.Icon = null;
+            this.TWcoreFolderBTN.Location = new System.Drawing.Point(45, 46);
+            this.TWcoreFolderBTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TWcoreFolderBTN.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TWcoreFolderBTN.Name = "TWcoreFolderBTN";
+            this.TWcoreFolderBTN.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.TWcoreFolderBTN.Size = new System.Drawing.Size(186, 41);
+            this.TWcoreFolderBTN.TabIndex = 8;
+            this.TWcoreFolderBTN.Text = "切換至TWcore目錄";
+            this.TWcoreFolderBTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.TWcoreFolderBTN.UseAccentColor = false;
+            this.TWcoreFolderBTN.UseVisualStyleBackColor = true;
+            this.TWcoreFolderBTN.Click += new System.EventHandler(this.TWcoreFolderBTN_Click);
             // 
             // sheetPickerComboBox
             // 
@@ -344,7 +346,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialComboBox sheetPickerComboBox;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton TWCRfolderBTN;
+        private MaterialSkin.Controls.MaterialButton TWcoreFolderBTN;
     }
 }

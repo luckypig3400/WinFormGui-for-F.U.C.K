@@ -60,20 +60,22 @@ namespace WFGF.U.C.K.childForm
             }
         }
 
+        string subFolderPath = @".\FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\";
+
         private void fileListComboBox_Click(object sender, EventArgs e)
         {
             fileListComboBox.Items.Clear(); // 每次點選清單，先清空上次讀取到的項目
 
             // 讀取F.U.C.K profile資料夾的檔案清單
             // https://stackoverflow.com/questions/36363675/getting-list-of-files-from-directory-into-combobox
-            string[] files = Directory.GetFiles("./FHIR-Universal-Conversion-Kit/Excel-templates/twcore/excel-template-with10-sample-data");
+            string[] files = Directory.GetFiles(subFolderPath);
             fileListComboBox.Items.AddRange(files.Select((string filePath) => Path.GetFileName(filePath)).ToArray());
         }
 
         private void fileListComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             string filePath = Directory.GetCurrentDirectory();
-            filePath += "\\FHIR-Universal-Conversion-Kit\\Excel-templates\\twcore\\excel-template-with10-sample-data\\" + fileListComboBox.SelectedItem.ToString();
+            filePath += subFolderPath + fileListComboBox.SelectedItem.ToString();
             currentFilePathOutput.Text = filePath;
 
             readExcel(filePath);
@@ -88,7 +90,7 @@ namespace WFGF.U.C.K.childForm
             openFileDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
             openFileDialog.FilterIndex = 1;
             //openFileDialog.RestoreDirectory = true;
-            openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + "\\FHIR-Universal-Conversion-Kit\\Excel-templates\\";
+            openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + subFolderPath;
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -153,6 +155,16 @@ namespace WFGF.U.C.K.childForm
                         "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void TWcoreFolderBTN_Click(object sender, EventArgs e)
+        {
+            subFolderPath = @".\FHIR-Universal-Conversion-Kit\Excel-templates\twcore\excel-template-with10-sample-data\";
+        }
+
+        private void TWCRfolderBTN_Click(object sender, EventArgs e)
+        {
+            subFolderPath = @".\FHIR-Universal-Conversion-Kit\Excel-templates\TWCR\";
         }
     }
 }
