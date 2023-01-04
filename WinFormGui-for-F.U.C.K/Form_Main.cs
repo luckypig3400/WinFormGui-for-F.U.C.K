@@ -372,7 +372,7 @@ namespace WFGF.U.C.K
             if (confirmResult == DialogResult.Yes)
             {
                 // open folder
-                string folderPath = Directory.GetCurrentDirectory().ToString() + @"/FHIR-Universal-Conversion-Kit/twcore";
+                string folderPath = Directory.GetCurrentDirectory().ToString() + @"/FHIR-Universal-Conversion-Kit/Excel-templates/twcore";
                 try
                 {
                     Process.Start(folderPath);
