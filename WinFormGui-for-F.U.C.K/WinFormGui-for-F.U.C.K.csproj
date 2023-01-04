@@ -489,6 +489,9 @@
     <Content Include="FHIR-Universal-Conversion-Kit\profile\patientMS.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+	<Content Include="FHIR-Universal-Conversion-Kit\profile\patientTWCR.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="FHIR-Universal-Conversion-Kit\src\api\controllers\convert.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
