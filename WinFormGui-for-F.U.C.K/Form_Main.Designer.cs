@@ -630,6 +630,7 @@
             this.Name = "Form_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WinFormGui-for-F.U.C.K";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
