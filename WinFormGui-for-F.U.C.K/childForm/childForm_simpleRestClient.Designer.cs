@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(childForm_simpleRestClient));
             this.panel1 = new System.Windows.Forms.Panel();
             this.enableDarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
@@ -240,7 +241,7 @@
             this.jsonInputTextbox.Name = "jsonInputTextbox";
             this.jsonInputTextbox.Size = new System.Drawing.Size(510, 504);
             this.jsonInputTextbox.TabIndex = 0;
-            this.jsonInputTextbox.Text = "";
+            this.jsonInputTextbox.Text = resources.GetString("jsonInputTextbox.Text");
             // 
             // childForm_simpleRestClient
             // 
