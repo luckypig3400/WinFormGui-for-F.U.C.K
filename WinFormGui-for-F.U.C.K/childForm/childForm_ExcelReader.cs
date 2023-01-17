@@ -190,5 +190,32 @@ namespace WFGF.U.C.K.childForm
                 MessageBox.Show("您尚未選擇Excel內要匯出的工作表喔!", "重要提醒!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void copyCsvAsTextBTN_Click(object sender, EventArgs e)
+        {
+            if (dt != null)
+            {
+                // https://stackoverflow.com/questions/4959722/how-can-i-turn-a-datatable-to-a-csv
+                StringBuilder sb = new StringBuilder();
+
+                IEnumerable<string> columnNames = dt.Columns.Cast<DataColumn>().
+                                                  Select(column => column.ColumnName);
+                sb.AppendLine(string.Join(",", columnNames));
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    IEnumerable<string> fields = row.ItemArray.Select(field =>
+                        string.Concat("\"", field.ToString().Replace("\"", "\"\""), "\""));
+                    sb.AppendLine(string.Join(",", fields));
+                }
+
+                // 輸出csv文字轉換結果到剪貼簿
+                // https://stackoverflow.com/questions/899350/how-do-i-copy-the-contents-of-a-string-to-the-clipboard-in-c
+                System.Windows.Forms.Clipboard.SetText(sb.ToString());
+            }
+            else
+                MessageBox.Show("您尚未選擇Excel內要匯出的工作表喔!", "重要提醒!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }
