@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 using ExcelDataReader;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
+using System.Data.OleDb;
 
 namespace WFGF.U.C.K.childForm
 {
@@ -102,9 +102,10 @@ namespace WFGF.U.C.K.childForm
         }
 
         DataTableCollection tableCollection;
+        DataTable dt = null;
         private void sheetPickerComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[sheetPickerComboBox.SelectedItem.ToString()];
+            dt = tableCollection[sheetPickerComboBox.SelectedItem.ToString()];
             dataGridView1.DataSource = dt;
         }
 
@@ -153,6 +154,33 @@ namespace WFGF.U.C.K.childForm
                         "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void saveSheetAsCsvBTN_Click(object sender, EventArgs e)
+        {
+            string outputCSVpath = @"C:\Users\hp\Downloads\XDexport\test.csv";
+
+            if (dt != null)
+            {
+                // https://stackoverflow.com/questions/4959722/how-can-i-turn-a-datatable-to-a-csv
+                StringBuilder sb = new StringBuilder();
+
+                IEnumerable<string> columnNames = dt.Columns.Cast<DataColumn>().
+                                                  Select(column => column.ColumnName);
+                sb.AppendLine(string.Join(",", columnNames));
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    IEnumerable<string> fields = row.ItemArray.Select(field =>
+                        string.Concat("\"", field.ToString().Replace("\"", "\"\""), "\""));
+                    sb.AppendLine(string.Join(",", fields));
+                }
+
+                File.WriteAllText(outputCSVpath, sb.ToString());
+            }
+            else
+                MessageBox.Show("您尚未選擇Excel內要匯出的工作表喔!", "重要提醒!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
