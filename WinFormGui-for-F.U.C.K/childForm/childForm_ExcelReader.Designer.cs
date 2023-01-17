@@ -43,6 +43,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.saveSheetAsCsvBTN = new MaterialSkin.Controls.MaterialButton();
+            this.copyCsvAsTextBTN = new MaterialSkin.Controls.MaterialButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -103,6 +104,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.groupBox2.Controls.Add(this.copyCsvAsTextBTN);
             this.groupBox2.Controls.Add(this.saveSheetAsCsvBTN);
             this.groupBox2.Controls.Add(this.sheetPickerComboBox);
             this.groupBox2.Controls.Add(this.materialLabel4);
@@ -275,18 +277,40 @@
             this.saveSheetAsCsvBTN.Depth = 0;
             this.saveSheetAsCsvBTN.HighEmphasis = false;
             this.saveSheetAsCsvBTN.Icon = null;
-            this.saveSheetAsCsvBTN.Location = new System.Drawing.Point(106, 418);
+            this.saveSheetAsCsvBTN.Location = new System.Drawing.Point(49, 427);
             this.saveSheetAsCsvBTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.saveSheetAsCsvBTN.MouseState = MaterialSkin.MouseState.HOVER;
             this.saveSheetAsCsvBTN.Name = "saveSheetAsCsvBTN";
             this.saveSheetAsCsvBTN.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.saveSheetAsCsvBTN.Size = new System.Drawing.Size(282, 45);
+            this.saveSheetAsCsvBTN.Size = new System.Drawing.Size(185, 45);
             this.saveSheetAsCsvBTN.TabIndex = 8;
-            this.saveSheetAsCsvBTN.Text = "將目前工作表另存為CSV";
+            this.saveSheetAsCsvBTN.Text = "另存工作表為CSV";
             this.saveSheetAsCsvBTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.saveSheetAsCsvBTN.UseAccentColor = false;
             this.saveSheetAsCsvBTN.UseVisualStyleBackColor = false;
             this.saveSheetAsCsvBTN.Click += new System.EventHandler(this.saveSheetAsCsvBTN_Click);
+            // 
+            // copyCsvAsTextBTN
+            // 
+            this.copyCsvAsTextBTN.AutoSize = false;
+            this.copyCsvAsTextBTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.copyCsvAsTextBTN.BackColor = System.Drawing.Color.Yellow;
+            this.copyCsvAsTextBTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.copyCsvAsTextBTN.Depth = 0;
+            this.copyCsvAsTextBTN.HighEmphasis = true;
+            this.copyCsvAsTextBTN.Icon = null;
+            this.copyCsvAsTextBTN.Location = new System.Drawing.Point(262, 427);
+            this.copyCsvAsTextBTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.copyCsvAsTextBTN.MouseState = MaterialSkin.MouseState.HOVER;
+            this.copyCsvAsTextBTN.Name = "copyCsvAsTextBTN";
+            this.copyCsvAsTextBTN.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.copyCsvAsTextBTN.Size = new System.Drawing.Size(185, 45);
+            this.copyCsvAsTextBTN.TabIndex = 9;
+            this.copyCsvAsTextBTN.Text = "複製CSV文字到剪貼簿";
+            this.copyCsvAsTextBTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.copyCsvAsTextBTN.UseAccentColor = false;
+            this.copyCsvAsTextBTN.UseVisualStyleBackColor = false;
+            this.copyCsvAsTextBTN.Click += new System.EventHandler(this.copyCsvAsTextBTN_Click);
             // 
             // childForm_ExcelReader
             // 
@@ -325,5 +349,6 @@
         private MaterialSkin.Controls.MaterialComboBox sheetPickerComboBox;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialButton saveSheetAsCsvBTN;
+        private MaterialSkin.Controls.MaterialButton copyCsvAsTextBTN;
     }
 }
