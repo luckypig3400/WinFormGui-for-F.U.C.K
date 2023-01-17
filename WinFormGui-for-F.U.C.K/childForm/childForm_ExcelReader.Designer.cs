@@ -42,6 +42,7 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.saveSheetAsCsvBTN = new MaterialSkin.Controls.MaterialButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -102,6 +103,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.groupBox2.Controls.Add(this.saveSheetAsCsvBTN);
             this.groupBox2.Controls.Add(this.sheetPickerComboBox);
             this.groupBox2.Controls.Add(this.materialLabel4);
             this.groupBox2.Controls.Add(this.currentFilePathOutput);
@@ -132,7 +134,7 @@
             this.sheetPickerComboBox.FormattingEnabled = true;
             this.sheetPickerComboBox.IntegralHeight = false;
             this.sheetPickerComboBox.ItemHeight = 43;
-            this.sheetPickerComboBox.Location = new System.Drawing.Point(49, 417);
+            this.sheetPickerComboBox.Location = new System.Drawing.Point(49, 360);
             this.sheetPickerComboBox.MaxDropDownItems = 4;
             this.sheetPickerComboBox.MouseState = MaterialSkin.MouseState.OUT;
             this.sheetPickerComboBox.Name = "sheetPickerComboBox";
@@ -147,7 +149,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel4.Location = new System.Drawing.Point(45, 382);
+            this.materialLabel4.Location = new System.Drawing.Point(45, 325);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(278, 24);
@@ -161,7 +163,7 @@
             this.currentFilePathOutput.Depth = 0;
             this.currentFilePathOutput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.currentFilePathOutput.LeadingIcon = null;
-            this.currentFilePathOutput.Location = new System.Drawing.Point(49, 321);
+            this.currentFilePathOutput.Location = new System.Drawing.Point(49, 264);
             this.currentFilePathOutput.MaxLength = 65536;
             this.currentFilePathOutput.MouseState = MaterialSkin.MouseState.OUT;
             this.currentFilePathOutput.Multiline = false;
@@ -178,7 +180,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel3.Location = new System.Drawing.Point(45, 286);
+            this.materialLabel3.Location = new System.Drawing.Point(45, 229);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(186, 24);
@@ -193,12 +195,12 @@
             this.loadFileDialogBtn.Depth = 0;
             this.loadFileDialogBtn.HighEmphasis = true;
             this.loadFileDialogBtn.Icon = null;
-            this.loadFileDialogBtn.Location = new System.Drawing.Point(84, 164);
+            this.loadFileDialogBtn.Location = new System.Drawing.Point(106, 158);
             this.loadFileDialogBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.loadFileDialogBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.loadFileDialogBtn.Name = "loadFileDialogBtn";
             this.loadFileDialogBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.loadFileDialogBtn.Size = new System.Drawing.Size(322, 55);
+            this.loadFileDialogBtn.Size = new System.Drawing.Size(282, 45);
             this.loadFileDialogBtn.TabIndex = 2;
             this.loadFileDialogBtn.Text = "或是手動選擇其他檔案";
             this.loadFileDialogBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -257,12 +259,34 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            // https://stackoverflow.com/questions/1247800/how-to-change-the-color-of-winform-datagridview-header
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(561, 599);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // saveSheetAsCsvBTN
+            // 
+            this.saveSheetAsCsvBTN.AutoSize = false;
+            this.saveSheetAsCsvBTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.saveSheetAsCsvBTN.BackColor = System.Drawing.Color.Yellow;
+            this.saveSheetAsCsvBTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.saveSheetAsCsvBTN.Depth = 0;
+            this.saveSheetAsCsvBTN.HighEmphasis = false;
+            this.saveSheetAsCsvBTN.Icon = null;
+            this.saveSheetAsCsvBTN.Location = new System.Drawing.Point(106, 418);
+            this.saveSheetAsCsvBTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.saveSheetAsCsvBTN.MouseState = MaterialSkin.MouseState.HOVER;
+            this.saveSheetAsCsvBTN.Name = "saveSheetAsCsvBTN";
+            this.saveSheetAsCsvBTN.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.saveSheetAsCsvBTN.Size = new System.Drawing.Size(282, 45);
+            this.saveSheetAsCsvBTN.TabIndex = 8;
+            this.saveSheetAsCsvBTN.Text = "將目前工作表另存為CSV";
+            this.saveSheetAsCsvBTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.saveSheetAsCsvBTN.UseAccentColor = false;
+            this.saveSheetAsCsvBTN.UseVisualStyleBackColor = false;
+            this.saveSheetAsCsvBTN.Click += new System.EventHandler(this.saveSheetAsCsvBTN_Click);
             // 
             // childForm_ExcelReader
             // 
@@ -300,5 +324,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialComboBox sheetPickerComboBox;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialButton saveSheetAsCsvBTN;
     }
 }
