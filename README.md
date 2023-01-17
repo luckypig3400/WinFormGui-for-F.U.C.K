@@ -42,5 +42,5 @@ So many thanks to the author: [Lorex](https://github.com/Lorex), who created thi
 - [ ] Loading Animation while waiting for response in "Simple RESTful Client"
 - [ ] Excel file writer(Advanced function)
 - [ ] Save F.U.C.K response as txt/Word/PDF files
-- [ ] Convert Excel(.xlsx) to csv if possible
+- [x] Convert Excel(.xlsx) to csv if possible(export via DataTable)
 - [ ] Try to add json prettier for RichTextBox
