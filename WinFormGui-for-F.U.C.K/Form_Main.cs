@@ -167,7 +167,10 @@ namespace WFGF.U.C.K
             }
             else
             {
-                restClientForm.Visible = false; // 隱藏簡易RestClient
+                if (GlobalData.restClientFormHasBeenOpened)
+                {
+                    restClientForm.Visible = false; // 隱藏簡易RestClient
+                }
                 profileEditorForm.reloadEditorTheme();
                 profileEditorForm.Visible = true;
             }
@@ -347,7 +350,10 @@ namespace WFGF.U.C.K
             }
             else
             {
-                profileEditorForm.Visible = false;// 隱藏F.U.C.K編輯器
+                if (GlobalData.profileEditorFormHasBeenOpened)
+                {
+                    profileEditorForm.Visible = false;// 隱藏F.U.C.K Profile編輯器
+                }
                 restClientForm.reloadTheme();
                 restClientForm.Visible = true;
             }
