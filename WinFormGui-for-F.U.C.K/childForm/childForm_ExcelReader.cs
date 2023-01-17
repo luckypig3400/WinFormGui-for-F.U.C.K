@@ -176,6 +176,14 @@ namespace WFGF.U.C.K.childForm
                     sb.AppendLine(string.Join(",", fields));
                 }
 
+                // https://stackoverflow.com/questions/21719126/how-to-save-the-file-using-save-file-dialog-box
+                SaveFileDialog svDialog = new SaveFileDialog();
+                svDialog.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+                if (svDialog.ShowDialog() == DialogResult.OK)
+                {
+                    outputCSVpath = svDialog.FileName;
+                }
+
                 File.WriteAllText(outputCSVpath, sb.ToString());
             }
             else
